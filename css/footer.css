@@ -1,0 +1,48 @@
+/* footer css */
+footer{
+	width: 100%;
+	text-align:center;
+	
+}
+footer h1{
+	text-align: center;
+
+}
+footer:before,
+footer:after {
+  box-sizing: inherit;
+}
+.footer_left{
+
+	width: 100%;
+	clear: both;
+
+}
+.footer_right{
+
+	width: 100%;
+	clear: both;
+
+
+}
+footer ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+footer  a {
+	display: inline-block;
+	text-align: center;
+	padding: 1rem 1rem;
+	text-decoration: none;
+
+}
+.footer_below{
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+	color: #ff3333;
+	width: 100%;
+
+}

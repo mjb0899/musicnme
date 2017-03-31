@@ -1,0 +1,91 @@
+body{
+    width: 100%;
+}
+main{
+    width:80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+*{
+         font-family: "Arial", Helvetica, sans-serif;
+
+}
+
+.wrapper h2{
+    text-align: center;
+    color:#ff3333; 
+    font-weight: lighter;   
+
+
+
+
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  
+}
+
+/* Set a style for all buttons */
+main button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    width: 90%;
+    padding: 1rem;
+    border-left: 1px solid #ff3333;
+    background-color: white;
+    box-shadow: 1rem 1rem  1rem black;
+
+}
+
+.dot{
+    color: #212121;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+main div label{
+    clear: left;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 960px) {
+    .cancelbtn, .signupbtn {
+        width: 50%;
+
+    }
+}

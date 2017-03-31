@@ -1,0 +1,13 @@
+body {
+  background: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid a{
+    color: #ff3333!important;
+}
+
+.navbar-custom {
+    background-color:  #212121;
+}

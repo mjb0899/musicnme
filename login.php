@@ -1,12 +1,12 @@
 <?php
 include ("dbConnect.php");
 
-if(empty($_GET["username"])||empty($_GET["password"])){
+if(empty($_POST["username"])||empty($_POST["password"])){
     echo "both fields required";
 }
 else{
-    $username=$_GET["username"];
-    $password=$_GET["password"];
+    $username=$_POST["username"];
+    $password=$_POST["password"];
 }
 
 $sql="SELECT uid FROM users WHERE username='$username'and upassword='$password'";

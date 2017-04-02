@@ -51,7 +51,7 @@
         <div class="welcometext">
             <h1> Welcome</h1>
         </div>
-        <form action="login.php" method="get">
+        <form action="login.php" method="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
                 <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">

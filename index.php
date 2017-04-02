@@ -54,7 +54,7 @@
         <form action="login.php" method="get">
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
-                <input type="text" class="form-control" name="usename" id="exampleInputEmail1" placeholder="Email" required="">
+                <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>

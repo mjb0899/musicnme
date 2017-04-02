@@ -51,14 +51,14 @@
         <div class="welcometext">
             <h1> Welcome</h1>
         </div>
-        <form>
+        <form action="login.php" method="post">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required="">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" name="usename" id="exampleInputEmail1" placeholder="Email" required="">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required="">
             </div>
             <div class="checkbox">
                 <label>
@@ -66,7 +66,7 @@
                 </label>
             </div>
             <div class="buttonholder">
-                <button type="submit" class="btn btn-default" id="loginbtn">Submit</button>
+                <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
             </div>
         </form>
     </div>

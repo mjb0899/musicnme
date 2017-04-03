@@ -87,6 +87,7 @@ session_start();
                     <h1><?php echo $name; ?></h1>
                     <h1 value="text"></h1>
                     <h1> text</h1>
+                    <input type="text" name="idtest" value="<?php echo $name; ?>" >
 
 
 

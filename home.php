@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -80,7 +83,7 @@
                     </div>
                 </div>
                 <div class="feed">
-                    <h1>text</h1>
+                    <h1><?php echo name; ?></h1>
                     <h1>text</h1>
                     <h1>text</h1>
                     <h1>text</h1>

@@ -15,6 +15,8 @@ $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
 $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
+    session_start();
+    $_SESSION['name']=$username;
     header("location:home.php");
 }else{
     echo "Incorrect Username";

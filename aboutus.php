@@ -61,7 +61,9 @@ $sess=$_SESSION['name'];
             <h3> Don't have a free account yet?</h3>
             <div class="wrapper_signup">
                 <button type="button" class="log-btn"  >Create Account</button>
-                <input type="button" value="Add to Cart" <?php if (isset($_SESSION['name'])){ ?> disabled <?php   } ?>  />
+
+                <input type="button" value="Add to Cart" <?php if( empty( $_SESSION[ 'name' ] ) ) { ?>style="display:none;"<?php } ?>  />
+
             </div>
         </div>
     </div>

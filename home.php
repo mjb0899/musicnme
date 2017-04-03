@@ -49,8 +49,9 @@ $sess=$_SESSION['name'];
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>></span> Login</a></li>
+                    <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+                    <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -85,8 +86,7 @@ $sess=$_SESSION['name'];
                 </div>
                 <div class="feed">
                     <h1><?php echo $sess; ?></h1>
-                    <h1><?php echo $name; ?></h1>
-                    <h1 value="text"></h1>
+                    <h1></h1>
                     <h1> text</h1>
                     <input type="text" value="<?php echo $sess; ?>" >
 

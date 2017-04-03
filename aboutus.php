@@ -1,6 +1,7 @@
 <?php
 session_start();
 $sess=$_SESSION['name'];
+$a=0;
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +63,7 @@ $sess=$_SESSION['name'];
             <div class="wrapper_signup">
                 <button type="button" class="log-btn"  >Create Account</button>
 
-                <input type="button" value="Add to Cart" <?php if( empty( $_SESSION[ 'name' ] ) ) { ?>style="display:none;"<?php } ?>  />
+                <input type="button" value="Add to Cart" <?php if( $a==0 ) { ?>style="display:none;"<?php } ?>  />
 
             </div>
         </div>

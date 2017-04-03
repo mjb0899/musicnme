@@ -61,9 +61,7 @@ $a=0;
             </p>
             <h3> Don't have a free account yet?</h3>
             <div class="wrapper_signup">
-                <button type="button" class="log-btn"  >Create Account</button>
-                <h1><?php echo $sess; ?></h1>
-                <input type="button" value="Add to Cart" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>  />
+                <button type="button" class="log-btn" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>  >Create Account</button>
 
             </div>
         </div>

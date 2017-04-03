@@ -63,7 +63,7 @@ $a=0;
             <div class="wrapper_signup">
                 <button type="button" class="log-btn"  >Create Account</button>
                 <h1><?php echo $sess; ?></h1>
-                <input type="button" value="Add to Cart" <?php if( $a==0 ) { ?>style="display:none;"<?php } ?>  />
+                <input type="button" value="Add to Cart" <?php if(empty($sess)) { ?>style="display:none;"<?php } ?>  />
 
             </div>
         </div>

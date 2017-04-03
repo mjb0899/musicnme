@@ -83,7 +83,7 @@ session_start();
                     </div>
                 </div>
                 <div class="feed">
-                    <h1><?php echo name; ?></h1>
+                    <h1><?php echo $name; ?></h1>
                     <h1>text</h1>
                     <h1>text</h1>
                     <h1>text</h1>

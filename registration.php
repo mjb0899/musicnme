@@ -52,7 +52,7 @@
     <div>
         <h2> - Join Our Family -</h2>
     </div>
-    <form action="/action_page.php">
+    <form action="insertuser.php" method="post">
         <div class="container">
             <label><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="fname" required>
@@ -63,7 +63,7 @@
             <label><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
             <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="pass" required>
             <label><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
             <input type="checkbox" checked="checked"> Remember me

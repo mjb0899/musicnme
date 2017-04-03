@@ -88,7 +88,7 @@ $sess=$_SESSION['name'];
                     <h1><?php echo $name; ?></h1>
                     <h1 value="text"></h1>
                     <h1> text</h1>
-                    <input type="text" name="idtest" value="<?php echo $sess; ?>" >
+                    <input type="text" value=<?php echo $sess; ?> >
 
 
 

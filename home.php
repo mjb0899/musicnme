@@ -1,5 +1,6 @@
 <?php
 session_start();
+$sess=$_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,11 +84,11 @@ session_start();
                     </div>
                 </div>
                 <div class="feed">
-                    <h1><?php echo $name; ?></h1>
+                    <h1><?php echo $sess; ?></h1>
                     <h1><?php echo $name; ?></h1>
                     <h1 value="text"></h1>
                     <h1> text</h1>
-                    <input type="text" name="idtest" value="<?php echo $name; ?>" >
+                    <input type="text" name="idtest" value="<?php echo $sess; ?>" >
 
 
 

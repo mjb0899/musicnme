@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+$sess=$_SESSION['name'];
+?>
 
 <!DOCTYPE html>
 <html >
@@ -58,6 +61,7 @@
             <h3> Don't have a free account yet?</h3>
             <div class="wrapper_signup">
                 <button type="button" class="log-btn"  >Create Account</button>
+                <input type="button" value="Add to Cart" <?php if (isset($_SESSION['name'])){ ?> disabled <?php   } ?>  />
             </div>
         </div>
     </div>

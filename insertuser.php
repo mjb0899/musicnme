@@ -12,8 +12,9 @@ $fname=$_POST["fname"];
 $lname=$_POST["lname"];
 $email=$_POST["email"];
 $pass=$_POST["pass"];
+$type=$_POST['utype'];
 
-$sql="INSERT INTO users(username,upassword,uemail,ufname,ulname) VALUES ('$username','$pass','$email','$fname','$lname')";
+$sql="INSERT INTO users(username,upassword,uemail,ufname,ulname,utype) VALUES ('$username','$pass','$email','$fname','$lname','$type')";
 
 if(mysqli_query($db,$sql)){
 

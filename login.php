@@ -10,7 +10,7 @@ else{
     $usertype=$_POST["utype"];
 }
 
-$sql="SELECT uid FROM users WHERE username= ? "."and upassword = ?";
+$sql="SELECT uid,utype FROM users WHERE username= ? "."and upassword = ?";
 $stmt=$db->prepare($sql);
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
@@ -18,7 +18,7 @@ $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
-    $_SESSION['acctype']=1;
+    $_SESSION['acctype']=$usertype;
     header("location:home.php");
 }else{
     echo "Incorrect Username for user";

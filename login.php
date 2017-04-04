@@ -19,8 +19,10 @@ if($row = $stmt->fetch()){
     $_SESSION['name']=$username;
     header("location:home.php");
 }else{
-    echo "Incorrect Username";
+    echo "Incorrect Username for user";
 }
+
+
 /*$result=mysqli_query($db,$sql);
 if(mysqli_num_rows($result)==1)
 {

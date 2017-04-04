@@ -18,12 +18,7 @@ $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
-    if($usertype=="user"){
-
-    }elseif($usertype=="artist"){
-
-        $_SESSION['acctype'] = $usertype;
-    }
+    $_SESSION['acctype'] = $usertype;
     header("location:home.php");
 }else{
     echo "Incorrect Username for user";

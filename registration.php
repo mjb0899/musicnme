@@ -54,6 +54,14 @@
     </div>
     <form action="insertuser.php" method="post">
         <div class="container">
+            <div class="rad" style="text-align: center;">
+                <label class="radio-inline">
+                    <input type="radio" name="utype" checked value="user">User
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="utype" value="artist">Artist
+                </label>
+            </div>
             <label><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="fname" required>
             <label><b>Last Name</b></label>

@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -57,10 +56,10 @@
         <form action="login.php" method="post">
             <div class="rad" style="text-align: center;">
             <label class="radio-inline">
-                <input type="radio" name="optradio" checked>User
+                <input type="radio" name="utype" checked>User
             </label>
             <label class="radio-inline">
-                <input type="radio" name="optradio">Artist
+                <input type="radio" name="utype">Artist
             </label>
             </div>
             <div class="form-group">

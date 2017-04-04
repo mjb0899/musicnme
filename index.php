@@ -56,10 +56,10 @@
         <form action="login.php" method="post">
             <div class="rad" style="text-align: center;">
             <label class="radio-inline">
-                <input type="radio" name="utype" checked>User
+                <input type="radio" name="utype" checked value="user">User
             </label>
             <label class="radio-inline">
-                <input type="radio" name="utype">Artist
+                <input type="radio" name="utype" value="artist">Artist
             </label>
             </div>
             <div class="form-group">

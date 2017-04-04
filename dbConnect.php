@@ -5,7 +5,7 @@
  * Date: 14/03/2017
  * Time: 13:49
  */
-$connectstr_dbhost = '';
+$connectstr_dbhost = 'MYSQLCONNSTR_localdb';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';

@@ -52,6 +52,12 @@
             <h1> Welcome</h1>
         </div>
         <form action="login.php" method="post">
+            <label class="radio-inline">
+                <input type="radio" name="optradio" checked>User
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio">Artist
+            </label>
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
                 <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">

@@ -90,7 +90,7 @@ $acc=$_SESSION['acctype'];
                 </div>
                 <div class="feed">
                     <h1><?php echo $sess; ?></h1>
-                    <h1></h1>
+                    <h1><?php echo $acc; ?></h1>
                     <h1> text</h1>
                     <input type="text" value="<?php echo $sess; ?>" >
 

@@ -53,7 +53,8 @@
         <div class="welcometext">
             <h1> Welcome</h1>
         </div>
-        <form action="login.php" method="post">
+        <div id="ack"></div>
+        <form action="login.php" method="post" id="myform">
             <div class="rad" style="text-align: center;">
             <label class="radio-inline">
                 <input type="radio" name="utype" checked value="user">User

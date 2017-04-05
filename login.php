@@ -22,7 +22,7 @@ if($row = $stmt->fetch()){
     header("location:home.php");
 }else{
     echo "Incorrect Username for user";
-    echo "this is the value -> ".$usertype." <-is here";
+
 }
 
 

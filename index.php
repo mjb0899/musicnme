@@ -56,7 +56,7 @@ session_start();
             <h1> Welcome</h1>
         </div>
         <div id="ack">
-            <p> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
+            <p style="color: red;"> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
         </div>
         <?php unset($_SESSION['errmsg']); ?>
         <form action="login.php" method="post">

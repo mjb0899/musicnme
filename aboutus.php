@@ -1,7 +1,7 @@
 <?php
 session_start();
 $sess=$_SESSION['name'];
-$a=0;
+$acc=$_SESSION['acctype'];
 ?>
 
 <!DOCTYPE html>

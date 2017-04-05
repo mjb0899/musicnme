@@ -51,7 +51,7 @@ left: 0;
 right: 0;
 
 }
-.ack{
+.ack p {
     color: red;
     font-weight: bold;
 }

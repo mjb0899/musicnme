@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -12,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--INTERNAL-->
     <link rel="stylesheet" type="text/css" href="css/logincss.css">
-    <script type="text/javascript" src="js/log.js"></script>
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
@@ -54,8 +55,11 @@
         <div class="welcometext">
             <h1> Welcome</h1>
         </div>
-        <div id="ack"></div>
-        <form action="login.php" method="post" id="myform">
+        <div id="ack">
+            <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?>
+        </div>
+        <?php unset($_SESSION['errmsg']); ?>
+        <form action="login.php" method="post">
             <div class="rad" style="text-align: center;">
             <label class="radio-inline">
                 <input type="radio" name="utype" checked value="user">User

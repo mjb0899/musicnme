@@ -22,6 +22,7 @@ if($row = $stmt->fetch()){
     header("location:home.php");
 }else{
     echo "Incorrect Username for user";
+    $_SESSION['errmsg']="Invalid Credentials";
 
 }
 

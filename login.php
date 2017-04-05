@@ -21,8 +21,9 @@ if($row = $stmt->fetch()){
     $_SESSION['acctype'] = $usertype;
     header("location:home.php");
 }else{
-    echo "Incorrect Username for user";
+    session_start();
     $_SESSION['errmsg']="Invalid Credentials";
+    header("location:index.php");
 
 }
 

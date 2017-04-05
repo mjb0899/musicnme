@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--INTERNAL-->
     <link rel="stylesheet" type="text/css" href="css/logincss.css">
+    <script type="text/javascript" src="js/log.js"></script>
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>

@@ -1,12 +1,7 @@
 main.wrapper{
 
     width: 100%;
-    margin-top: 11rem;
-}
-
-.wrapper_bar{
-    background-color: #212121;
-    color: #212121;
+    margin-top: 50rem;
 }
 
 .wrapper_one{
@@ -50,7 +45,7 @@ div.wrapper_one h2{
 
 @media(max-width: 960px) {
     main div.wrapper_one {
-        margin-top: 6rem;
+        margin-top: 50rem;
 
     }
 }

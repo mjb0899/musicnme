@@ -5,7 +5,7 @@
   width: 100%;
   color: white;
   overflow: hidden;
-  background: #ff3333;
+  background-image: url('../images/console.jpg');
 }
 .share {
   border: 2px solid #ff3333;

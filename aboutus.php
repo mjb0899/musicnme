@@ -34,7 +34,7 @@ $acc=$_SESSION['acctype'];
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <liclass="active" <?php if(!isset($sess)) { ?>style="display:none;"<?php } ?>><a href="home.php">Home</a></li>
+                    <li <?php if(!isset($sess)) { ?>style="display:none;"<?php } ?>><a href="home.php">Home</a></li>
                     <li><a href="#">Share Music</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Get In Touch</a></li>

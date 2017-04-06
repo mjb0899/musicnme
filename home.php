@@ -66,9 +66,7 @@ $acc=$_SESSION['acctype'];
     <div class="out-wrapper">
         <div class="out">
             <div class="one">
-                <div class="one-content">
-                    one content
-                </div>
+                <h1>morris</h1>
             </div>
             <div class="two">
                 <div class="share">
@@ -92,21 +90,17 @@ $acc=$_SESSION['acctype'];
                     <h1><?php echo $sess; ?></h1>
                     <h1><?php echo $acc; ?></h1>
                     <h1> text</h1>
+                    <h1> text</h1><h1> text</h1><h1> text</h1>
+                    <h1> text</h1><h1> text</h1><h1> text</h1>
+                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
+                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
+                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
                     <input type="text" value="<?php echo $sess; ?>" >
-
-
-
                 </div>
 
-            </div>
-            <div class="three">
-                <div class="three-content">
-                    three content
-                </div>
             </div>
         </div>
     </div>
-</main>
 
 <!--FOOTER-->
 <footer>

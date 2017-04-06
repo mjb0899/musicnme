@@ -1,81 +1,44 @@
 .out-wrapper {
   width: 100%;
-  overflow: hidden;
 }
-
 .out {
-  width: 960px;
-  display: block;
-  font-size: 0;
-  margin: 0 auto;
-  color: white; 
-  position: relative;
-
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  background: #ff3333;
 }
-.share{
-  border: 2px solid white;
+.share {
+  border: 2px solid #ff3333;
   border-radius: 1rem;
+  background: #212121;
 }
-.share_align{
-  margin-left:2rem;
+.share_align {
+  margin-left: 2rem;
 }
-.feed{
+.feed {
   margin-top: 1rem;
-    border-radius: 1rem;
-      border: 2px solid white;
-
-
+  border-radius: 1rem;
+  border: 2px solid #ff3333;
+  background: #212121;
 }
-
 .one {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 15rem;
-  background: #666;
-  font-size: 1rem;
-    margin-top: 6rem;
-
-}
-
-.one-content {
-  background: gray;
-  height: 400px;
+  margin-top: 5rem;
+  float: left;
+  width: 20rem;
+  background: #212121;
+  height: 92vh;
   position: fixed;
-  top: 0;
-  width: 15rem;
-    margin-top: 6rem;
-
+  border: 2px solid #ff3333;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
-
 .two {
-  display: inline-block;
+  margin-top: 5rem;
+  float: left;
   vertical-align: top;
-  background: #333;
-  width: calc(960px - 30rem);
+  width: 80%;
   font-size: 1rem;
   height: 1000px;
-    margin-top: 6rem;
-
-}
-
-.three {
-  display: inline-block;
-  vertical-align: top;
-  width: 15rem;
-  background: #666;
-  font-size: 1rem;
-  height: 300px;
-    margin-top: 6rem;
-
-}
-
-.three-content {
-  background: gray;
-  height: 400px;
-  position: fixed;
-  top: 0;
-  width: 15rem;
-    margin-top: 6rem;
-
+  margin-left: 21rem;
+  min-width: 500px;
 }

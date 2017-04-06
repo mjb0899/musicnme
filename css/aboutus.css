@@ -1,7 +1,7 @@
 main.wrapper{
 
     width: 100%;
-    margin-top: 10%;
+    margin-top: 6rem;
 }
 
 .wrapper_bar{
@@ -50,7 +50,7 @@ div.wrapper_one h2{
 
 @media(max-width: 960px) {
     main div.wrapper_one {
-        margin-top: 10%;
+        margin-top: 6rem;
 
     }
 }

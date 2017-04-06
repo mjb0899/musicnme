@@ -16,17 +16,18 @@ main.wrapper{
 
 
 }
-#usr{
-    display: none;
-}
-#art{
-    display: none;
-}
+
+
 div.wrapper_one h2{
     color:red;
 
 }
-
+#usr{
+    display: none;
+}
+#art {
+    display: none;
+}
 .log-btn {
   background:#ff3333;
   dispaly: inline-block;

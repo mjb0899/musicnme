@@ -44,7 +44,7 @@ $acc=$_SESSION['acctype'];
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="home.php">Home</a></li>
                     <li><a href="#">Share Music</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Get In Touch</a></li>

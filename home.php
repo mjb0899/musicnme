@@ -47,7 +47,7 @@ $acc=$_SESSION['acctype'];
                     <li class="active"><a href="home.php">Home</a></li>
                     <li><a href="#">Share Music</a></li>
                     <li><a href="#">Events</a></li>
-                    <li id="hiding" ><a href="#">Get In Touch</a></li>
+                    <li class="hide"><a href="#">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

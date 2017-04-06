@@ -7,9 +7,10 @@
   overflow: hidden;
   background:#000000;
 }
-#hiding{
+.hide{
   display: none;
 }
+
 .share {
   border: 2px solid #ff3333;
   border-radius: 1rem;

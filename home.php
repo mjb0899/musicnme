@@ -47,11 +47,11 @@ $acc=$_SESSION['acctype'];
                     <li class="active"><a href="home.php">Home</a></li>
                     <li><a href="#">Share Music</a></li>
                     <li><a href="#">Events</a></li>
-                    <li <?php if(isset($sess)) { ?>style="display: block"<?php } ?>><a href="#">Get In Touch</a></li>
+                    <li id="hiding" <?php if(isset($sess)) { ?>style="display: block"<?php } ?>><a href="#">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="hiding" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+                    <li  <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
                     <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li <?php if(isset($sess)&&($acc=='artist')){ ?>style="display:none;"<?php } ?> ><a href="userprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>
                     <li <?php if(isset($sess)&&($acc=='user')) { ?>style="display:none;"<?php } ?> ><a href="artistprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>

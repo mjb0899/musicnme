@@ -43,8 +43,8 @@ $acc=$_SESSION['acctype'];
                 <ul class="nav navbar-nav navbar-right">
                     <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="registration.php"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
                     <li <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li class="disp" <?php if(isset($sess)&&($acc=='artist')){ ?>style="display:inline;"<?php } ?> ><a href="userprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>
-                    <li class="disp" <?php if(isset($sess)&&($acc=='user')) { ?>style="display:inline;"<?php } ?> ><a href="artistprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>
+                    <li class="hide" <?php if(isset($sess)&&($acc=='artist')){ ?>style="display:block;"<?php } ?> ><a href="artistprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>
+                    <li class="hide" <?php if(isset($sess)&&($acc=='user')) { ?>style="display:block;"<?php } ?> ><a href="userprofile.php"><span class="glyphicon glyphicon-headphones"></span> <?php echo $sess ?></a></li>
                     <li <?php if(!isset($sess)) { ?>style="display:none;"<?php } ?> ><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 
                 </ul>

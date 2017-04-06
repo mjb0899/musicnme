@@ -16,6 +16,12 @@ main.wrapper{
 
 
 }
+#usr{
+    display: none;
+}
+#art{
+    display: none;
+}
 div.wrapper_one h2{
     color:red;
 

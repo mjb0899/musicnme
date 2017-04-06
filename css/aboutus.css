@@ -1,7 +1,6 @@
 main.wrapper{
     margin-top: 76px;
     width: 100%;
-    text-align: center;
 }
 
 .wrapper_one{
@@ -10,6 +9,7 @@ main.wrapper{
     text-align: center;
     width: 80%;
     margin-top: 76px;
+    margin-left: auto;
     background-color: white;
     border: 2px solid white;
     border-radius: 1rem;

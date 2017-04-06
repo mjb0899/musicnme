@@ -22,10 +22,7 @@ div.wrapper_one h2{
     color:red;
 
 }
-#usr{
-    display: none;
-}
-#art {
+.disp{
     display: none;
 }
 .log-btn {

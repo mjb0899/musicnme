@@ -18,7 +18,12 @@ $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
-    $_SESSION['acctype'] = $usertype;
+    if($usertype=="user"){
+        $_SESSION['user'] = $usertype;
+    }
+    elseif ($usertype=="artist"){
+        $_SESSION['artist']=$usertype;
+    }
     header("location:home.php");
 }else{
     session_start();

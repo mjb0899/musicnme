@@ -1,5 +1,4 @@
 main.wrapper{
-    margin-top: 76px;
     width: 100%;
 }
 
@@ -8,8 +7,7 @@ main.wrapper{
     font-family: "Lucida Console", Monaco, monospace;
     text-align: center;
     width: 80%;
-   margin: auto;
-
+    margin: auto;
     background-color: white;
     border: 2px solid white;
     border-radius: 1rem;

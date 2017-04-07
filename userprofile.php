@@ -1,8 +1,6 @@
 <?php
 session_start();
 $sess=$_SESSION['name'];
-$acc=$_SESSION['acctype'];
-
 ?>
 <!DOCTYPE html>
 <html >
@@ -80,6 +78,17 @@ $acc=$_SESSION['acctype'];
             </div>
 
             <div id="info" class="tabcontent">
+                <?php
+                include("dbConnect.php");
+                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $firstname= $row['ufname'];
+                    $lastname= $row['ulname'];
+                    $email= $row['uemail'];
+                    echo "<<h2>$firstname}{$lastname}</h2>";
+                }
+                ?>
                 <h3>London</h3>
                 <p>London is the capital city of England.</p>
             </div>

@@ -66,6 +66,7 @@
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
             </div>
             <div id="uploads" class="tabcontent">
+
                 <h3>Uploads shizz</h3>
                 <p>London is the capital city of England.</p>
                 <p>London is the capital city of England.</p>
@@ -79,6 +80,17 @@
                 <p>London is the capital city of England.</p>
             </div>
             <div id="about" class="tabcontent">
+                <?php
+                include("dbConnect.php");
+                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $firstname= $row['ufname'];
+                    $lastname= $row['ulname'];
+                    $email= $row['uemail'];
+                    echo "<h2>$firstname"." "."$lastname</h2>";
+                }
+                ?>
                 <h3>Paris</h3>
                 <p>Paris is the capital of France.</p>
             </div>

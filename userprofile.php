@@ -86,7 +86,7 @@ $sess=$_SESSION['name'];
                     $firstname= $row['ufname'];
                     $lastname= $row['ulname'];
                     $email= $row['uemail'];
-                    echo "<<h2>$firstname}{$lastname}</h2>";
+                    echo "<h2>$firstname"." "."$lastname</h2>";
                 }
                 ?>
                 <h3>London</h3>

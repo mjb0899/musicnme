@@ -1,5 +1,7 @@
-
-
+<?php
+session_start();
+$sess=$_SESSION['name'];
+?>
 <!DOCTYPE html>
 <html>
 <head>

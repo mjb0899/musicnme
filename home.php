@@ -23,9 +23,6 @@ $artist=$_SESSION['artist'];
 
     <style>
 
-        .form-control{
-            width: 8rem;
-        }
     </style>
 
 
@@ -87,7 +84,7 @@ $artist=$_SESSION['artist'];
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
                                     <form method="post" action="savepost.php">
-                                        <textarea class="form-control" rows="5" id="comment" name="status"></textarea>
+                                        <textarea class="form-control" rows="2" id="comment" name="status"></textarea>
                                         <button type="sumbit" class="btn btn-default" id="button_col">Post</button>
                                     </form>
                                 </div>

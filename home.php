@@ -129,10 +129,10 @@ $artist=$_SESSION['artist'];
                                                         <h4 class="modal-title">What's on your mind?</h4>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="button_col">Post</button>
+                                                        <form method="post">
+                                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal" id="button_col">Post</button>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>

@@ -21,43 +21,6 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
 
-    <style>
-        .col{
-            background-color:black;
-            border:none;
-            border-radius:0;
-            margin-top: 2rem;
-
-
-        }
-        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-            color:    #ff3333;
-        }
-        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-            color:    #ff3333;
-            opacity:  1;
-        }
-        ::-moz-placeholder { /* Mozilla Firefox 19+ */
-            color:    #ff3333;
-            opacity:  1;
-        }
-        :-ms-input-placeholder { /* Internet Explorer 10-11 */
-            color:    #ff3333;
-        }
-        .modal-header,.modal-body,.modal-footer{
-            background-color:#212121;
-        }
-        .modal-title{
-            color:#ff3333;
-        }
-        #button_col{
-            background-color:#ff3333;
-            border:none;
-            margin-top: 1rem;
-        }
-
-    </style>
-
 
 
 
@@ -117,28 +80,10 @@ $artist=$_SESSION['artist'];
 
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
-                                    <div class="container">
-                                        <!-- Trigger the modal with a button -->
-                                        <input type="text" class="btn btn-info btn-lg col" data-toggle="modal" data-target="#myModal" placeholder="What's on your mind?">
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="myModal" role="dialog">
-                                            <div class="modal-dialog modal-sm">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h4 class="modal-title">What's on your mind?</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form method="post" action="savepost.php">
-                                                            <textarea class="form-control" rows="5" id="comment" name="status"></textarea>
-                                                            <button type="button" class="btn btn-default"  id="button_col">Post</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <form method="post" action="savepost.php">
+                                        <textarea class="form-control" rows="5" id="comment" name="status"></textarea>
+                                        <button type="sumbit" class="btn btn-default" id="button_col">Post</button>
+                                    </form>
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
                                     <form action="upload.php" method="post" enctype="multipart/form-data">

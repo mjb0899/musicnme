@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
-                header("Location:index.php");
+                header("Location:home.php");
             }else{
                 echo "File too big";
             }
@@ -37,7 +37,17 @@ if(isset($_POST['submit'])){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
-                header("Location:index.php");
+                //insert
+
+
+
+
+                header("Location:home.php");
+
+
+
+
+
             }else{
                 echo "File too big";
             }
@@ -47,10 +57,8 @@ if(isset($_POST['submit'])){
 
     }
     else{
-        echo $fileName."-";
-        echo $fileActualExt."+";
-        echo $fileExt;
-        echo "you cannot upload files of this type";
+
+        echo "You cannot upload files of this type";
     }
 
 

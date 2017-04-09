@@ -22,6 +22,38 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
 
     <style>
+        .col{
+            background-color:black;
+            border:none;
+            border-radius:0;
+            margin-top: 2rem;
+
+
+        }
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color:    #ff3333;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    #ff3333;
+            opacity:  1;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    #ff3333;
+            opacity:  1;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color:    #ff3333;
+        }
+        .modal-header,.modal-body,.modal-footer{
+            background-color:#212121;
+        }
+        .modal-title{
+            color:#ff3333;
+        }
+        #button_col{
+            background-color:#ff3333;
+            border:none;
+        }
 
     </style>
 

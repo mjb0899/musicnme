@@ -70,7 +70,7 @@ $artist=$_SESSION['artist'];
             </div>
             <div class="two">
                 <div class="share">
-                    <div class="share_align" style="padding: 2rem;">
+                    <div class="share_align">
                         <div class="container">
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
@@ -105,7 +105,7 @@ $artist=$_SESSION['artist'];
                                     </div>
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
-                                    <form action="upload.php" method="post" enctype="multipar\t/form-data">
+                                    <form action="upload.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="exampleInputFile">File input</label>
                                             <input type="file" id="exampleInputFile" name="file">

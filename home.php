@@ -25,7 +25,7 @@ $artist=$_SESSION['artist'];
 
         #comment{
             width: 700px;
-            padding: 1rem;
+
         }
     </style>
 

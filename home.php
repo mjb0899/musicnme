@@ -132,7 +132,7 @@ $artist=$_SESSION['artist'];
                                                     <div class="modal-body">
                                                         <form method="post" action="savepost.php">
                                                             <textarea class="form-control" rows="5" id="comment" name="status"></textarea>
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal" id="button_col">Post</button>
+                                                            <button type="button" class="btn btn-default"  id="button_col">Post</button>
                                                         </form>
                                                     </div>
                                                 </div>

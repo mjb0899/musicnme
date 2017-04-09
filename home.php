@@ -71,10 +71,10 @@ $artist=$_SESSION['artist'];
             <div class="two">
                 <div class="share">
                     <div class="share_align">
-                        <form>
+                        <form action="upload.php" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="exampleInputFile">File input</label>
-                                <input type="file" id="exampleInputFile">
+                                <input type="file" id="exampleInputFile" name="file">
                                 <p class="help-block">Example block-level help text here.</p>
                             </div>
                             <div class="checkbox">
@@ -82,7 +82,7 @@ $artist=$_SESSION['artist'];
                                     <input type="checkbox"> Check me out
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-default" id="submit_btn" >Post</button>
+                            <button type="submit" class="btn btn-default" id="submit_btn" name="submit" >Post</button>
                         </form>
                     </div>
                 </div>

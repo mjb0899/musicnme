@@ -12,10 +12,11 @@
   border: 2px solid #ff3333;
   border-radius: 1rem;
   background: #212121;
+    padding: 2rem;
 }
 .share_align {
   margin-left: 2rem;
-  padding: 2rem; !important;
+  padding: 2rem;
 
 }
 .feed {

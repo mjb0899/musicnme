@@ -21,6 +21,12 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
 
+    <style>
+
+        .form-control{
+            width: 8rem;
+        }
+    </style>
 
 
 

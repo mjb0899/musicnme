@@ -46,7 +46,8 @@
   margin-left: 21rem;
   min-width: 500px;
 }
-#col{
+
+.col{
   background-color:black;
   border:none;
   border-radius:0;
@@ -72,6 +73,7 @@
 .modal-title{
   color:#ff3333;
 }
+
 #button_col{
   background-color:#ff3333;
   border:none;

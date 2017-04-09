@@ -83,7 +83,7 @@ $artist=$_SESSION['artist'];
                                 <div id="home" class="tab-pane fade in active">
                                     <div class="container">
                                         <!-- Trigger the modal with a button -->
-                                        <input type="text" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" placeholder="What's on your mind?" id="col">
+                                        <input type="text" class="btn btn-info btn-lg col" data-toggle="modal" data-target="#myModal" placeholder="What's on your mind?">
 
                                         <!-- Modal -->
                                         <div class="modal fade" id="myModal" role="dialog">

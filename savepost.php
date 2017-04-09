@@ -27,10 +27,11 @@ $date = date('Y-m-d H:i:s');
 $sql="INSERT INTO topic(description,uid,dateposted) VALUES ('$status','$userID','$date')";
 
 if(mysqli_query($db,$sql)){
- echo $userID." and ".$status." and ".$date;
+
 }
 else{
     echo"Error:".$sql."<br>" . mysqli_error($db);
 }
-header( "refresh:5; url=aboutus.php" );
+header("location:home.php");
+
 

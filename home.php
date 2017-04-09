@@ -53,6 +53,7 @@ $artist=$_SESSION['artist'];
         #button_col{
             background-color:#ff3333;
             border:none;
+            margin-top: 1rem;
         }
 
     </style>

@@ -24,13 +24,13 @@ $date = date('Y-m-d H:i:s');
 //reflect changes
 
 
-$sql="INSERT INTO topic(description,uid,title,dateposted) VALUES ('$status','$userID','$date')";
+$sql="INSERT INTO topic(description,uid,dateposted) VALUES ('$status','$userID','$date')";
 
 if(mysqli_query($db,$sql)){
-
+ echo $userID." and ".$status." and ".$date;
 }
 else{
     echo"Error:".$sql."<br>" . mysqli_error($db);
 }
-header("location:home.php");
+
 

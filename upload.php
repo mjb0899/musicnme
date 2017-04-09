@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
     //upload for images
     if(in_array($fileActualExt,$allowed_image)){
         if($fileError===0){
-            if($fileSize<1000000){
+            if($fileSize<3097152){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
     }elseif(in_array($fileActualExt,$allowed_media)) {
         //upload for music
         if($fileError===0){
-            if($fileSize<1000000){
+            if($fileSize<12097152){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);

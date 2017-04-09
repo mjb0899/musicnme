@@ -105,7 +105,7 @@ $artist=$_SESSION['artist'];
             </div>
             <div class="two">
                 <div class="share">
-                    <div class="share_align">
+                    <div class="share_align" style="padding:2rem;">
                         <div class="container">
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>

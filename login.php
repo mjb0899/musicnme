@@ -19,6 +19,7 @@ if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
     echo $usertype;
+    echo "<-";
 
     if($usertype==="user"){
         $_SESSION['user'] = $usertype;

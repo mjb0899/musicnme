@@ -149,11 +149,15 @@ $artist=$_SESSION['artist'];
 
                     include('dbConnect.php');
 
-                    $sql_query = "Select  from users Where username='$sess'";
+                    $sql_query = "Select uid,description,file_name from topic ";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()){
                         $userID= $row['uid'];
-
+                        $status= $row['description'];
+                        $file_name= $row['file_name'];
+                        echo $user;
+                        echo $status;
+                        echo $file_name;
 
                        // echo "<article>
            //     <p>The superhero known as <strong>{$firstname}{$lastname}</strong> recently fought<strong>{$villanFought}</strong> using

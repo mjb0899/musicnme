@@ -155,7 +155,7 @@ $artist=$_SESSION['artist'];
                         $userID= $row['uid'];
                         $status= $row['description'];
                         $file_name= $row['file_name'];
-                        echo $user;
+                        echo $userID;
                         echo $status;
                         echo $file_name;
 

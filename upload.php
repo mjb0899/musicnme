@@ -48,7 +48,7 @@ if(isset($_POST['submit'])){
                 $upload="upload";
                 $date = date('Y-m-d H:i:s');
                 //insert into topic
-                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileDestination')";
+                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path,file_name) VALUES ('$description','$userID','$date','$upload','$fileActualExt','$fileDestination','$fileNameNew')";
                 if(mysqli_query($db,$sql)){
 
                 }

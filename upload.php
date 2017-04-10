@@ -99,7 +99,7 @@ if(isset($_POST['submit'])){
                     echo"Error:".$sql."<br>" . mysqli_error($db);
                 }
                 //insert into music
-                $sql2="INSERT INTO music(music_name,artist,file_name) VALUES ('$$songtitle','$songartist','$fileNameNew')";
+                $sql2="INSERT INTO music(music_name,artist,file_name) VALUES ('$songtitle','$songartist','$fileNameNew')";
                 if(mysqli_query($db,$sql2)){
 
                 }

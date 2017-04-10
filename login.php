@@ -7,7 +7,6 @@ if(empty($_POST["username"])||empty($_POST["password"])){
 else{
     $username=$_POST["username"];
     $password=$_POST["password"];
-    $usertype=$_POST["utype"];
 }
 
 $sql="SELECT uid,utype FROM users WHERE username= ? "."and upassword = ?";
@@ -18,6 +17,8 @@ $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
+    $usertype= $row['utype'];
+
     if($usertype=="user"){
         $_SESSION['user'] = $usertype;
     }

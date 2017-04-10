@@ -109,8 +109,28 @@ $artist=$_SESSION['artist'];
                                     </form>
                                 </div>
                                 <div id="menu2" class="tab-pane fade">
-                                    <h3>Menu 2</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Title</span>
+                                                <input id="msg" type="text" class="form-control" name="songtitle" placeholder="Give a title for your music">
+                                            </div>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">Artist</span>
+                                                <input id="msg" type="text" class="form-control" name="songartist" placeholder="Give the Artist name">
+                                            </div>
+                                            <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
+                                            <label for="exampleInputFile">File input</label>
+                                            <input type="file" id="exampleInputFile" name="file">
+                                            <p class="help-block">Example block-level help text here.</p>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Check me out
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default" id="submit_btn" name="submit">Post</button>
+                                    </form>
                                 </div>
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>

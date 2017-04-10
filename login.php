@@ -15,9 +15,9 @@ $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
 $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
+    $usertype= $row['utype'];
     session_start();
     $_SESSION['name']=$username;
-    $usertype= $row['utype'];
     echo $usertype;
 
     if($usertype==="user"){

@@ -88,14 +88,14 @@ $artist=$_SESSION['artist'];
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
                                     <form method="post" action="savepost.php">
-                                        <textarea class="form-control" rows="2" id="comment" name="status"></textarea>
+                                        <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
                                         <button type="sumbit" class="btn btn-default" id="button_col">Post</button>
                                     </form>
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
                                     <form action="upload.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="2" id="comment" name="description_text"></textarea>
+                                            <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
                                             <label for="exampleInputFile">File input</label>
                                             <input type="file" id="exampleInputFile" name="file">
                                             <p class="help-block">Example block-level help text here.</p>

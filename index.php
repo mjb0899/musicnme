@@ -60,14 +60,6 @@ session_start();
         </div>
         <?php unset($_SESSION['errmsg']); ?>
         <form action="login.php" method="post">
-            <div class="rad" style="text-align: center;">
-            <label class="radio-inline">
-                <input type="radio" name="utype" checked value="user">User
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="utype" value="artist">Artist
-            </label>
-            </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>
                 <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">

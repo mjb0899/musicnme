@@ -159,10 +159,11 @@ $artist=$_SESSION['artist'];
                         echo $status;
                         echo $file_name;
 
-                       // echo "<article>
-           //     <p>The superhero known as <strong>{$firstname}{$lastname}</strong> recently fought<strong>{$villanFought}</strong> using
-           //     <strong> {$mainSuperpower}     </strong></p>
-         //   </article>";
+                        echo "<div style='border-bottom: 2px solid red;'>
+                              <p><strong>{$userID}</strong><br>
+                              <strong>{$status}</strong><br>
+                              <strong>{$file_name}</strong><br></p>
+                              </div>";
                     }
 
 

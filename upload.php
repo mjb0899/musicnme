@@ -91,7 +91,7 @@ if(isset($_POST['submit'])){
                 }
 
                 //insert into topic
-                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileDestination')";
+                $sql="INSERT INTO topic(description,uid,dateposted,title,file_name,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileActualExt','$fileDestination')";
                 if(mysqli_query($db,$sql)){
 
                 }

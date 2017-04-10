@@ -145,6 +145,35 @@ $artist=$_SESSION['artist'];
                     <h1><?php echo $user; ?></h1>
                     <h1><?php echo $artist; ?></h1>
 
+                    <?php
+
+                    include('dbConnect.php');
+
+                    $sql_query = "Select  from users Where username='$sess'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()){
+                        $userID= $row['uid'];
+
+
+                       // echo "<article>
+           //     <p>The superhero known as <strong>{$firstname}{$lastname}</strong> recently fought<strong>{$villanFought}</strong> using
+           //     <strong> {$mainSuperpower}     </strong></p>
+         //   </article>";
+                    }
+
+
+
+
+                    ?>
+
+
+
+
+
+
+
+
+
                     <h1> text</h1>
                     <h1> text</h1><h1> text</h1><h1> text</h1>
                     <h1> text</h1><h1> text</h1><h1> text</h1>

@@ -155,15 +155,10 @@ $artist=$_SESSION['artist'];
                         $userID= $row['uid'];
                         $status= $row['description'];
                         $file_name= $row['file_name'];
-                        //GET USERNAME
-                        $sql2="Select username from users where uid ='$userID' ";
 
-                        while($row = $result -> fetch_array()){
-                            $get_username= $row['username'];
-                        }
 
                         echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$get_username}</strong><br>
+                              <p><strong>{$userID}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";

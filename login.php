@@ -18,14 +18,17 @@ if($row = $stmt->fetch()){
     session_start();
     $_SESSION['name']=$username;
     $usertype= $row['utype'];
+    echo $usertype;
 
-    if($usertype=="user"){
+    if($usertype==="user"){
         $_SESSION['user'] = $usertype;
     }
-    elseif ($usertype=="artist"){
+    elseif ($usertype==="artist"){
         $_SESSION['artist']=$usertype;
     }
-    header("location:home.php");
+   // header("location:home.php");
+    header( "refresh:5; url=index.php" );
+
 }else{
     session_start();
     $_SESSION['errmsg']="Invalid Credentials";

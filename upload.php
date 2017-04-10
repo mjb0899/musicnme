@@ -1,10 +1,22 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: ADMIN
  * Date: 09/04/2017
  * Time: 16:13
  */
+session_start();
+$sess=$_SESSION['name'];
+$user=$_SESSION['user'];
+$artist=$_SESSION['artist'];
+$description=$_POST['description_text'];
+
+$upload="upload";
+$date = date('Y-m-d H:i:s');
+
+include("dbConnect.php");
+
 if(isset($_POST['submit'])){
     $file = $_FILES['file'];
     $fileName=$_FILES['file']['name'];
@@ -23,6 +35,35 @@ if(isset($_POST['submit'])){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
+
+                //insert
+                //get uid
+                $sql_query = "Select uid from users Where username='$sess'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $userID= $row['uid'];
+                }
+
+
+                $upload="upload";
+                $date = date('Y-m-d H:i:s');
+                //insert into topic
+                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileDestination')";
+                if(mysqli_query($db,$sql)){
+
+                }
+                else{
+                    echo"Error:".$sql."<br>" . mysqli_error($db);
+                }
+
+                header("Location:home.php");
+
+
+
+
+
+
+
                 header("Location:home.php");
             }else{
                 echo "File too big";
@@ -35,18 +76,27 @@ if(isset($_POST['submit'])){
         if($fileError===0){
             if($fileSize<12097152){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
-                $fileDestination='uploads/images/'.$fileNameNew;
+                $fileDestination='uploads/media/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
+
                 //insert
+                //get uid
+                $sql_query = "Select uid from users Where username='$sess'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $userID= $row['uid'];
+                }
 
+                //insert into topic
+                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$filenameNew','$fileDestination')";
+                if(mysqli_query($db,$sql)){
 
-
+                }
+                else{
+                    echo"Error:".$sql."<br>" . mysqli_error($db);
+                }
 
                 header("Location:home.php");
-
-
-
-
 
             }else{
                 echo "File too big";

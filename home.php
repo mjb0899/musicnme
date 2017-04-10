@@ -95,6 +95,7 @@ $artist=$_SESSION['artist'];
                                 <div id="menu1" class="tab-pane fade">
                                     <form action="upload.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
+                                            <textarea class="form-control" rows="2" id="comment" name="description_text"></textarea>
                                             <label for="exampleInputFile">File input</label>
                                             <input type="file" id="exampleInputFile" name="file">
                                             <p class="help-block">Example block-level help text here.</p>

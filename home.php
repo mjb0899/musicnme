@@ -155,12 +155,15 @@ $artist=$_SESSION['artist'];
                         $userID= $row['uid'];
                         $status= $row['description'];
                         $file_name= $row['file_name'];
-                        echo $userID;
-                        echo $status;
-                        echo $file_name;
+                        //GET USERNAME
+                        $sql2="Select username from users where uid ='$userID' ";
+
+                        while($row = $result -> fetch_array()){
+                            $get_username= $row['username'];
+                        }
 
                         echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$userID}</strong><br>
+                              <p><strong>{$get_username}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";
@@ -179,13 +182,20 @@ $artist=$_SESSION['artist'];
 
 
 
-                    <h1> text</h1>
-                    <h1> text</h1><h1> text</h1><h1> text</h1>
-                    <h1> text</h1><h1> text</h1><h1> text</h1>
-                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
-                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
-                    <h1> text</h1><h1> text</h1><h1> text</h1><h1> text</h1>
-                    <input type="text" value="<?php echo $sess; ?>" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
 
             </div>

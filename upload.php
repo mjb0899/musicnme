@@ -11,6 +11,9 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 $description=$_POST['description_text'];
+$songartist=$_POST['songartist'];
+$songtitle=$_POST['songtitle'];
+
 
 $upload="upload";
 $date = date('Y-m-d H:i:s');
@@ -90,6 +93,14 @@ if(isset($_POST['submit'])){
                 //insert into topic
                 $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileDestination')";
                 if(mysqli_query($db,$sql)){
+
+                }
+                else{
+                    echo"Error:".$sql."<br>" . mysqli_error($db);
+                }
+                //insert into music
+                $sql2="INSERT INTO music(music_name,artist,file_name) VALUES ('$$songtitle','$songartist','$fileNameNew')";
+                if(mysqli_query($db,$sql2)){
 
                 }
                 else{

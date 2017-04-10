@@ -9,21 +9,22 @@ else{
     $password=$_POST["password"];
 }
 
-$sql="SELECT utype FROM users WHERE username= ? "."and upassword = ?";
+$sql="SELECT * FROM users WHERE username= ? "."and upassword = ?";
 $stmt=$db->prepare($sql);
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
 $stmt->bind_result($uid);
 if($row = $stmt->fetch()){
     $user_type= $row['utype'];
-
+    $firstname=$row['ufname'];
+    echo $firstname;
     echo $user_type;
     echo "<-";
 
-    session_start();
+    /* session_start();
     $_SESSION['name']=$username;
 
-   /* if($user_type==="user"){
+   if($user_type==="user"){
         $_SESSION['user'] = $user_type;
     }
     elseif ($user_type==="artist"){

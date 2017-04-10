@@ -88,7 +88,7 @@ if(isset($_POST['submit'])){
                 }
 
                 //insert into topic
-                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$filenameNew','$fileDestination')";
+                $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileDestination')";
                 if(mysqli_query($db,$sql)){
 
                 }

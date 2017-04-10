@@ -149,16 +149,16 @@ $artist=$_SESSION['artist'];
 
                     include('dbConnect.php');
 
-                    $sql_query = "Select uid,description,file_name from topic ";
+                    $sql_query = "Select * from post_info ";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()){
-                        $userID= $row['uid'];
+                        $post_owner= $row['username'];
                         $status= $row['description'];
                         $file_name= $row['file_name'];
 
 
                         echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$userID}</strong><br>
+                              <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";

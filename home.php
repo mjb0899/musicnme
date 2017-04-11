@@ -175,7 +175,7 @@ $artist=$_SESSION['artist'];
                             echo "<div style='border-bottom: 2px solid red;'>
                                 <div class=\"media\">
                                         <div class=\"media-left\">
-                                            <img src=uploads/".'$try'." class=\"media-object\" style=\"width:60px\">
+                                            <img src=images/".'$try'." class=\"media-object\" style=\"width:60px\">
                                         </div>
                                         <div class=\"media-body\">
                                              <h4 class=\"media-heading\">$post_owner</h4>

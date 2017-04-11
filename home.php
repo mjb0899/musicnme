@@ -23,7 +23,7 @@ $artist=$_SESSION['artist'];
 
     <style>
 
-        #comment{
+        #comment,#msg{
             width: 700px;
             margin-top: 1rem;
             margin-bottom: 1rem;
@@ -114,11 +114,11 @@ $artist=$_SESSION['artist'];
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon">Title</span>
-                                                <input id="msg" type="text" class="form-control " name="songtitle" id="comment" placeholder="Give a title for your music">
+                                                <input id="msg" type="text" class="form-control " name="songtitle"  placeholder="Give a title for your music">
                                             </div>
                                             <div class="input-group">
                                                 <span class="input-group-addon">Artist</span>
-                                                <input id="msg" type="text" class="form-control" name="songartist" id="comment" placeholder="Give the Artist name">
+                                                <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name">
                                             </div>
                                             <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
                                             <label for="exampleInputFile">File input</label>

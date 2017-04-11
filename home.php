@@ -129,10 +129,7 @@ $artist=$_SESSION['artist'];
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>
 
-                                    <audio controls>
-                                        <source src="horse.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                    </audio>
+
 
 
                                 </div>
@@ -188,6 +185,16 @@ $artist=$_SESSION['artist'];
                               <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
+                              
+                              
+                              <audio controls>
+                                        <source src=\"horse.ogg\" type=\"audio/ogg\">
+                                         <source src=\"horse.mp3\" type=\"audio/mpeg\">
+                                </audio>
+                              
+                              
+                              
+                              
                               </div>";
                             }
                         }

@@ -157,6 +157,7 @@ $artist=$_SESSION['artist'];
                         $file_name= $row['file_name'];
                         $file_path=$row['path'];
                         $file_title=$row['title'];
+                        $file_type=$row['file_type'];
 
                         echo $post_owner;
                         echo $file_title;
@@ -169,13 +170,27 @@ $artist=$_SESSION['artist'];
                               <strong>{$status}</strong><br>
                               </div>";
                         }
+                        $allowed_image = array('jpg','jpeg','png');
+                        $allowed_media = array('mp4','mp3');
+
                         //upload music
                         if($file_title==="upload") {
-                            echo "<div style='border-bottom: 2px solid red;'>
+                            if(in_array($file_type,$allowed_image)) {
+                                echo "<div style='border-bottom: 2px solid red;'>
                               <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";
+                            }elseif(in_array($file_type,$allowed_media)){
+                                echo "IN MEDIA LOOP";
+                                echo "<div style='border-bottom: 2px solid red;'>
+                              <p><strong>{$post_owner}</strong><br>
+                              <strong>{$status}</strong><br>
+                              <strong>{$file_name}</strong><br></p>
+                              </div>";
+                            }
+                        }else{
+                                echo "Sorry! Something went wrong";
                         }
 
 

@@ -192,7 +192,7 @@ $artist=$_SESSION['artist'];
                         if($file_title==="upload") {
                             if(in_array($file_type,$allowed_image)) {
                                 echo "IN IMAGE LOOP";
-                                echo "<div style='border-bottom: 2px solid red;'>
+                                echo "<div>
                               
                               <div class=\"media\">
                                         <div class=\"media - left\">
@@ -203,7 +203,7 @@ $artist=$_SESSION['artist'];
                                                <p>$status</p>
                                          </div>
                                  </div>
- 
+                                <hr>
                               </div>";
 
 
@@ -214,7 +214,7 @@ $artist=$_SESSION['artist'];
 
                             }elseif(in_array($file_type,$allowed_media)){
                                 echo "IN MEDIA LOOP";
-                                echo "<div style='border-bottom: 2px solid red;'>
+                                echo "<div>
                               <div class=\"media\">
                                         <div class=\"media - left\">
                                             <img src=\"images / default_profile . png\" class=\"media - object\" style=\"width:60px\">
@@ -232,7 +232,7 @@ $artist=$_SESSION['artist'];
                               
                               
                               
-                              
+                              <hr>
                               </div>";
                             }
                         }

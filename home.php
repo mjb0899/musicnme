@@ -158,6 +158,7 @@ $artist=$_SESSION['artist'];
                         $file_path=$row['path'];
                         $file_title=$row['title'];
 
+                        echo $post_owner;
                         echo $file_title;
                         echo $file_path;
 

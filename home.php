@@ -166,6 +166,7 @@ $artist=$_SESSION['artist'];
                         echo $post_owner;
                         echo $file_title;
                         echo $file_path;
+                        echo $profile_pic;
 
                         //upload status
                         if($file_title==="status"){

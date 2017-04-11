@@ -158,6 +158,8 @@ $artist=$_SESSION['artist'];
                         $file_path=$row['path'];
                         $file_title=$row['title'];
 
+                        echo $file_title;
+                        echo $file_path;
 
 
 

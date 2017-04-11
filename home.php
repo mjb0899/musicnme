@@ -159,6 +159,9 @@ $artist=$_SESSION['artist'];
                         $file_path=$row['path'];
                         $file_title=$row['title'];
                         $file_type=$row['file_type'];
+                        $profile_pic=$row['profile_image'];
+
+
 
                         echo $post_owner;
                         echo $file_title;
@@ -169,7 +172,7 @@ $artist=$_SESSION['artist'];
                             echo "<div style='border-bottom: 2px solid red;'>
                                 <div class=\"media\">
                                         <div class=\"media-left\">
-                                            <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
+                                            <img src=\'.$profile_pic.' class=\"media-object\" style=\"width:60px\">
                                         </div>
                                         <div class=\"media-body\">
                                              <h4 class=\"media-heading\">$post_owner</h4>

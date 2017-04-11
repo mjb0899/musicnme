@@ -76,7 +76,7 @@ $artist=$_SESSION['artist'];
             </div>
             <div class="two">
                 <div class="share">
-                    <div class="share_align" style="padding:2rem;">
+                    <div class="share_align">
                         <div class="container">
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
@@ -105,7 +105,7 @@ $artist=$_SESSION['artist'];
                                                 <input type="checkbox"> Check me out
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn-default" id="submit_btn" name="submit">Post</button>
+                                        <button type="submit" class="btn zbtn-default" id="submit_btn" name="submit">Post</button>
                                     </form>
                                 </div>
                                 <div id="menu2" class="tab-pane fade">

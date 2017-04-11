@@ -80,8 +80,8 @@ $artist=$_SESSION['artist'];
                         <div class="container">
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
-                                <li><a data-toggle="pill" href="#menu1">Share Music</a></li>
-                                <li><a data-toggle="pill" href="#menu2">Men</a></li>
+                                <li><a data-toggle="pill" href="#menu1">Share Image</a></li>
+                                <li><a data-toggle="pill" href="#menu2">Share Music</a></li>
                                 <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
                             </ul>
 

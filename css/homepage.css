@@ -61,6 +61,12 @@ div.tab-pane > textarea{
 
 
 }
+
+#comment{
+    width: 9rem;
+}
+
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #ff3333;
 }

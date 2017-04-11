@@ -8,7 +8,7 @@ else{
     $username=$_POST["username"];
     $password=$_POST["password"];
 }
-
+/*
 $sql="SELECT utype FROM users WHERE username= ? "."and upassword = ?";
 $stmt=$db->prepare($sql);
 $stmt->bind_param('ss',$username,$password);
@@ -21,6 +21,34 @@ if($row = $stmt->fetch()){
     echo $user_type;
     echo "<-";
 
+*/
+
+    $sql_query = "SELECT utype FROM users WHERE username=$username and upassword=$password ";
+    $result = $db -> query($sql_query);
+    while($row = $result -> fetch_array()){
+        $utype= $row['utype'];
+       echo $utype;
+        header( "refresh:5; url=index.php" );
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* session_start();
     $_SESSION['name']=$username;
 
@@ -30,15 +58,14 @@ if($row = $stmt->fetch()){
     elseif ($user_type==="artist"){
         $_SESSION['artist']=$user_type;
     }
-    header("location:home.php");*/
+    header("location:home.php");
     header( "refresh:5; url=index.php" );
 
 }else{
     session_start();
     $_SESSION['errmsg']="Invalid Credentials";
     header("location:index.php");
-
-}
+}*/
 
 
 /*$result=mysqli_query($db,$sql);

@@ -124,7 +124,26 @@ $artist=$_SESSION['artist'];
                                 </div>
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>
-                                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+                                    <!--HTML5 audio-->
+                                    <audio id="music" preload="true">
+                                        <source src="music/a.mp3">
+
+                                    </audio>
+
+                                    <div id="wrapper">
+                                        <!--Audio Player Interface-->
+                                        <div id="audioplayer">
+                                            <button id="pButton" class="play"></button>
+                                            <div id="timeline">
+                                                <div id="playhead"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script src="js/html5audio.js" type="text/javascript"></script>
+
+
                                 </div>
                             </div>
                         </div>

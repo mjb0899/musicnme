@@ -105,7 +105,7 @@ $artist=$_SESSION['artist'];
                                                 <input type="checkbox"> Check me out
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn zbtn-default" id="submit_btn" name="submit">Post</button>
+                                        <button type="submit" class="btn btn-default" id="submit_btn" name="submit">Post</button>
                                     </form>
                                 </div>
                                 <div id="menu2" class="tab-pane fade">

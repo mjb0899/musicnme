@@ -189,8 +189,6 @@ $artist=$_SESSION['artist'];
                               <strong>{$file_name}</strong><br></p>
                               </div>";
                             }
-                        }else{
-                                echo "Sorry! Something went wrong";
                         }
 
 

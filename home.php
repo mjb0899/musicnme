@@ -129,22 +129,10 @@ $artist=$_SESSION['artist'];
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>
 
-                                    <audio id="music" preload="true">
-                                        <source src="music/interlude.mp3">
+                                    <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
                                     </audio>
-
-                                    <div id="wrapper">
-                                        <!--Audio Player Interface-->
-                                        <div id="audioplayer">
-                                            <button id="pButton" class="play"></button>
-                                            <div id="timeline">
-                                                <div id="playhead"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <script src="js/html5audio.js" type="text/javascript"></script>
-
 
 
                                 </div>
@@ -167,13 +155,29 @@ $artist=$_SESSION['artist'];
                         $post_owner= $row['username'];
                         $status= $row['description'];
                         $file_name= $row['file_name'];
+                        $file_path=$row['path'];
+                        $file_title=$row['title'];
 
-
-                        echo "<div style='border-bottom: 2px solid red;'>
+                        //upload status
+                        if($file_title==="status"){
+                            echo "<div style='border-bottom: 2px solid red;'>
+                              <p><strong>{$post_owner}</strong><br>
+                              <strong>{$status}</strong><br>
+                              </div>";
+                        }
+                        //upload music
+                        if($file_title==="upload") {
+                            echo "<div style='border-bottom: 2px solid red;'>
                               <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";
+                        }
+
+
+
+
+
                     }
 
 

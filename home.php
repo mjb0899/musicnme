@@ -142,9 +142,6 @@ $artist=$_SESSION['artist'];
                     </div>
                 </div>
                 <div class="feed">
-                    <h1><?php echo $sess; ?></h1>
-                    <h1><?php echo $user; ?></h1>
-                    <h1><?php echo $artist; ?></h1>
 
                     <?php
 

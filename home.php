@@ -88,7 +88,7 @@ $artist=$_SESSION['artist'];
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
                                     <form method="post" action="savepost.php">
-                                        <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
+                                        <textarea class="form-control pad" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
                                         <button type="sumbit" class="btn btn-default" id="button_col">Post</button>
                                     </form>
                                 </div>
@@ -96,8 +96,8 @@ $artist=$_SESSION['artist'];
                                     <form action="upload.php" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
-                                            <label for="exampleInputFile">File input</label>
-                                            <input type="file" id="exampleInputFile" name="file">
+                                            <label for="exampleInputFile" >File input</label>
+                                            <input type="file" id="exampleInputFile" name="file" >
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
                                         <div class="checkbox">
@@ -113,7 +113,7 @@ $artist=$_SESSION['artist'];
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon">Title</span>
-                                                <input id="msg" type="text" class="form-control" name="songtitle" placeholder="Give a title for your music">
+                                                <input id="msg" type="text" class="form-control " name="songtitle" placeholder="Give a title for your music">
                                             </div>
                                             <div class="input-group">
                                                 <span class="input-group-addon">Artist</span>

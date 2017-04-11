@@ -168,12 +168,14 @@ $artist=$_SESSION['artist'];
                         echo $file_path;
                         echo $profile_pic;
 
+                        $try="default_profile.png";
+
                         //upload status
                         if($file_title==="status"){
                             echo "<div style='border-bottom: 2px solid red;'>
                                 <div class=\"media\">
                                         <div class=\"media-left\">
-                                            <img src=".'$profile_pic'." class=\"media-object\" style=\"width:60px\">
+                                            <img src=uploads/".'$try'." class=\"media-object\" style=\"width:60px\">
                                         </div>
                                         <div class=\"media-body\">
                                              <h4 class=\"media-heading\">$post_owner</h4>

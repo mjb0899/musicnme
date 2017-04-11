@@ -10,6 +10,10 @@ $artist=$_SESSION['artist'];
 <head>
     <meta charset="UTF-8">
     <title>PageOutline</title>
+    <!--AUDIO CSS-->
+
+    <link rel="stylesheet" type="text/css" href="css/audio/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/audio/audio.css">
 
     <!--MENUBAR CSS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">

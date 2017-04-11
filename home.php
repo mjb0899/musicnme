@@ -167,8 +167,15 @@ $artist=$_SESSION['artist'];
                         //upload status
                         if($file_title==="status"){
                             echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$post_owner}</strong><br>
-                              <strong>{$status}</strong><br>
+                                <div class=\"media\">
+                                        <div class=\"media-left\">
+                                            <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
+                                        </div>
+                                        <div class=\"media-body\">
+                                             <h4 class=\"media-heading\">$post_owner</h4>
+                                               <p>$status</p>
+                                         </div>
+                                 </div>
                               </div>";
                         }
                         $allowed_image = array('jpg','jpeg','png');
@@ -179,10 +186,17 @@ $artist=$_SESSION['artist'];
                             if(in_array($file_type,$allowed_image)) {
                                 echo "IN IMAGE LOOP";
                                 echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$post_owner}</strong><br>
+                                <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>
                               <strong>{$file_name}</strong><br></p>
                               </div>";
+
+
+
+
+
+
+
                             }elseif(in_array($file_type,$allowed_media)){
                                 echo "IN MEDIA LOOP";
                                 echo "<div style='border-bottom: 2px solid red;'>

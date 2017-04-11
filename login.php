@@ -15,7 +15,7 @@ $stmt-> execute();
 $stmt->bind_result($utype);
 
     echo $user_type;
-    echo "<-";
+    echo "<--";
 header( "refresh:5; url=index.php" );
 
 

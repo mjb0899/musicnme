@@ -9,15 +9,16 @@ else{
     $password=$_POST["password"];
 }
 
-$stmt= $mysqli->prepare("SELECT utype FROM users WHERE username= ? and upassword = ?");
+$stmt= $db->prepare("SELECT utype FROM users WHERE username= ? and upassword = ?");
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
+$stmt-> store_result();
 $stmt->bind_result($utype);
-
+while ($stmt->fetch()) {
     echo $user_type;
     echo "<--";
-header( "refresh:5; url=index.php" );
-
+    header("refresh:5; url=index.php");
+}
 
 
 /*
@@ -76,4 +77,4 @@ if(mysqli_num_rows($result)==1)
 else{
     echo "Incorrect Username";
     echo $username . $password;
-}*/
+}

@@ -23,7 +23,7 @@ if($row = $stmt->fetch()){
 
 */
 
-    $sql_query = "SELECT utype FROM users WHERE username=$username and upassword=$password ";
+    $sql_query = "SELECT utype FROM users WHERE username='$username' and upassword='$password' ";
     $result = $db -> query($sql_query);
     while($row = $result -> fetch_array()){
         $utype= $row['utype'];

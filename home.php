@@ -165,14 +165,6 @@ $artist=$_SESSION['artist'];
                               <strong>{$status}</strong><br>
                               </div>";
                         }
-                        //upload music
-                        if($file_title==="upload") {
-                            echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$post_owner}</strong><br>
-                              <strong>{$status}</strong><br>
-                              <strong>{$file_name}</strong><br></p>
-                              </div>";
-                        }
 
 
 

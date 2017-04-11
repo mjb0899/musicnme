@@ -123,11 +123,6 @@ $artist=$_SESSION['artist'];
                                             <input type="file" id="exampleInputFile" name="file">
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> Check me out
-                                            </label>
-                                        </div>
                                         <button type="submit" class="btn btn-default" id="button_col" name="submit">Post</button>
                                     </form>
                                 </div>

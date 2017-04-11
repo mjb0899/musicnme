@@ -158,13 +158,6 @@ $artist=$_SESSION['artist'];
                         $file_path=$row['path'];
                         $file_title=$row['title'];
 
-                        //upload status
-                        if($file_title==="status"){
-                            echo "<div style='border-bottom: 2px solid red;'>
-                              <p><strong>{$post_owner}</strong><br>
-                              <strong>{$status}</strong><br>
-                              </div>";
-                        }
 
 
 

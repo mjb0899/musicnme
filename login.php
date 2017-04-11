@@ -14,14 +14,31 @@ $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
 $stmt-> store_result();
 $stmt->bind_result($col1);
+
 while ($stmt->fetch()) {
-    echo "user_type=$col1";
-    echo "<--";
+   $user_type=$col1;
+    session_start();
+
+    $_SESSION['name']=$username;
     header("refresh:5; url=index.php");
+
+    if($user_type==="user"){
+        $_SESSION['user'] = $user_type;
+    }
+    elseif ($user_type==="artist"){
+        $_SESSION['artist']=$user_type;
+    }
+}
+if(isset($_SESSION['name'])){
+    header("location:home.php");
+}
+else{
+    $_SESSION['errmsg']="Invalid Credentials";
+    header("location:index.php");
 }
 
 
-/*
+
 
 
 /*
@@ -30,16 +47,6 @@ $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()){
 $utype= $row['utype'];
 echo $utype;
-C
-}
-
-
-
-
-
-
-
-
 
 
 

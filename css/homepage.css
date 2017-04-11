@@ -61,6 +61,10 @@ div.tab-pane > textarea{
 
 
 }
+.input-group{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .tab-pane, .fade{
     width: 700px;

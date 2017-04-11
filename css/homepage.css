@@ -62,7 +62,7 @@ div.tab-pane > textarea{
 
 }
 
-pad{
+.tab-pane, .fade{
     width: 700px;
     padding: 1rem;
     background-color: #4CAF50;

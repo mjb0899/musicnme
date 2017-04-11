@@ -48,10 +48,7 @@
     margin-left: 21rem;
     min-width: 500px;
 }
-.form-control{
-    width: 8rem;
-}
-.pad{
+#comment{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }

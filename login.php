@@ -9,15 +9,15 @@ else{
     $password=$_POST["password"];
 }
 
-$sql="SELECT * FROM users WHERE username= ? "."and upassword = ?";
+$sql="SELECT utype FROM users WHERE username= ? "."and upassword = ?";
 $stmt=$db->prepare($sql);
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
-$stmt->bind_result($uid);
+$stmt->bind_result($utype);
 if($row = $stmt->fetch()){
     $user_type= $row['utype'];
-    $firstname=$row['ufname'];
-    echo $firstname;
+    //$firstname=$row['ufname'];
+   // echo $firstname;
     echo $user_type;
     echo "<-";
 

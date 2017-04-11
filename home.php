@@ -128,7 +128,11 @@ $artist=$_SESSION['artist'];
                                 </div>
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>
-
+                                    <audio controls>
+                                        <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+                                        <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+                                        <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
+                                    </audio>
 
 
 

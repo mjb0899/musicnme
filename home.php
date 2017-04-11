@@ -176,6 +176,7 @@ $artist=$_SESSION['artist'];
                         //upload music
                         if($file_title==="upload") {
                             if(in_array($file_type,$allowed_image)) {
+                                echo "IN IMAGE LOOP";
                                 echo "<div style='border-bottom: 2px solid red;'>
                               <p><strong>{$post_owner}</strong><br>
                               <strong>{$status}</strong><br>

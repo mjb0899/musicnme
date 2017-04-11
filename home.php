@@ -104,7 +104,7 @@ $artist=$_SESSION['artist'];
                                                 <input type="checkbox"> Check me out
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn-default" id="submit_btn" name="submit">Post</button>
+                                        <button type="submit" class="btn btn-default" id="button_col" name="submit">Post</button>
                                     </form>
                                 </div>
                                 <div id="menu2" class="tab-pane fade">
@@ -128,7 +128,7 @@ $artist=$_SESSION['artist'];
                                                 <input type="checkbox"> Check me out
                                             </label>
                                         </div>
-                                        <button type="submit" class="btn btn-default" id="submit_btn" name="submit">Post</button>
+                                        <button type="submit" class="btn btn-default" id="#button_col" name="submit">Post</button>
                                     </form>
                                 </div>
                                 <div id="menu3" class="tab-pane fade">

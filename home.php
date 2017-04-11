@@ -172,7 +172,7 @@ $artist=$_SESSION['artist'];
 
                         //upload status
                         if($file_title==="status"){
-                            echo "<div style='border-bottom: 2px solid red;'>
+                            echo "<div>
                                 <div class=\"media\">
                                         <div class=\"media-left\">
                                             <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
@@ -182,6 +182,7 @@ $artist=$_SESSION['artist'];
                                                <p>$status</p>
                                          </div>
                                  </div>
+                                   <hr>
                               </div>";
                         }
                         $allowed_image = array('jpg','jpeg','png');

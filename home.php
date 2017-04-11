@@ -12,8 +12,8 @@ $artist=$_SESSION['artist'];
     <title>PageOutline</title>
     <!--AUDIO CSS-->
 
-    <link rel="stylesheet" type="text/css" href="css/audio/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/audio/audio.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/audio.css">
 
     <!--MENUBAR CSS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,10 +129,8 @@ $artist=$_SESSION['artist'];
                                 <div id="menu3" class="tab-pane fade">
                                     <h3>Menu 3</h3>
 
-                                    <!--HTML5 audio-->
                                     <audio id="music" preload="true">
-                                        <source src="music/a.mp3">
-
+                                        <source src="music/interlude.mp3">
                                     </audio>
 
                                     <div id="wrapper">
@@ -146,6 +144,7 @@ $artist=$_SESSION['artist'];
                                     </div>
 
                                     <script src="js/html5audio.js" type="text/javascript"></script>
+
 
 
                                 </div>

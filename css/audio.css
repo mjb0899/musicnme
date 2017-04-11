@@ -8,8 +8,8 @@
 #audioplayer{
 	width: 480px;
 	height: 60px;
-	margin: auto;
-	margin-top: 50px;
+	/*margin: auto;
+	margin-top: 50px;*/
 	border: solid;
 }
 /* Play/Pause Button */

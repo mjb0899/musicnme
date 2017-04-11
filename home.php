@@ -82,7 +82,7 @@ $artist=$_SESSION['artist'];
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
                                 <li><a data-toggle="pill" href="#menu1">Share Image</a></li>
-                                <?php if(isset($sess,$artist)){ echo '<li><a data-toggle="pill" href="#menu2">Share Music</a></li>'?>
+                                <?php if(isset($sess,$artist)){ echo ' <li><a data-toggle="pill" href="#menu2">Share Music</a></li>';}?>
                                 <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
                             </ul>
 

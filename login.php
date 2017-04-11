@@ -13,9 +13,9 @@ $stmt= $db->prepare("SELECT utype FROM users WHERE username= ? and upassword = ?
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
 $stmt-> store_result();
-$stmt->bind_result($utype);
+$stmt->bind_result($col1);
 while ($stmt->fetch()) {
-    echo $user_type;
+    echo "user_type=$col1";
     echo "<--";
     header("refresh:5; url=index.php");
 }

@@ -96,3 +96,6 @@ div.tab-pane > textarea{
     float: right;
 
 }
+#msg{
+    padding: 1rem;
+}

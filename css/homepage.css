@@ -93,5 +93,6 @@ div.tab-pane > textarea{
     background-color:#ff3333;
     border:none;
     margin-top: 1rem;
+    float: right;
 
 }

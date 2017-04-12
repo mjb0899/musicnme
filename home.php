@@ -123,6 +123,9 @@ $artist=$_SESSION['artist'];
                     </div>
                 </div>
                 <div class="feed">
+                    <div style="margin-top: 1rem;">
+
+                    </div>
                     <?php
                     include('dbConnect.php');
 
@@ -172,7 +175,6 @@ $artist=$_SESSION['artist'];
                         //upload music
                         if($file_title==="upload") {
                             if(in_array($file_type,$allowed_image)) {
-                                echo "IN IMAGE LOOP";
                                 echo "<div class=\"media\">
                      <div class=\"media-left\">
                      <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
@@ -199,7 +201,6 @@ $artist=$_SESSION['artist'];
 
 
                             }elseif(in_array($file_type,$allowed_media)){
-                                echo "IN MEDIA LOOP";
                                 echo "<div class=\"media\">
                      <div class=\"media-left\">
                      <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">

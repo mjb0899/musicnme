@@ -145,10 +145,11 @@ $artist=$_SESSION['artist'];
 
 
 
+                      /* rectifier
                         echo $post_owner;
                         echo $file_title;
                         echo $file_path;
-                        echo $profile_pic;
+                        echo $profile_pic;*/
 
                         $try="default_profile.png";
 

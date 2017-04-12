@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 $sess=$_SESSION['name'];
@@ -6,15 +8,12 @@ $artist=$_SESSION['artist'];
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>PageOutline</title>
     <!--AUDIO CSS-->
-
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/audio.css">
-
     <!--MENUBAR CSS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -24,19 +23,10 @@ $artist=$_SESSION['artist'];
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
-
     <style>
-
-
     </style>
-
-
-
-
 </head>
-
 <body>
-
 <header>
     <!--Menu bar-->
     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
@@ -85,14 +75,11 @@ $artist=$_SESSION['artist'];
                                 <?php if(isset($sess,$artist)){ echo ' <li><a data-toggle="pill" href="#menu2">Share Music</a></li>';}?>
                                 <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
                             </ul>
-
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
                                     <form method="post" action="savepost.php">
-
                                         <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
                                         <button type="sumbit" class="btn btn-default" id="button_col">Post</button>
-
                                     </form>
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
@@ -103,7 +90,6 @@ $artist=$_SESSION['artist'];
                                             <input type="file" id="exampleInputFile" name="file" >
                                             <p class="help-block">Example block-level help text here.</p>
                                         </div>
-
                                         <button type="submit" class="btn btn-default" id="button_col" name="submit">Post</button>
                                     </form>
                                 </div>
@@ -133,18 +119,13 @@ $artist=$_SESSION['artist'];
                                         <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
                                         <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
                                     </audio>
-
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="feed">
-
                     <?php
-
                     include('dbConnect.php');
 
                     $sql_query = "Select * from post_info ORDER BY dateposted DESC ";
@@ -170,15 +151,15 @@ $artist=$_SESSION['artist'];
                         //upload status
                         if($file_title==="status"){
                             echo "<div class=\"media\">
-                                        <div class=\"media-left\">
-                                            <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
-                                        </div>
-                                        <div class=\"media-body\">
-                                             <h4 class=\"media-heading\">$post_owner</h4>
-                                               <p>$status</p>
+                                         <div class=\"media-left\">
+                                             <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
                                          </div>
-                                 </div>
-                                   <hr>";
+                                         <div class=\"media-body\">
+                                              <h4 class=\"media-heading\">$post_owner</h4>
+                                                <p>$status</p>
+                                          </div>
+                                  </div>
+                                    <hr>";
                         }
                         $allowed_image = array('jpg','jpeg','png');
                         $allowed_media = array('mp4','mp3');
@@ -188,15 +169,15 @@ $artist=$_SESSION['artist'];
                             if(in_array($file_type,$allowed_image)) {
                                 echo "IN IMAGE LOOP";
                                 echo "<div class=\"media\">
-    <div class=\"media-left\">
-      <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
-    </div>
-    <div class=\"media-body\">
-      <h4 class=\"media-heading\">$post_owner</h4>
-      <p>$status</p>
-    </div>
-  </div>
-  <hr>";
+                     <div class=\"media-left\">
+                     <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
+                     </div>
+                     <div class=\"media-body\">
+                     <h4 class=\"media-heading\">$post_owner</h4>
+                     <p>$status</p>
+                     </div>
+                     </div>
+                     <hr>";
 
 
 
@@ -207,20 +188,20 @@ $artist=$_SESSION['artist'];
                             }elseif(in_array($file_type,$allowed_media)){
                                 echo "IN MEDIA LOOP";
                                 echo "<div class=\"media\">
-    <div class=\"media-left\">
-      <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
-    </div>
-    <div class=\"media-body\">
-      <h4 class=\"media-heading\">$post_owner</h4>
-      <p>$status</p>
-    </div>
-  </div>
-                <div>
-                 <audio controls>
-                    <source src=\"$file_path\" type=\"audio/mpeg\">
-                 </audio>
-                  </div>
-  <hr>";
+                     <div class=\"media-left\">
+                     <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
+                     </div>
+                     <div class=\"media-body\">
+                     <h4 class=\"media-heading\">$post_owner</h4>
+                     <p>$status</p>
+                     </div>
+                     </div>
+                     <div>
+                     <audio controls>
+                     <source src=\"$file_path\" type=\"audio/mpeg\">
+                     </audio>
+                     </div>
+                     <hr>";
                             }
                         }
 
@@ -234,47 +215,20 @@ $artist=$_SESSION['artist'];
 
 
                     ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
-
             </div>
         </div>
     </div>
-
-<!--FOOTER-->
-<footer>
-
-</footer>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 28/03/2017
- * Time: 15:51
- */?>
+    <!--FOOTER-->
+    <footer>
+    </footer>
+    <?php
+    /**
+     * Created by PhpStorm.
+     * User: ADMIN
+     * Date: 28/03/2017
+     * Time: 15:51
+     */?>
 </body>
-
 </html>
+

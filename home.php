@@ -175,6 +175,14 @@ $artist=$_SESSION['artist'];
                      <p>$status</p>
                      </div>
                      </div>
+                     <div style='height: 5rem;width: 5rem;'>
+                      <img src=".$file_path.">      
+                    </div>
+                     
+                     
+                     
+                     
+                     
                      <hr>";
 
 

@@ -202,7 +202,7 @@ $artist=$_SESSION['artist'];
                      <p>$status</p>
                      </div>
                      </div>
-                     <div style='border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem'>
+                     <div style='border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem'>
                      <audio controls style='width: 100%;'>
                      <source src=\"$file_path\" type=\"audio/mpeg\">
                      </audio>

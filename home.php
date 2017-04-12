@@ -169,8 +169,7 @@ $artist=$_SESSION['artist'];
 
                         //upload status
                         if($file_title==="status"){
-                            echo "<div>
-                                <div class=\"media\">
+                            echo "<div class=\"media\">
                                         <div class=\"media-left\">
                                             <img src=\"images/default_profile.png\" class=\"media-object\" style=\"width:60px\">
                                         </div>
@@ -179,8 +178,7 @@ $artist=$_SESSION['artist'];
                                                <p>$status</p>
                                          </div>
                                  </div>
-                                   <hr>
-                              </div>";
+                                   <hr>";
                         }
                         $allowed_image = array('jpg','jpeg','png');
                         $allowed_media = array('mp4','mp3');
@@ -211,8 +209,7 @@ $artist=$_SESSION['artist'];
 
                             }elseif(in_array($file_type,$allowed_media)){
                                 echo "IN MEDIA LOOP";
-                                echo "<div>
-                              <div class=\"media\">
+                                echo "<div class=\"media\">
                                         <div class=\"media - left\">
                                             <img src=\"images/default_profile.png\" class=\"media - object\" style=\"width:60px\">
                                         </div>
@@ -221,13 +218,7 @@ $artist=$_SESSION['artist'];
                                                <p>$status</p>
                                          </div>
                                  </div>
-                              
-                            
-                              
-                              
-                              
-                              <hr>
-                              </div>";
+                                   <hr>";
                             }
                         }
 

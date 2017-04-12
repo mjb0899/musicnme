@@ -137,6 +137,12 @@ $artist=$_SESSION['artist'];
                         $file_type=$row['file_type'];
                         $profile_pic=$row['profile_image'];
 
+                        if($profile_pic!=null){
+
+                        }else{
+                            $profile_pic="images/default_profile.png";
+                        }
+
 
 
                         echo $post_owner;

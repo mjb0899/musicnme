@@ -168,7 +168,7 @@ $artist=$_SESSION['artist'];
                                 echo "IN IMAGE LOOP";
                                 echo "<div class=\"media\">
                      <div class=\"media-left\">
-                     <img src=\".$file_path.\" class=\"media-object\" style=\"width:60px\">
+                     <img src=\"$file_path\" class=\"media-object\" style=\"width:60px\">
                      </div>
                      <div class=\"media-body\">
                      <h4 class=\"media-heading\">$post_owner</h4>

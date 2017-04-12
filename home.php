@@ -222,10 +222,7 @@ $artist=$_SESSION['artist'];
                                          </div>
                                  </div>
                               
-                              
-                              <audio controls>
-                                         <source src=\"$file_path\" type=\"audio/mpeg\">
-                                </audio>
+                            
                               
                               
                               

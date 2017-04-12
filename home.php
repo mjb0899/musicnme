@@ -215,6 +215,11 @@ $artist=$_SESSION['artist'];
       <p>$status</p>
     </div>
   </div>
+                <div>
+                 <audio controls>
+                    <source src=\"$file_path\" type=\"audio/mpeg\">
+                 </audio>
+                  </div>
   <hr>";
                             }
                         }

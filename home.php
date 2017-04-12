@@ -175,8 +175,8 @@ $artist=$_SESSION['artist'];
                      <p>$status</p>
                      </div>
                      </div>
-                     <div style='height: 5rem;width: 5rem;'>
-                      <img src=".$file_path.">      
+                     <div style='height: 300px; width: 100px; background-color: red;border:2px solid black;'>
+                      <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
                     </div>
                      
                      

@@ -69,18 +69,109 @@ $owner=$_GET['owner'];
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
             </div>
             <div id="uploads" class="tabcontent">
+                <?php
+                $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+                    $post_owner = $row['username'];
+                    $status = $row['description'];
+                    $file_name = $row['file_name'];
+                    $file_path = $row['path'];
+                    $file_title = $row['title'];
+                    $file_type = $row['file_type'];
+                    $profile_pic = $row['profile_image'];
+                    $post_owner_type=$row['utype'];
 
-                <h3>Uploads shizz</h3>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
-                <p>London is the capital city of England.</p>
+                    if($post_owner_type==="user"){
+                        $redirect="userprofile.php";
+                    }elseif ($post_owner_type==="artist"){
+                        $redirect="artistprofile.php";
+                    }else{
+                        $redirect= "www.google.com";
+                    }
+                    //upload status
+                    if($file_title==="status"){
+                        echo "<div class=\"media\">
+                                         <div class=\"media-left\">
+                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                         </div>
+                                         <div class=\"media-body\">
+                                           <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
+                                                <p>$status</p>
+                                          </div>
+                                  </div>
+                                    <hr>";
+                    }
+                    $allowed_image = array('jpg','jpeg','png');
+                    $allowed_media = array('mp4','mp3');
+
+                    //upload music
+                    if($file_title==="upload") {
+                        if(in_array($file_type,$allowed_image)) {
+                            echo "<div class=\"media\">
+                     <div class=\"media-left\">
+                     <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                     </div>
+                     <div class=\"media-body\">
+                     <h4 class=\"media-heading\">$post_owner</h4>
+                     <p>$status</p>
+                     </div>
+                     </div>
+                     <div style='height: 400px; width: 500px; background-color: #212121;margin: auto'>
+                      <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
+                    </div>
+                     
+                     
+                     
+                     
+                     
+                     <hr>";
+
+
+
+
+
+
+
+                        }elseif(in_array($file_type,$allowed_media)){
+                            echo "<div class=\"media\">
+                     <div class=\"media-left\">
+                     <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                     </div>
+                     <div class=\"media-body\">
+                     <h4 class=\"media-heading\">$post_owner</h4>
+                     <p>$status</p>
+                     </div>
+                     </div>
+                     <div style='border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem'>
+                     <audio controls style='width: 100%;'>
+                     <source src=\"$file_path\" type=\"audio/mpeg\">
+                     </audio>
+                     </div>
+                     <hr>";
+                        }
+                    }
+
+
+
+
+
+
+
+                }
+
+
+
+
+
+                ?>
+
+
+
+
+
+
+
             </div>
             <div id="about" class="tabcontent">
                 <?php

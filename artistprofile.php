@@ -324,8 +324,9 @@ if(strcmp($sess,$owner)==0){
 
 
             <div id="followme" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <h1><?php  echo $sess ?></h1>
+                <h1><?php echo $owner ?></h1>
+                <h1><?php echo $_SESSION['match'] ?></h1>
             </div>
         </div>
 

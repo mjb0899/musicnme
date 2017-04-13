@@ -1,6 +1,9 @@
 <?php
 session_start();
 $sess=$_SESSION['name'];
+$user=$_SESSION['user'];
+$artist=$_SESSION['artist'];
+
 $owner=$_GET['owner'];
 
 if(strcmp($sess,$owner)==0){

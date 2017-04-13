@@ -164,7 +164,7 @@ $artist=$_SESSION['artist'];
                         }elseif ($post_owner_type==="artist"){
                             $redirect="artistprofile.php";
                         }else{
-                            echo "something went wrong! Sorry!";
+                            $redirect= "www.google.com";
                         }
 
 

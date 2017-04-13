@@ -63,7 +63,21 @@ $owner=$_GET['owner'];
     <div class="wrapper">
         <div class="wrapper_pic">
             <div class="propic" id="profile_pic">
-                <img src="images/ed.jpg" id="pic">
+                <?php
+
+                include("dbConnect.php");
+                $sql_query = "Select profile_image from users Where username='$owner'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $profile_path=$row['profile_image'];
+                    if($profile_path!=null){
+
+                    }else{
+                        $profile_pic="images/default_profile.png";
+                    }
+                    echo "  <img src=\"$profile_path\" id=\"pic\">";
+                }
+                ?>
             </div>
         </div>
         <div  class="wrapper_details">

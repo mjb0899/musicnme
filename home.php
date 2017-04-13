@@ -139,6 +139,7 @@ $artist=$_SESSION['artist'];
                         $file_title=$row['title'];
                         $file_type=$row['file_type'];
                         $profile_pic=$row['profile_image'];
+                        $post_owner_type=$row['utype'];
 
                         if($profile_pic!=null){
 
@@ -156,6 +157,20 @@ $artist=$_SESSION['artist'];
 
                         $try="default_profile.png";
 
+                        //check post_owner account type (user or artist)
+
+                        if($post_owner_type==="user"){
+                            $redirect="userprofile.php";
+                        }elseif ($post_owner_type==="artist"){
+                            $redirect="artistprofile.php";
+                        }else{
+                            echo "something went wrong! Sorry!";
+                        }
+
+
+
+
+
                         //upload status
                         if($file_title==="status"){
                             echo "<div class=\"media\">
@@ -163,7 +178,7 @@ $artist=$_SESSION['artist'];
                                              <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                          </div>
                                          <div class=\"media-body\">
-                                              <h4 class=\"media-heading\">$post_owner</h4>
+                                              <h4 class=\"media-heading\"><a href='.$redirect.'>$post_owner</a></h4>
                                                 <p>$status</p>
                                           </div>
                                   </div>

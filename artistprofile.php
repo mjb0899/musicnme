@@ -4,6 +4,9 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 $owner=$_GET['owner'];
+if(strcmp($sess,$owner)==0){
+    $_SESSION['match']=1;
+}
 ?>
 <!DOCTYPE html>
 <html>

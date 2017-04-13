@@ -3,9 +3,9 @@ session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
-
+$owner=$sess;
 $owner=$_GET['owner'];
-
+//for uploading and editing profile
 if(strcmp($sess,$owner)==0){
     $_SESSION['match']=1;
 }

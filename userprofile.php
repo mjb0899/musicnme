@@ -2,6 +2,9 @@
 session_start();
 $sess=$_SESSION['name'];
 $owner=$_GET['owner'];
+if(strcmp($sess,$owner)==0){
+    $_SESSION['match']=1;
+}
 ?>
 <!DOCTYPE html>
 <html >
@@ -89,6 +92,8 @@ $owner=$_GET['owner'];
                 <button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">Info</button>
                 <button class="tablinks" onclick="openCity(event, 'status')">Status</button>
                 <button class="tablinks" onclick="openCity(event, 'uploads')">Uploads</button>
+                <button class="tablinks" onclick="openCity(event, 'test')">TestTab</button>
+
             </div>
 
             <div id="info" class="tabcontent">
@@ -177,7 +182,7 @@ $owner=$_GET['owner'];
                     }
 
                     $allowed_image = array('jpg','jpeg','png');
-                    $allowed_media = array('mp4','mp3');
+
 
                     //uploads image and music
                     if($file_title==="upload") {
@@ -195,32 +200,21 @@ $owner=$_GET['owner'];
                       <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
                     </div>                     
                      <hr>";
-
-
-
                         }
                     }
-
-
-
-
-
-
-
-
-
                 }//end while
-
-
-
-
-
                 ?>
 
+            </div>
+            <div id="test" class="tabcontent">
+                <h1><?php $sess ?></h1>
+                <h1><?php $owner ?></h1>
+                <h1><?php $_SESSION['match'] ?></h1>
 
 
             </div>
-        </div>
+
+            </div>
 
 
     </div>

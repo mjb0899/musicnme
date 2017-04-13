@@ -68,13 +68,13 @@ $owner=$_GET['owner'];
         </div>
         <div  class="wrapper_details">
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'uploads')" id="defaultOpen">Status</button>
-                <button class="tablinks" onclick="openCity(event, 'about')">Uploads</button>
+                <button class="tablinks" onclick="openCity(event, 'status')" id="defaultOpen">Status</button>
+                <button class="tablinks" onclick="openCity(event, 'uploads')">Uploads</button>
+                <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
                 <button class="tablinks" onclick="openCity(event, 'events')">Events</button>
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
             </div>
-            <div id="uploads" class="tabcontent">
-
+            <div id="status" class="tabcontent">
             <h1>test</h1>
                 <?php
                 include("dbConnect.php");
@@ -121,13 +121,8 @@ $owner=$_GET['owner'];
 
                 ?>
 
-
-
-
-
-
             </div>
-            <div id="about" class="tabcontent">
+            <div id="uploads" class="tabcontent">
                 <?php
                 include("dbConnect.php");
                 $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
@@ -166,21 +161,52 @@ $owner=$_GET['owner'];
                      </div>
                      <div style='height: 300px; width: 400px; background-color: #212121;margin: auto'>
                       <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
-                    </div>
-                     
-                     
-                     
-                     
-                     
+                    </div>                    
                      <hr>";
 
 
+                        } // end if
+                    } //if uploads
+
+
+
+                }//end while
 
 
 
 
 
-                        }elseif(in_array($file_type,$allowed_media)){
+                ?>
+
+            </div>
+            <div id="music" class="tabcontent">
+                <?php
+                include("dbConnect.php");
+                $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
+                $result = $db -> query($sql_query);
+
+                while($row = $result -> fetch_array()) {
+                $post_owner = $row['username'];
+                $status = $row['description'];
+                $file_name = $row['file_name'];
+                $file_path = $row['path'];
+                $file_title = $row['title'];
+                $file_type = $row['file_type'];
+                $profile_pic = $row['profile_image'];
+
+
+                // retrieve profile else default pic
+                if($profile_pic!=null){
+
+                }else{
+                    $profile_pic="images/default_profile.png";
+                }
+
+
+                $allowed_media = array('mp4','mp3');
+                    //uploads image and music
+                    if($file_title==="upload") {
+                       if(in_array($file_type,$allowed_media)){
                             echo "<div class=\"media\">
                      <div class=\"media-left\">
                      <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
@@ -228,7 +254,12 @@ $owner=$_GET['owner'];
                     echo "<h2>$firstname"." "."$lastname$owner</h2>";
                 }
                 ?>
+
             </div>
+
+
+
+
             <div id="followme" class="tabcontent">
                 <h3>Tokyo</h3>
                 <p>Tokyo is the capital of Japan.</p>

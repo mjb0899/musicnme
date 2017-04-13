@@ -74,8 +74,8 @@ $owner=$_GET['owner'];
 
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">Info</button>
-                <button class="tablinks" onclick="openCity(event, 'likes')">Likes</button>
-                <button class="tablinks" onclick="openCity(event, 'saved')">Saved Music</button>
+                <button class="tablinks" onclick="openCity(event, 'status')">Status</button>
+                <button class="tablinks" onclick="openCity(event, 'saved')">Uploads</button>
             </div>
 
             <div id="info" class="tabcontent">
@@ -90,13 +90,55 @@ $owner=$_GET['owner'];
                     echo "<h2>$firstname"." "."$lastname$owner </h2>";
                 }
                 ?>
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
             </div>
 
-            <div id="likes" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+            <div id="status" class="tabcontent">
+                <?php
+                $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+                    $post_owner = $row['username'];
+                    $status = $row['description'];
+                    $file_name = $row['file_name'];
+                    $file_path = $row['path'];
+                    $file_title = $row['title'];
+                    $file_type = $row['file_type'];
+                    $profile_pic = $row['profile_image'];
+                    $post_owner_type=$row['utype'];
+
+                    // retrieve profile else default pic
+                    if($profile_pic!=null){
+
+                    }else{
+                        $profile_pic="images/default_profile.png";
+                    }
+
+
+                    //upload status
+                    if($file_title==="status"){
+                        echo "<div class=\"media\">
+                                         <div class=\"media-left\">
+                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                         </div>
+                                         <div class=\"media-body\">
+                                          <h4 class=\"media-heading\">".$post_owner."</h4>
+                                                <p>$status</p>
+                                          </div>
+                                  </div>
+                                    <hr>";
+                    }
+
+
+                }//end while
+
+
+
+
+
+                ?>
+
+
+
             </div>
 
             <div id="saved" class="tabcontent">

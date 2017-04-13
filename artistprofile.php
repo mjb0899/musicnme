@@ -20,7 +20,10 @@ $owner=$_GET['owner'];
     <!-- js-->
     <script type="text/javascript" src="js/artistjs.js"></script>
     <script src="js/artistjs.js"></script>
-
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </head>
 
 <body>

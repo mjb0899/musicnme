@@ -93,6 +93,40 @@ if(strcmp($sess,$owner)==0){
                     echo "  <img src=\"$profile_path\" id=\"pic\">";
                 }
                 ?>
+                <!--Modal For Profile Pic Upload-->
+                <?php
+
+                if(isset($_SESSION['match'])){
+
+                    echo "  <div class=\"container\">
+
+                    <!-- Trigger the modal with a button -->
+                    <button type=\"button\" class=\"btn-place\" data-toggle=\"modal\" data-target=\"#myModal\"><span class=\"glyphicon glyphicon-pencil\"></button>
+
+                    <!-- Modal -->
+                    <div class=\"modal fade\" id=\"myModal\" role=\"dialog\">
+                        <div class=\"modal-dialog modal-sm\">
+                            <div class=\"modal-content\">
+                                <div class=\"modal-header\">
+                                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>
+                                    <h4 class=\"modal-title\">Select File</h4>
+                                </div>
+                                <div class=\"modal-body\">
+                                    <form action=\"uploadImage.php\" method=\"post\" enctype=\"multipart/form-data\">
+                                        <input type=\"file\" name=\"file\" id=\"exampleInputFile\">
+                                        <button type=\"submit\" class=\"btn btn-default btn-sm\" name=\"submit\"> <span class=\"glyphicon glyphicon-pencil\">Upload</span></button>
+                                    </form>
+                                </div>
+                                <div class=\"modal-footer\">
+                                    <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>";
+                }
+
+                ?>
             </div>
         </div>
         <div  class="wrapper_details">

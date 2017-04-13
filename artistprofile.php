@@ -20,10 +20,7 @@ $owner=$_GET['owner'];
     <!-- js-->
     <script type="text/javascript" src="js/artistjs.js"></script>
     <script src="js/artistjs.js"></script>
-    <script>
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>
+
 </head>
 
 <body>
@@ -73,7 +70,7 @@ $owner=$_GET['owner'];
                 <button class="tablinks" onclick="openCity(event, 'events')">Events</button>
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
             </div>
-            <div id="uploads" class="tabcontent">
+            <div id="Status" class="tabcontent">
 
             <h1>test</h1>
                 <?php
@@ -89,6 +86,14 @@ $owner=$_GET['owner'];
                     $file_type = $row['file_type'];
                     $profile_pic = $row['profile_image'];
                     $post_owner_type=$row['utype'];
+
+                    // retrieve profile else default pic
+                    if($profile_pic!=null){
+
+                    }else{
+                        $profile_pic="images/default_profile.png";
+                    }
+
 
                     //upload status
                     if($file_title==="status"){
@@ -131,8 +136,7 @@ $owner=$_GET['owner'];
                     echo "<h2>$firstname"." "."$lastname$owner</h2>";
                 }
                 ?>
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+
             </div>
             <div id="events" class="tabcontent">
                 <h3>Tokyo</h3>
@@ -144,44 +148,6 @@ $owner=$_GET['owner'];
             </div>
         </div>
 
-    </div>
-
-    <div style="width: 700px;margin:auto;">
-        <?php
-        $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
-        $result = $db -> query($sql_query);
-        while($row = $result -> fetch_array()) {
-            $post_owner = $row['username'];
-            $status = $row['description'];
-            $file_name = $row['file_name'];
-            $file_path = $row['path'];
-            $file_title = $row['title'];
-            $file_type = $row['file_type'];
-            $profile_pic = $row['profile_image'];
-            $post_owner_type=$row['utype'];
-
-            //upload status
-            if($file_title==="status"){
-                echo "<div class=\"media\">
-                                         <div class=\"media-left\">
-                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
-                                         </div>
-                                         <div class=\"media-body\">
-                                          <h4 class=\"media-heading\">".$post_owner."</h4>
-                                                <p>$status</p>
-                                          </div>
-                                  </div>
-                                    <hr>";
-            }
-
-
-        }//end while
-
-
-
-
-
-        ?>
     </div>
 </main>
 <script>

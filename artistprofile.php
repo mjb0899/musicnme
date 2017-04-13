@@ -73,7 +73,7 @@ $owner=$_GET['owner'];
                     if($profile_path!=null){
 
                     }else{
-                        $profile_pic="images/default_profile.png";
+                        $profile_path="images/default_profile.png";
                     }
                     echo "  <img src=\"$profile_path\" id=\"pic\">";
                 }

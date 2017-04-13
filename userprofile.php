@@ -75,7 +75,7 @@ $owner=$_GET['owner'];
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">Info</button>
                 <button class="tablinks" onclick="openCity(event, 'status')">Status</button>
-                <button class="tablinks" onclick="openCity(event, 'saved')">Uploads</button>
+                <button class="tablinks" onclick="openCity(event, 'uploads')">Uploads</button>
             </div>
 
             <div id="info" class="tabcontent">
@@ -141,9 +141,71 @@ $owner=$_GET['owner'];
 
             </div>
 
-            <div id="saved" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+            <div id="uploads" class="tabcontent">
+                <?php
+                include("dbConnect.php");
+                $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+                    $post_owner = $row['username'];
+                    $status = $row['description'];
+                    $file_name = $row['file_name'];
+                    $file_path = $row['path'];
+                    $file_title = $row['title'];
+                    $file_type = $row['file_type'];
+                    $profile_pic = $row['profile_image'];
+                    $post_owner_type=$row['utype'];
+
+                    // retrieve profile else default pic
+                    if($profile_pic!=null){
+
+                    }else{
+                        $profile_pic="images/default_profile.png";
+                    }
+
+                    $allowed_image = array('jpg','jpeg','png');
+                    $allowed_media = array('mp4','mp3');
+
+                    //uploads image and music
+                    if($file_title==="upload") {
+                        if(in_array($file_type,$allowed_image)) {
+                            echo "<div class=\"media\">
+                     <div class=\"media-left\">
+                     <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                     </div>
+                     <div class=\"media-body\">
+                     <h4 class=\"media-heading\">$post_owner</h4>
+                     <p>$status</p>
+                     </div>
+                     </div>
+                     <div style='height: 300px; width: 400px; background-color: #212121;margin: auto'>
+                      <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
+                    </div>                     
+                     <hr>";
+
+
+
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+                }//end while
+
+
+
+
+
+                ?>
+
+
+
             </div>
         </div>
 

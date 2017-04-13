@@ -3,7 +3,17 @@ session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
-$owner=$_GET['owner'];
+
+if(isset($_GET['owner'])){
+    $owner=$_GET['owner'];
+
+}else{
+    $owner=$sess;
+}
+
+
+
+
 if(strcmp($sess,$owner)==0){
     $_SESSION['match']=1;
 }

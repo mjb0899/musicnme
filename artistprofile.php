@@ -76,41 +76,7 @@ $owner=$_GET['owner'];
             <div id="uploads" class="tabcontent">
 
             <h1>test</h1>
-                <?php
-                $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
-                $result = $db -> query($sql_query);
-                while($row = $result -> fetch_array()) {
-                    $post_owner = $row['username'];
-                    $status = $row['description'];
-                    $file_name = $row['file_name'];
-                    $file_path = $row['path'];
-                    $file_title = $row['title'];
-                    $file_type = $row['file_type'];
-                    $profile_pic = $row['profile_image'];
-                    $post_owner_type=$row['utype'];
 
-                    //upload status
-                    if($file_title==="status"){
-                        echo "<div class=\"media\">
-                                         <div class=\"media-left\">
-                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
-                                         </div>
-                                         <div class=\"media-body\">
-                                          <h4 class=\"media-heading\">".$post_owner."</h4>
-                                                <p>$status</p>
-                                          </div>
-                                  </div>
-                                    <hr>";
-                    }
-
-
-                }//end while
-
-
-
-
-
-                ?>
 
 
 
@@ -142,6 +108,43 @@ $owner=$_GET['owner'];
                 <p>Tokyo is the capital of Japan.</p>
             </div>
         </div>
+        <div style="width: 700px;margin: auto;">
+            <?php
+            $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
+            $result = $db -> query($sql_query);
+            while($row = $result -> fetch_array()) {
+                $post_owner = $row['username'];
+                $status = $row['description'];
+                $file_name = $row['file_name'];
+                $file_path = $row['path'];
+                $file_title = $row['title'];
+                $file_type = $row['file_type'];
+                $profile_pic = $row['profile_image'];
+                $post_owner_type=$row['utype'];
+
+                //upload status
+                if($file_title==="status"){
+                    echo "<div class=\"media\">
+                                         <div class=\"media-left\">
+                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                         </div>
+                                         <div class=\"media-body\">
+                                          <h4 class=\"media-heading\">".$post_owner."</h4>
+                                                <p>$status</p>
+                                          </div>
+                                  </div>
+                                    <hr>";
+                }
+
+
+            }//end while
+
+
+
+
+
+            ?>
+        </div>
     </div>
 </main>
 <script>
@@ -161,10 +164,7 @@ $owner=$_GET['owner'];
         <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
     </div>
 </footer>
-<script>
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
+
 </body>
 </html>
 

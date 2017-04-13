@@ -114,7 +114,7 @@ if(strcmp($sess,$owner)==0){
                                 <div class=\"modal-body\">
                                     <form action=\"uploadImage.php\" method=\"post\">
                                         <input type=\"file\" name=\"file\" id=\"exampleInputFile\">
-                                        <button type=\"submit\" class=\"btn btn-default btn-sm\"> <span class=\"glyphicon glyphicon-pencil\">Upload</span></button>
+                                        <button type=\"submit\" class=\"btn btn-default btn-sm\" name=\"submit\"> <span class=\"glyphicon glyphicon-pencil\">Upload</span></button>
                                     </form>
                                 </div>
                                 <div class=\"modal-footer\">

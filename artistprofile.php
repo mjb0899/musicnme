@@ -60,7 +60,7 @@ $owner=$_GET['owner'];
     </nav>
 </header>
 <main>
-  <!--  <div class="wrapper">
+    <div class="wrapper">
         <div class="wrapper_pic">
             <div class="propic" id="profile_pic">
                 <img src="images/ed.jpg" id="pic">
@@ -109,7 +109,7 @@ $owner=$_GET['owner'];
             </div>
         </div>
 
-    </div>-->
+    </div>
 
     <div style="width: 700px;margin:auto;">
         <?php

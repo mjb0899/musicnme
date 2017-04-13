@@ -36,6 +36,9 @@ if(strcmp($sess,$owner)==0){
     .btn-place{
         margin: auto;
     }
+    .container{
+        padding: 1rem;
+    }
 </style>
 
 </head>

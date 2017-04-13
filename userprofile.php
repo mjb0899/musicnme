@@ -98,7 +98,7 @@ if(strcmp($sess,$owner)==0){
                 <div class="container">
 
                     <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button>
+                    <button type="button" class="btn btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">

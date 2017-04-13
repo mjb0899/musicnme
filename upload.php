@@ -61,13 +61,6 @@ if(isset($_POST['submit'])){
 
                 header("Location:home.php");
 
-
-
-
-
-
-
-                header("Location:home.php");
             }else{
                 echo "File too big";
             }

@@ -111,7 +111,7 @@ $owner=$_GET['owner'];
 
     </div>-->
 
-    <div style="width: 700px;margin: auto;">
+    <div style="width: 700px;margin-top: 100px; ">
         <?php
         $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
         $result = $db -> query($sql_query);

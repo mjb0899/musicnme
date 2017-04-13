@@ -1,6 +1,7 @@
 <?php
 session_start();
 $sess=$_SESSION['name'];
+$owner=$_GET['owner'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -90,7 +91,7 @@ $sess=$_SESSION['name'];
                     $firstname= $row['ufname'];
                     $lastname= $row['ulname'];
                     $email= $row['uemail'];
-                    echo "<h2>$firstname"." "."$lastname</h2>";
+                    echo "<h2>$firstname"." "."$lastname$owner</h2>";
                 }
                 ?>
                 <h3>Paris</h3>

@@ -32,7 +32,11 @@ if(strcmp($sess,$owner)==0){
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-
+<style>
+    .btn-place{
+        margin: auto;
+    }
+</style>
 
 </head>
 <body>
@@ -81,9 +85,40 @@ if(strcmp($sess,$owner)==0){
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                   $profile_path=$row['profile_image'];
-                  echo "  <img src=\"$profile_path\" id=\"pic\">";
+                  //upload profile picture
+                  echo "  <img src=\"$profile_path\" id=\"pic\">
+                           ";
                 }
                 ?>
+                <!--Modal For Profile Pic Upload-->
+
+                <div class="container">
+
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-info btn-lg btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Select File</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="uploadImage.php">
+                                        <input type="file" name="file" id="exampleInputFile">
+                                        <button type="submit" class="btn btn-default btn-sm"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
 
 

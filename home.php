@@ -178,7 +178,7 @@ $artist=$_SESSION['artist'];
                                              <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                          </div>
                                          <div class=\"media-body\">
-                                              <h4 class=\"media-heading\"><a href='.$redirect.'>$post_owner</a></h4>
+                                              <h4 class=\"media-heading\"><a href=\"$file_path\">$post_owner</a></h4>
                                                 <p>$status</p>
                                           </div>
                                   </div>

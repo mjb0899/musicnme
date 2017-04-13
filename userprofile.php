@@ -80,7 +80,7 @@ $owner=$_GET['owner'];
 
 
 
-                <img src="" id="pic">
+
             </div>
         </div>
         <div  class="wrapper_details">

@@ -68,12 +68,12 @@ $owner=$_GET['owner'];
         </div>
         <div  class="wrapper_details">
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'uploads')" id="defaultOpen">Uploads</button>
-                <button class="tablinks" onclick="openCity(event, 'about')">About</button>
+                <button class="tablinks" onclick="openCity(event, 'uploads')" id="defaultOpen">Status</button>
+                <button class="tablinks" onclick="openCity(event, 'about')">Uploads</button>
                 <button class="tablinks" onclick="openCity(event, 'events')">Events</button>
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
             </div>
-            <div id="Status" class="tabcontent">
+            <div id="uploads" class="tabcontent">
 
             <h1>test</h1>
                 <?php
@@ -139,7 +139,8 @@ $owner=$_GET['owner'];
                     echo "<h2>$firstname"." "."$lastname$owner</h2>";
                 }
                 ?>
-
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
             </div>
             <div id="events" class="tabcontent">
                 <h3>Tokyo</h3>

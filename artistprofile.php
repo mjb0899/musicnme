@@ -20,7 +20,12 @@ $owner=$_GET['owner'];
     <!-- js-->
     <script type="text/javascript" src="js/artistjs.js"></script>
     <script src="js/artistjs.js"></script>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </head>
+
 <body>
 <header>
     <!--Menu bar-->
@@ -156,6 +161,10 @@ $owner=$_GET['owner'];
         <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
     </div>
 </footer>
+<script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 </body>
 </html>
 

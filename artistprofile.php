@@ -77,6 +77,7 @@ $owner=$_GET['owner'];
 
             <h1>test</h1>
                 <?php
+                include("dbConnect.php");
                 $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()) {

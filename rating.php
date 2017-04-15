@@ -27,26 +27,7 @@ $sql_query = "Select uid from users WHERE username='$sess'";
 $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()) {
     $uid = $row['uid'];
-}   //get count values
-    $sql3="select rate from uid where tid='$tid'";
-    $result = $db -> query($sql3);
-    while($row = $result -> fetch_array()){
-        $totalRate=$totalRate+$row['rate'];
-        $count=$count+1;
-    }
-    $hits=($totalRate/$count);
-    //set count values
-    $sql4="UPDATE topic SET hits=$hits where tid='$tid'";
-
-    $result = $db -> query($sql4);
-    if(mysqli_query($db,$sql)){
-
-    }
-    else{
-    echo"Error:".$sql."<br>" . mysqli_error($db);
-    }
-
-
+}
 
 
 

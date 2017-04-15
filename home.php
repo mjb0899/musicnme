@@ -168,6 +168,7 @@ $artist=$_SESSION['artist'];
 
 
 
+
                       /* rectifier
                         echo $post_owner;
                         echo $file_title;
@@ -201,8 +202,8 @@ $artist=$_SESSION['artist'];
                                                 <p>$status</p>
                                           </div>
                                           
-                                         <div>
-                                         <div style=\"style=float:left\">
+                                         <div style='clear:both'>
+                                         <div style='float:left'>
                                          <h4>Hits:</h4>
                                          </div>
                                           

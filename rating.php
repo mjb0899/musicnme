@@ -17,9 +17,10 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 include ("dbConnect.php");
+
 $topic=$_GET['topic'];
-$topic=explode('_',$topic);
-$tid=$topic[0];
+$topic_array=explode('_',$topic);
+$tid=$topic_array[0];
 
 $sql_query = "Select uid from users WHERE username='$sess'";
 $result = $db -> query($sql_query);
@@ -41,7 +42,7 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
         echo $row['rid'];
     } else {
 
-        $sql = "INSERT INTO tbl_rating ( rate,tid,uid) VALUES ('$rate' , '$tid','$uid'); ";
+        $sql = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$rate' , '$tid','$uid'); ";
         if (mysqli_query($db, $sql)) {
             echo "0";
         }

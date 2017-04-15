@@ -42,7 +42,7 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
         echo $row['rid'];
     } else {
 
-        $sql = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$uid' , '$uid','$uid'); ";
+        $sql = "INSERT INTO tbl_rating (rate) VALUES ('$rate'); ";
         if (mysqli_query($db, $sql)) {
             echo "0";
         }

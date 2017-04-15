@@ -200,7 +200,7 @@ $artist=$_SESSION['artist'];
                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
                                                 <p>$status</p>
                                           </div>
-                                          <div class=\"ratingDiv\">
+                                          <div class=\"ratingDiv\" style=\"float:right\">
                                             <fieldset id='demo1' class=\"rating\">
                                                 <input class=\"stars\" type=\"radio\" id=\"star5\" name=\"rating\" value=\"5\" />
                                                 <label class = \"full\" for=\"star5\" title=\"Awesome - 5 stars\"></label>

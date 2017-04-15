@@ -17,14 +17,23 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 include ("dbConnect.php");
-$ipaddress=$_GET['uid'];
+
+
+$sql_query = "Select uid from users WHERE username='$sess'";
+$result = $db -> query($sql_query);
+while($row = $result -> fetch_array()) {
+    $uid = $row['uid'];
+
+}
+
+
 
 if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 
     $rate = $db->real_escape_string($_POST['rate']);
 
 // check if user has already rated
-    $sql = "SELECT rid FROM tbl_rating WHERE user_id='" . $ipaddress . "'";
+    $sql = "SELECT rid FROM tbl_rating WHERE user_id='" . $uid . "'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {

@@ -159,6 +159,7 @@ $artist=$_SESSION['artist'];
                         $file_type=$row['file_type'];
                         $profile_pic=$row['profile_image'];
                         $post_owner_type=$row['utype'];
+                        $topic_id=$row['tid'];
 
                         if($profile_pic!=null){
 
@@ -202,16 +203,16 @@ $artist=$_SESSION['artist'];
                                           </div>
                                           <div class=\"ratingDiv\" style=\"float:right\">
                                             <fieldset id='demo1' class=\"rating\">
-                                                <input class=\"stars\" type=\"radio\" id=\"star5\" name=\"rating\" value=\"5\" />
-                                                <label class = \"full\" for=\"star5\" title=\"Awesome - 5 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"star4\" name=\"rating\" value=\"4\" />
-                                                <label class = \"full\" for=\"star4\" title=\"Pretty good - 4 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"star3\" name=\"rating\" value=\"3\" />
-                                                <label class = \"full\" for=\"star3\" title=\"Meh - 3 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"star2\" name=\"rating\" value=\"2\" />
-                                                <label class = \"full\" for=\"star2\" title=\"Kinda bad - 2 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"star1\" name=\"rating\" value=\"1\" />
-                                                <label class = \"full\" for=\"star1\" title=\"Sucks big time - 1 star\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star5\" name=\"rating\" value=\"5\" />
+                                                <label class = \"full\" for=\".'$topic_id'.star5\" title=\"Awesome - 5 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star4\" name=\"rating\" value=\"4\" />
+                                                <label class = \"full\" for=\".'$topic_id'.star4\" title=\"Pretty good - 4 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star3\" name=\"rating\" value=\"3\" />
+                                                <label class = \"full\" for=\".'$topic_id'.star3\" title=\"Meh - 3 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star2\" name=\"rating\" value=\"2\" />
+                                                <label class = \"full\" for=\".'$topic_id'.star2\" title=\"Kinda bad - 2 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star1\" name=\"rating\" value=\"1\" />
+                                                <label class = \"full\" for=\".'$topic_id'.star1\" title=\"Sucks big time - 1 star\"></label>
 
                                             </fieldset>
                                           </div>

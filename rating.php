@@ -17,7 +17,7 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 include ("dbConnect.php");
-$ipaddress=2;
+$ipaddress=$_GET['uid'];
 
 if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 

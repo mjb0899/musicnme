@@ -200,6 +200,12 @@ $artist=$_SESSION['artist'];
                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
                                                 <p>$status</p>
                                           </div>
+                                          
+                                         <div>
+                                         <div style=\"style=float:left\">
+                                         <h4>Hits:</h4>
+                                         </div>
+                                          
                                           <div class=\"ratingDiv\" style=\"float:right\">
                                             <fieldset  class=\"rating demo1 \">
                                                 <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
@@ -214,6 +220,12 @@ $artist=$_SESSION['artist'];
                                                 <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
                                             </fieldset>
                                           </div>
+                                          
+                                          </div> 
+                                          
+                                          
+                                          
+                                          
                                   </div>
                                     <hr>";
 

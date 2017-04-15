@@ -28,7 +28,7 @@ $artist=$_SESSION['artist'];
         $(document).ready(function () {
             $("#demo1 .stars").click(function () {
 
-                $.post('rating.php',{rate:$(this).val(),uid:7},function(d){
+                $.post('rating.php',{rate:$(this).val()},function(d){
                     if(d>0)
                     {
                         alert('You already rated');
@@ -200,98 +200,20 @@ $artist=$_SESSION['artist'];
                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
                                                 <p>$status</p>
                                           </div>
-                                         
-                                         <div class=\"container\">
+                                          <div class=\"ratingDiv\">
+                                            <fieldset id='demo1' class=\"rating\">
+                                                <input class=\"stars\" type=\"radio\" id=\"star5\" name=\"rating\" value=\"5\" />
+                                                <label class = \"full\" for=\"star5\" title=\"Awesome - 5 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\"star4\" name=\"rating\" value=\"4\" />
+                                                <label class = \"full\" for=\"star4\" title=\"Pretty good - 4 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\"star3\" name=\"rating\" value=\"3\" />
+                                                <label class = \"full\" for=\"star3\" title=\"Meh - 3 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\"star2\" name=\"rating\" value=\"2\" />
+                                                <label class = \"full\" for=\"star2\" title=\"Kinda bad - 2 stars\"></label>
+                                                <input class=\"stars\" type=\"radio\" id=\"star1\" name=\"rating\" value=\"1\" />
+                                                <label class = \"full\" for=\"star1\" title=\"Sucks big time - 1 star\"></label>
 
-                    <!-- Trigger the modal with a button -->
-                    <button type=\"button\" class=\"btn-place\" data-toggle=\"modal\" data-target=\"#myModal\"><span class=\"glyphicon glyphicon-pencil\"></button>
-
-                    <!-- Modal -->
-                    <div class=\"modal fade\" id=\"myModal\" role=\"dialog\">
-                        <div class=\"modal-dialog modal-sm\">
-                            <div class=\"modal-content\">
-                                <div class=\"modal-header\">
-                                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>
-                                    <h4 class=\"modal-title\">Select File</h4>
-                                </div>
-                                <div class=\"modal-body\">
-                                    
-                                    <!--stars-->
-                                    <fieldset class='demo1 rating' >
-
-                        <input class=\"stars\" type=\"radio\" id=\"star5\" name=\"rating\" value=\"5\" />
-                        <label class = \"full\" for=\"star5\" title=\"Awesome - 5 stars\"></label>
-
-                        <input class=\"stars\" type=\"radio\" id=\"star4\" name=\"rating\" value=\"4\" />
-                        <label class = \"full\" for=\"star4\" title=\"Pretty good - 4 stars\"></label>
-
-                        <input class=\"stars\" type=\"radio\" id=\"star3\" name=\"rating\" value=\"3\" />
-                        <label class = \"full\" for=\"star3\" title=\"Meh - 3 stars\"></label>
-
-                        <input class=\"stars\" type=\"radio\" id=\"star2\" name=\"rating\" value=\"2\" />
-                        <label class = \"full\" for=\"star2\" title=\"Kinda bad - 2 stars\"></label>
-
-                        <input class=\"stars\" type=\"radio\" id=\"star1\" name=\"rating\" value=\"1\" />
-                        <label class = \"full\" for=\"star1\" title=\"Sucks big time - 1 star\"></label>
-
-                    </fieldset>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                </div>
-                                <div class=\"modal-footer\">
-                                    <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
-                                         
+                                            </fieldset>
                                           </div>
                                   </div>
                                     <hr>";

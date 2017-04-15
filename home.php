@@ -25,7 +25,7 @@ $artist=$_SESSION['artist'];
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $(".demo1 .stars").click(function () {
+            $("#demo1 .stars").click(function () {
 
                 $.post('rating.php',{rate:$(this).val(),topic:$(this.id)},function(d){
                     if(d>0)
@@ -201,7 +201,7 @@ $artist=$_SESSION['artist'];
                                                 <p>$status</p>
                                           </div>
                                           <div class=\"ratingDiv\" style=\"float:right\">
-                                            <fieldset class=\"rating demo1\">
+                                            <fieldset id=\"#demo1\" class=\"rating \">
                                                 <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
                                                 <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
                                                 <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />

@@ -18,7 +18,7 @@ $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 $topic_id=$_POST['id'];
 $tid_array = explode('_',$topic_id);
-$tid=$tid_array[0];
+$tid=15;
 
 
 

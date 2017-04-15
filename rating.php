@@ -35,7 +35,7 @@ while($row = $result -> fetch_array()) {
 
 echo $uid;
 echo $tid;
-echo $rate;
+echo $_POST['rate'];
 header("Refresh:5,url:rating.html");
 if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 

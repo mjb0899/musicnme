@@ -16,40 +16,31 @@ session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
-$topic_id=$_POST['id'];
-$tid_array = explode('_',$topic_id);
-$tid=15;
-
-
-
-
 include ("dbConnect.php");
+$ipaddress=8;
 
 
 $sql_query = "Select uid from users WHERE username='$sess'";
 $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()) {
     $uid = $row['uid'];
-
 }
 
-echo $uid;
-echo $tid;
-echo $_POST['rate'];
-header("Refresh:5,url:rating.html");
+
+
 if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 
     $rate = $db->real_escape_string($_POST['rate']);
 
 // check if user has already rated
-    $sql = "SELECT rid FROM tbl_rating WHERE user_id='" . $uid . "'";
+    $sql = "SELECT rid FROM tbl_rating WHERE user_id='$ipaddress'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {
-        echo $row['rid'];
+        echo $row['id'];
     } else {
 
-        $sql = "INSERT INTO tbl_rating ( rate,tid,uid) VALUES ('$rate','$tid','$uid'); ";
+        $sql = "INSERT INTO tbl_rating ( rate,tid,uid) VALUES ('" . $rate . "', '" . $ipaddress . "'); ";
         if (mysqli_query($db, $sql)) {
             echo "0";
         }

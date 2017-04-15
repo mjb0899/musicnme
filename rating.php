@@ -35,15 +35,15 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
     $rate = $db->real_escape_string($_POST['rate']);
 
 // check if user has already rated
-    $sql = "SELECT rid FROM tbl_rating WHERE username='$sess' AND tid='$tid'";
+    $sql = "SELECT rid FROM tbl_rating WHERE uid='$uid' AND tid='$tid'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {
         echo $row['rid'];
     } else {
 
-        $sql = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$rate','$tid','$uid'); ";
-        if (mysqli_query($db, $sql)) {
+        $sql2 = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$rate','$tid','$uid'); ";
+        if (mysqli_query($db, $sql2)) {
             echo "0";
         }
     }

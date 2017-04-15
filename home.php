@@ -10,8 +10,7 @@ $artist=$_SESSION['artist'];
     <meta charset="UTF-8">
     <title>PageOutline</title>
     <!--AUDIO CSS-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/audio.css">
+
     <!--MENUBAR CSS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -28,7 +27,7 @@ $artist=$_SESSION['artist'];
         $(document).ready(function () {
             $("#demo1 .stars").click(function () {
 
-                $.post('rating.php',{rate:$(this).val()},function(d){
+                $.post('rating.php',{rate:$(this).val(),topic:$(this.id)},function(d){
                     if(d>0)
                     {
                         alert('You already rated');
@@ -213,7 +212,6 @@ $artist=$_SESSION['artist'];
                                                 <label class = \"full\" for=\".'$topic_id'.star2\" title=\"Kinda bad - 2 stars\"></label>
                                                 <input class=\"stars\" type=\"radio\" id=\".'$topic_id'.star1\" name=\"rating\" value=\"1\" />
                                                 <label class = \"full\" for=\".'$topic_id'.star1\" title=\"Sucks big time - 1 star\"></label>
-
                                             </fieldset>
                                           </div>
                                   </div>

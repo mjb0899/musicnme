@@ -201,7 +201,7 @@ $artist=$_SESSION['artist'];
                                                 <p>$status</p>
                                           </div>
                                           <div class=\"ratingDiv\" style=\"float:right\">
-                                            <fieldset id=\"#demo1\" class=\"rating \">
+                                            <fieldset  class=\"rating demo1 \">
                                                 <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
                                                 <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
                                                 <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />

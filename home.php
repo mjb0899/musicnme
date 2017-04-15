@@ -27,7 +27,7 @@ $artist=$_SESSION['artist'];
         $(document).ready(function () {
             $("#demo1 .stars").click(function () {
 
-                $.post('rating.php',{rate:$(this).val(),topic:$(this.id)},function(d){
+                $.post('rating.php',{rate:$(this).val(),topic:$(this).attr('id')},function(d){
                     if(d>0)
                     {
                         alert('You already rated');

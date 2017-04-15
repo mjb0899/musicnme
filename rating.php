@@ -33,14 +33,16 @@ while($row = $result -> fetch_array()) {
 
 }
 
-
-
+echo $uid;
+echo $tid;
+echo $rate;
+header("Refresh:5,url:rating.html");
 if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 
     $rate = $db->real_escape_string($_POST['rate']);
 
 // check if user has already rated
-    $sql = "SELECT rid,tid FROM tbl_rating WHERE user_id='" . $uid . "'";
+    $sql = "SELECT rid FROM tbl_rating WHERE user_id='" . $uid . "'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {

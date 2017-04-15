@@ -216,6 +216,7 @@ $artist=$_SESSION['artist'];
                                           </div>
                                   </div>
                                     <hr>";
+
                         }
                         $allowed_image = array('jpg','jpeg','png');
                         $allowed_media = array('mp4','mp3');

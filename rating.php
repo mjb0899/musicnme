@@ -16,6 +16,13 @@ session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
+$topic_id=$_POST['id'];
+$tid_array = explode('_',$topic_id);
+$tid=$tid_array[0];
+
+
+
+
 include ("dbConnect.php");
 
 
@@ -33,14 +40,14 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
     $rate = $db->real_escape_string($_POST['rate']);
 
 // check if user has already rated
-    $sql = "SELECT rid FROM tbl_rating WHERE user_id='" . $uid . "'";
+    $sql = "SELECT rid,tid FROM tbl_rating WHERE user_id='" . $uid . "'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {
-        echo $row['id'];
+        echo $row['rid'];
     } else {
 
-        $sql = "INSERT INTO tbl_rating ( rate, user_id) VALUES ('" . $rate . "', '" . $ipaddress . "'); ";
+        $sql = "INSERT INTO tbl_rating ( rate,tid,uid) VALUES ('$rate','$tid','$uid'); ";
         if (mysqli_query($db, $sql)) {
             echo "0";
         }

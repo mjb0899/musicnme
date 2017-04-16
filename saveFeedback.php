@@ -7,8 +7,8 @@
  */
 session_start();
 $sess=$_SESSION['name'];
-$desc=$_GET['matter'];
-$subject=$_GET['subject'];
+$desc=$_POST['matter'];
+$subject=$_POST['subject'];
 include "dbConnect.php";
 
 $sql="Select uid from users where username='$sess'";

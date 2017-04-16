@@ -28,7 +28,7 @@ $acc=$_SESSION['acctype'];
         var matter=document.getElementById('matter').value;
         var dataString= 'subject='+subject+'&matter='+matter;
         $.ajax({
-            type:"get",
+            type:"post",
             url:"saveFeedback.php",
             data:dataString,
             cache:false,

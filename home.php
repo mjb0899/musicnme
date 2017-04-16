@@ -147,7 +147,7 @@ $artist=$_SESSION['artist'];
                     <?php
                     include('dbConnect.php');
 
-                    $sql_query = "Select * from post_info2 ORDER BY dateposted DESC ";
+                    $sql_query = "Select * from post_info ORDER BY dateposted DESC ";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()){
                         $post_owner= $row['username'];

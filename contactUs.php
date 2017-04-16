@@ -24,11 +24,12 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script>
         $(document).ready(function(){
-            $("button").click(function(){
-
-                $(".alert .success").fadeIn("slow");
-                $(".alert .success").fadeOut(6000);
-                $(".container").hide();
+            $("button").click(function(d){
+                if(d>0) {
+                    $(".alert .success").fadeIn("slow");
+                    $(".alert .success").fadeOut(6000);
+                    $(".container").hide();
+                }
             });
         });
     </script>

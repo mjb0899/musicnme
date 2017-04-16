@@ -7,7 +7,7 @@
  */
 session_start();
 $sess=$_SESSION['name'];
-$desc=$_POST['description'];
+$desc=$_POST['matter'];
 $subject=$_POST['subject'];
 
 $sql="Select uid from users where username='$sess'";

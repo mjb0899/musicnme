@@ -43,6 +43,32 @@ $acc=$_SESSION['acctype'];
             $( "#datepicker" ).datepicker();
         } );
     </script>
+    <script>
+        $("#ajaxform").submit(function(e)
+        {
+            var postData = $(this).serializeArray();
+            var formURL = $(this).attr("action");
+            $.ajax(
+                {
+                    url : formURL,
+                    type: "POST",
+                    data : postData,
+                    success:function(d)
+                    {
+                        if(d>0){
+                            alert("Event Saved!")
+                        }
+                    },
+                    error: function(d){
+                        alert("Event Not Saved!")
+
+                    }
+                });
+            e.preventDefault();	//STOP default action
+        });
+
+        $("#ajaxform").submit(); //SUBMIT FORM
+    </script>
 
 
     <style>
@@ -88,7 +114,7 @@ $acc=$_SESSION['acctype'];
     <div class="container">
         <div>
             <h2>Get In Touch:</h2>
-            <form id="myform" method="post" action="saveEvent.php">
+            <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
 
                 <p>Date: <input type="text" id="datepicker" name="date"></p>
 
@@ -108,11 +134,11 @@ $acc=$_SESSION['acctype'];
 
                 <div class="form-group">
                     <label for="name">Event Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Subject" name="subject" required>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Subject" name="eventName" required>
                 </div>
                 <div class="form-group">
                     <label for="desc">Tell People What's It About:</label>
-                    <textarea  class="form-control" id="desc" placeholder="Give a short Description" name="matter" required></textarea>
+                    <textarea  class="form-control" id="desc" placeholder="Give a short Description" name="eventDesc" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-default" >Submit</button>
                 <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>

@@ -23,6 +23,7 @@ $sql="INSERT INTO events (uid,ename,edesc,edate,etime) VALUES ('$uid','$ename','
 
 if(mysqli_query($db,$sql)){
 echo 1;
+echo $date;
 }
 else{
     echo"Error:".$sql."<br>" . mysqli_error($db);

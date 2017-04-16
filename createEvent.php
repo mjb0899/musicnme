@@ -53,13 +53,13 @@ $acc=$_SESSION['acctype'];
                     url : formURL,
                     type: "POST",
                     data : postData,
-                    success:function(d)
+                    success:function(data)
                     {
-                        if(d>0){
+                        if(data>0){
                             alert("Event Saved!")
                         }
                     },
-                    error: function(d<1){
+                    error: function(data<1){
                         alert("Event Not Saved!")
 
                     }
@@ -67,7 +67,7 @@ $acc=$_SESSION['acctype'];
             e.preventDefault();	//STOP default action
         });
 
-        $("#ajaxform").submit(); //SUBMIT FORM
+
     </script>
 
 

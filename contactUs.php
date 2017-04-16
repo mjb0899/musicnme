@@ -58,6 +58,37 @@ $acc=$_SESSION['acctype'];
 </header>
 <!--MAIN CODE-->
 <main>
+    <div class="container">
+        <div>
+            <h2>Get In Touch:</h2>
+            <form method="post" action="saveFeedback.php">
+                <div class="form-group">
+                    <label for="subject">Enter Subject:</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="matter">Description:</label>
+                    <textarea  class="form-control" id="matter" placeholder="Give a short Description" name="matter" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </main>
 <!--FOOTER CODE!!-->

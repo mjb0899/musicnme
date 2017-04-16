@@ -19,35 +19,16 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <
+    <script>
+
+    </script>
     <style>
 
 
     </style>
-    <script>
-        $(document).ready(function () {
-            $('#submit').click(function () {
-                var subject=$('#subject').val();
-                var matter=$('#matter').val();
-                $.ajax({
-                    url:"saveFeedback.php",
-                    method:"POST",
-                    data:{subject:subject,matter:matter},
-                    success:function (data) {
-                        $(".container").hide();
-                    }
-                });
-
-
-            });
-        });
-
-
-    </script>
 </head>
 <body>
 <!--HEADER CODE-->
@@ -87,7 +68,7 @@ $acc=$_SESSION['acctype'];
     <div class="container">
         <div>
             <h2>Get In Touch:</h2>
-            <form id="myform">
+            <form id="myform" method="post" action="saveFeedback.php">
                 <div class="form-group">
                     <label for="subject">Enter Subject:</label>
                     <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>
@@ -96,8 +77,8 @@ $acc=$_SESSION['acctype'];
                     <label for="matter">Description:</label>
                     <textarea  class="form-control" id="matter" placeholder="Give a short Description" name="matter" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-default" id="submit" onclick="return chk()">Submit</button>
-                <div id="alert" >Thank you for getting in touch!! Our team will get back to you via email!</div>
+                <button type="submit" class="btn btn-default" >Submit</button>
+                <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
             </form>
         </div>
 
@@ -133,6 +114,5 @@ $acc=$_SESSION['acctype'];
     </div>
 </footer>
 </body>
-
 </html>
 

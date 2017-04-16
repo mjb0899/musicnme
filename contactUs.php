@@ -26,7 +26,7 @@ $acc=$_SESSION['acctype'];
         function chk() {
         var subject=document.getElementById('subject').value;
         var matter=document.getElementById('matter').value;
-        var dataString= 'name='+subject+'&matter='+matter;
+        var dataString= 'subject='+subject+'&matter='+matter;
         $.ajax({
             type:"post",
             url:"saveFeedback.php",

@@ -23,18 +23,20 @@ $acc=$_SESSION['acctype'];
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <script>
-        $(document).ready(function(){
-            $("button").click(function(d){
-                if(d>0) {
-                    $(".alert .success").fadeIn("slow");
-                    $(".alert .success").fadeOut(6000);
-                    $(".container").hide();
+        $('#myForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'saveFeedback.php',
+                type:'post',
+                data:$('#myForm').serialize(),
+                success:function(){
+                    alert("Our team will get back to you via email! Thank You!")
                 }
             });
         });
     </script>
     <style>
-        .alert.success {background-color: #4CAF50;display:none;}
+
 
     </style>
 </head>
@@ -76,7 +78,7 @@ $acc=$_SESSION['acctype'];
     <div class="container">
         <div>
             <h2>Get In Touch:</h2>
-            <form method="post" action="saveFeedback.php">
+            <form id="myform">
                 <div class="form-group">
                     <label for="subject">Enter Subject:</label>
                     <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>

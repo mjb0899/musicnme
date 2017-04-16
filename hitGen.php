@@ -19,7 +19,7 @@ while($row = $result -> fetch_array()){
 }
 $hits=($totalRate/$count);
 //set count values
-$sql4="UPDATE topic SET hits=$hits where tid='$tid'";
+$sql4="UPDATE topic SET hits='$hits' where tid='$tid'";
 
 $result = $db -> query($sql4);
 if(mysqli_query($db,$sql)){

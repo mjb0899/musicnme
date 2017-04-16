@@ -44,8 +44,14 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
     } else {
 
         $sql2 = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$rate','$tid','$uid')";
+
+
+
+
+
+
         if (mysqli_query($db, $sql2)) {
-            //include 'hitGen.php';
+            include 'hitGen.php';
             echo "0";
         }
 

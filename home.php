@@ -147,7 +147,7 @@ $artist=$_SESSION['artist'];
                     <?php
                     include('dbConnect.php');
 
-                    $sql_query = "Select * from post_info ORDER BY dateposted DESC ";
+                    $sql_query = "Select * from post_info2 ORDER BY dateposted DESC ";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()){
                         $post_owner= $row['username'];
@@ -159,6 +159,7 @@ $artist=$_SESSION['artist'];
                         $profile_pic=$row['profile_image'];
                         $post_owner_type=$row['utype'];
                         $topic_id=$row['tid'];
+                        $post_hits=$row['hits'];
 
                         if($profile_pic!=null){
 
@@ -204,7 +205,7 @@ $artist=$_SESSION['artist'];
                                           
                                          <div style='clear:both'>
                                          <div style='float:left'>
-                                         <h4>Hits:</h4>
+                                         <h4>Hits:$host_hits</h4>
                                          </div>
                                           
                                           <div class=\"ratingDiv\" style=\"float:right\">

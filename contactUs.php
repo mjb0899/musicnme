@@ -26,8 +26,9 @@ $acc=$_SESSION['acctype'];
         $(document).ready(function(){
             $("button").click(function(){
 
-                $(".alert").fadeIn("slow");
-                $(".success").fadeOut(3000);
+                $(".alert .success").fadeIn("slow");
+                $(".alert .success").fadeOut(6000);
+                $(".container").hide();
             });
         });
     </script>

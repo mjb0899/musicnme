@@ -21,7 +21,7 @@ while($row = $result -> fetch_array()){
 $hits=($totalRate/$count);
 $finalHit=round( $hits, 1, PHP_ROUND_HALF_UP);
 //set count values
-$sql4="UPDATE topic SET hits='$finalHit' where tid='$tid'";
+$sql4="UPDATE topic SET hits='$finalHit',votes='$count' where tid='$tid'";
 
 $result = $db -> query($sql4);
 if(mysqli_query($db,$sql)){

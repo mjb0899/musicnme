@@ -11,7 +11,7 @@ $tid=$_SESSION['top'];
 $count=0;
 $totalRate=0;
 //get count values
-$sql3="select rate from uid where tid='$tid'";
+$sql3="select rate from tbl_rating where tid='$tid'";
 $result = $db -> query($sql3);
 while($row = $result -> fetch_array()){
     $totalRate=$totalRate+$row['rate'];

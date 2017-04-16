@@ -88,13 +88,14 @@ $acc=$_SESSION['acctype'];
     <div class="container">
         <div>
             <h2>Get In Touch:</h2>
-            <form id="myform" method="post" action="saveFeedback.php">
-                <p>Date: <input type="text" id="datepicker"></p>
+            <form id="myform" method="post" action="saveEvent.php">
+
+                <p>Date: <input type="text" id="datepicker" name="date"></p>
 
 
                 <div class="demo">
                     <h2>Basic Example</h2>
-                    <p><input id="basicExample" type="text" class="time"/></p>
+                    <p><input id="basicExample" type="text" class="time" name="time"/></p>
                 </div>
 
                 <script>
@@ -106,12 +107,12 @@ $acc=$_SESSION['acctype'];
 
 
                 <div class="form-group">
-                    <label for="subject">Enter Subject:</label>
-                    <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>
+                    <label for="name">Event Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Subject" name="subject" required>
                 </div>
                 <div class="form-group">
-                    <label for="matter">Description:</label>
-                    <textarea  class="form-control" id="matter" placeholder="Give a short Description" name="matter" required></textarea>
+                    <label for="desc">Tell People What's It About:</label>
+                    <textarea  class="form-control" id="desc" placeholder="Give a short Description" name="matter" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-default" >Submit</button>
                 <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>

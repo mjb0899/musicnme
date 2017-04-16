@@ -205,7 +205,7 @@ $artist=$_SESSION['artist'];
                                           
                                          <div style='clear:both'>
                                          <div style='float:left'>
-                                         <h4>Hits:$host_hits</h4>
+                                         <h4><span class=\"glyphicon glyphicon-star\"></span>$post_hits</h4>
                                          </div>
                                           
                                           <div class=\"ratingDiv\" style=\"float:right\">

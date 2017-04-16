@@ -27,6 +27,17 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="timeLib/jquery.timepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="timeLib/jquery.timepicker.css" />
+
+    <script type="text/javascript" src="timeLib/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="timeLib/bootstrap-datepicker.css" />
+
+
+
     <script>
         $( function() {
             $( "#datepicker" ).datepicker();
@@ -79,6 +90,21 @@ $acc=$_SESSION['acctype'];
             <h2>Get In Touch:</h2>
             <form id="myform" method="post" action="saveFeedback.php">
                 <p>Date: <input type="text" id="datepicker"></p>
+
+
+                <div class="demo">
+                    <h2>Basic Example</h2>
+                    <p><input id="basicExample" type="text" class="time"/></p>
+                </div>
+
+                <script>
+                    $(function() {
+                        $('#basicExample').timepicker();
+                    });
+                </script>
+
+
+
                 <div class="form-group">
                     <label for="subject">Enter Subject:</label>
                     <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="subject" required>

@@ -160,6 +160,7 @@ $artist=$_SESSION['artist'];
                         $post_owner_type=$row['utype'];
                         $topic_id=$row['tid'];
                         $post_hits=$row['hits'];
+                        $votes=$row['votes'];
 
                         if($profile_pic!=null){
 
@@ -205,7 +206,7 @@ $artist=$_SESSION['artist'];
                                           
                                          <div style='clear:both'>
                                          <div style='float:left'>
-                                         <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4>
+                                         <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
                                          </div>
                                           
                                           <div class=\"ratingDiv\" style=\"float:right\">

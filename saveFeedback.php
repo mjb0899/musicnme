@@ -9,15 +9,14 @@ session_start();
 $sess=$_SESSION['name'];
 $desc=$_POST['matter'];
 $subject=$_POST['subject'];
+include "dbConnect.php";
 
 $sql="Select uid from users where username='$sess'";
 $result = $db -> query($sql);
 while($row = $result -> fetch_array()){
     $uid= $row['uid'];
 }
-echo $desc;
-echo $subject;
-echo $uid;
+
 
 $sql="INSERT INTO user_issue (subject,description,uid) VALUES ('$subject','$desc','$uid')";
 

@@ -21,8 +21,8 @@ include ("dbConnect.php");
 $topic=$_POST['topic'];
 $topic_array=explode('_',$topic);
 $tid=$topic_array[0];
-$count=0;
-$totalRate=0;
+$_SESSION['top']=$tid;
+
 $sql_query = "Select uid from users WHERE username='$sess'";
 $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()) {
@@ -45,6 +45,7 @@ if (isset($_POST['rate']) && !empty($_POST['rate'])) {
 
         $sql2 = "INSERT INTO tbl_rating (rate,tid,uid) VALUES ('$rate','$tid','$uid')";
         if (mysqli_query($db, $sql2)) {
+            include 'hitGen.php';
             echo "0";
         }
 

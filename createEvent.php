@@ -50,7 +50,7 @@ $acc=$_SESSION['acctype'];
             var formURL = $(this).attr("action");
             $.ajax(
                 {
-                    url : "saveEvent.php",
+                    url : formURL,
                     type: "POST",
                     data : postData,
                     success:function(data)
@@ -114,7 +114,7 @@ $acc=$_SESSION['acctype'];
     <div class="container">
         <div>
             <h2>Get In Touch:</h2>
-            <form name="ajaxform" id="ajaxform"  method="POST">
+            <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
 
                 <p>Date: <input type="text" id="datepicker" name="date"></p>
 

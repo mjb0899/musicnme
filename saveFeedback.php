@@ -26,4 +26,3 @@ if(mysqli_query($db,$sql)){
 else{
     echo"Error:".$sql."<br>" . mysqli_error($db);
 }
-header("location:contactUs.php");

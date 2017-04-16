@@ -23,23 +23,7 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script>
-        function chk() {
-        var subject=document.getElementById('subject').value;
-        var matter=document.getElementById('matter').value;
-        var dataString= 'subject='+subject+'&matter='+matter;
-        $.ajax({
-            type:"post",
-            url:"saveFeedback.php",
-            data:dataString,
-            cache:false,
-            success.function(html){
-                $('#alert').html(html);
-            }
-        });
-        return false;
-        }
-    </script>
+    <
     <style>
 
 
@@ -129,5 +113,25 @@ $acc=$_SESSION['acctype'];
     </div>
 </footer>
 </body>
+<script>
+$(document).ready(function () {
+    $('#submit').click(function () {
+        var subject=$('#subject').val();
+        var matter=$('#matter').val();
+        $.ajax({
+            url:"saveFeedback.php",
+            method:"POST",
+            data:{subject:subject,matter:matter},
+            success:function (data) {
+                $(".container").hide();
+            }
+        });
+
+
+    });
+});
+
+
+</script>
 </html>
 

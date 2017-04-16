@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: ADMIN
+ * Date: 16/04/2017
+ * Time: 15:25
+ */
 session_start();
 $sess=$_SESSION['name'];
 $acc=$_SESSION['acctype'];
@@ -16,7 +22,6 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/aboutus.css">
 </head>
 <body>
 <!--HEADER CODE-->
@@ -53,23 +58,7 @@ $acc=$_SESSION['acctype'];
 </header>
 <!--MAIN CODE-->
 <main>
-    <div class="wrapper">
-        <div class="wrapper_one" style="margin-top: 76px;" >
-            <h2>-Our Mission-</h2>
-            <h2><?php echo $acc?></h2>
-            <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
-            </p>
-            <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
-            </p>
-            <h3 <?php if(isset($sess)) { ?>style="display:none;"<?php } ?> > Don't have a free account yet?</h3>
-            <div class="wrapper_signup">
-                <button type="button" class="log-btn" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>  >Create Account</button>
 
-            </div>
-        </div>
-    </div>
 </main>
 <!--FOOTER CODE!!-->
 <footer>

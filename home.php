@@ -60,7 +60,7 @@ $artist=$_SESSION['artist'];
                     <li class="active"><a href="home.php">Home</a></li>
                     <li><a href="rating.html">Test Rating</a></li>
                     <li><a href="#">Events</a></li>
-                    <li><a href="audio.html">Get In Touch</a></li>
+                    <li><a href="contactUs.php">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

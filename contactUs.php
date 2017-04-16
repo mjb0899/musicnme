@@ -28,6 +28,26 @@ $acc=$_SESSION['acctype'];
 
 
     </style>
+    <script>
+        $(document).ready(function () {
+            $('#submit').click(function () {
+                var subject=$('#subject').val();
+                var matter=$('#matter').val();
+                $.ajax({
+                    url:"saveFeedback.php",
+                    method:"POST",
+                    data:{subject:subject,matter:matter},
+                    success:function (data) {
+                        $(".container").hide();
+                    }
+                });
+
+
+            });
+        });
+
+
+    </script>
 </head>
 <body>
 <!--HEADER CODE-->
@@ -113,25 +133,6 @@ $acc=$_SESSION['acctype'];
     </div>
 </footer>
 </body>
-<script>
-$(document).ready(function () {
-    $('#submit').click(function () {
-        var subject=$('#subject').val();
-        var matter=$('#matter').val();
-        $.ajax({
-            url:"saveFeedback.php",
-            method:"POST",
-            data:{subject:subject,matter:matter},
-            success:function (data) {
-                $(".container").hide();
-            }
-        });
 
-
-    });
-});
-
-
-</script>
 </html>
 

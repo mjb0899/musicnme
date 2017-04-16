@@ -19,6 +19,7 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -91,7 +92,7 @@ $acc=$_SESSION['acctype'];
                     <label for="matter">Description:</label>
                     <textarea  class="form-control" id="matter" placeholder="Give a short Description" name="matter" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-default" onclick="return chk()">Submit</button>
+                <button type="submit" class="btn btn-default" id="submit" onclick="return chk()">Submit</button>
                 <div id="alert" >Thank you for getting in touch!! Our team will get back to you via email!</div>
             </form>
         </div>

@@ -119,13 +119,13 @@ $acc=$_SESSION['acctype'];
                     <div class="wrapper_form">
                     <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
                         <div class="form-group">
-                        <label for="datepicker">Event Name:</label>
+                        <label for="datepicker">Select Date:</label>
                         <input type="text" id="datepicker" name="date"><br>
                         </div>
 
 
                         <div class="demo form-group">
-                            <label for="basicExample">Event Name:</label>
+                            <label for="basicExample">Select Time:</label>
                             <input id="basicExample" type="text" class="time" name="time"/>
                         </div>
 

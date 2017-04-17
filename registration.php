@@ -48,7 +48,8 @@
         </div>
     </nav>
 </header>
-<main class="wrapper">
+<main>
+    <div class="wrapper">
     <div>
         <h2> - Join Our Family -</h2>
     </div>
@@ -81,7 +82,8 @@
                 <button type="submit" class="signupbtn">Sign Up</button>
             </div>
         </div>
-    </form>
+
+    </div>
 </main>
 <footer>
     <div class="footer_left" >

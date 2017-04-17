@@ -7,6 +7,8 @@ footer{
 footer h1{
 	text-align: center;
 	color: #ff3333;
+	background-color: #212121;
+
 
 
 }
@@ -18,12 +20,16 @@ footer:after {
 
 	width: 100%;
 	clear: both;
+	background-color: #212121;
+
 
 }
 .footer_right{
 
 	width: 100%;
 	clear: both;
+	background-color: #212121;
+
 
 
 }

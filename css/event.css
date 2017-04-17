@@ -19,6 +19,7 @@ body{
     width: 65%;
     margin: auto;
     background-color: #212121;
+    border: 2px solid white;
     padding: 1rem;
 }
 input[type=text],

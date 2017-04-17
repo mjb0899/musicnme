@@ -6,8 +6,8 @@
  * Time: 16:13
  */
 
-$username=$_GET["username"];
-$password=$_GET["password"];
+$username=$_POST["username"];
+$password=$_POST["password"];
 
 if(($username=='lucifer')&&($password=='xxxx')){
     session_start();

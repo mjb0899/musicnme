@@ -14,3 +14,6 @@ input[type=text],
 input[type=password] , textarea {
     box-sizing : border-box;
 }
+.wrapper>h2{
+    text-align: center;
+}

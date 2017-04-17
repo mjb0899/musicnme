@@ -30,5 +30,5 @@ input[type=password] , textarea {
     text-align: center;
 }
 .wrapper_head{
-    border-bottom: #212121;
+    border: #212121;
 }

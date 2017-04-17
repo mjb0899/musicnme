@@ -14,7 +14,6 @@ main{
 }
 .wrapper{
 width: 50%;
-
 margin: auto;
 padding: 2rem;
 background-color: #212121;
@@ -52,6 +51,7 @@ text-align: center;
     font-family: Century Gothic, sans-serif;
     text-align: center;
     color: white;
+    padding: 3rem;
 }
 
 

@@ -55,7 +55,11 @@ if(isset($_SESSION['name'])){
 </header>
 <!--MAIN PAGE-->
 <main >
+    <div class="quote">
+        <h2>Music is life.<br> That's why our hearts has beats.</h2>
+    </div>
     <div class="wrapper">
+
         <div class="welcometext">
             <h1> Welcome</h1>
         </div>
@@ -63,9 +67,7 @@ if(isset($_SESSION['name'])){
             <p style="color: red;"> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
         </div>
         <?php unset($_SESSION['errmsg']); ?>
-        <div class="quote">
-            <h2>Music is life.<br> That's why our hearts has beats.</h2>
-        </div>
+
         <form action="login.php" method="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">Username</label>

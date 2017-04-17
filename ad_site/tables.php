@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -215,6 +220,9 @@
                     <div class="col-lg-6">
                         <h2>Bordered Table</h2>
                         <div class="table-responsive">
+
+
+
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>

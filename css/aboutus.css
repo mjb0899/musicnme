@@ -13,6 +13,14 @@ main.wrapper{
     border-radius: 1rem;
 
 }
+.wrapper_event{
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
 
 .hide{
     display: none;

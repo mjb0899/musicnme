@@ -53,7 +53,10 @@
 
     <form action="insertuser.php" method="post">
         <div class="container">
-            <h2>  Join Our Family </h2>
+            <div class="header_div">
+                <h2>  Join Our Family </h2>
+            </div>
+
 
             <div class="rad" style="text-align: center;">
                 <label class="radio-inline">

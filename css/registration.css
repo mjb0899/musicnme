@@ -12,9 +12,7 @@ main{
 .wrapper{
     width: 70%;
     margin: auto;
-    background-color: white;
     padding-bottom: 1rem;
-    padding-top: 1rem;
 
 }
 
@@ -69,7 +67,6 @@ main button {
     background-color: #212121;
     box-shadow: 1rem 1rem  1rem black;
     padding-bottom: 1rem;
-    padding-top: 1rem;
 
 }
 .header_div{

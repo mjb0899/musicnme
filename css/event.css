@@ -1,7 +1,11 @@
 main{
     width: 100%;
-    background-image: url("/../images/background.png");
-    background-repeat: no-repeat;
+    background-image: url("/../images/background.png") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 
 
 }

@@ -2,6 +2,8 @@ main{
     width: 100%;
     margin-top: 7%;
     background-image: url("/../images/background.png");
+    padding: 1rem;
+    background-repeat: no-repeat;
 
 }
 body{

@@ -116,7 +116,7 @@ $acc=$_SESSION['acctype'];
                     <div class="wrapper_head">
                         <h2>Start Event:</h2>
                     </div>
-
+                    <div class="wrapper_form">
                     <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
 
                         <p>Date: <input type="text" id="datepicker" name="date"></p>
@@ -146,7 +146,7 @@ $acc=$_SESSION['acctype'];
                         <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
                         <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
                     </form>
-
+                    </div>
 
 
         </div>

@@ -113,12 +113,8 @@ $acc=$_SESSION['acctype'];
 <!--MAIN CODE-->
 <main>
 
+            <div class="wrapper">
 
-    <div class="wrapper">
-
-
-            <div class="container">
-                <div>
                     <h2>Get In Touch:</h2>
                     <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
 
@@ -149,11 +145,11 @@ $acc=$_SESSION['acctype'];
                         <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
                         <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
                     </form>
-                </div>
+
 
             </div>
 
-        </div>
+
 
 
 

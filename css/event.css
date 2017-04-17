@@ -19,9 +19,8 @@ body{
     width: 65%;
     margin: auto;
     background-color: white;
-    border: 2px solid white;
+   border-left: 2px solid #212121;
     padding: 1rem;
-    box-shadow: 2px 2px 2px #888888;
 }
 input[type=text],
 input[type=password] , textarea {

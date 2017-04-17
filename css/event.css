@@ -18,8 +18,7 @@ body{
     font-family: Century Gothic, sans-serif;
     width: 65%;
     margin: auto;
-    background-color: #212121;
-    border: 2px solid white;
+    background-color: black;
     padding: 1rem;
 }
 input[type=text],

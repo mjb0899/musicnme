@@ -50,11 +50,11 @@
 </header>
 <main>
     <div class="wrapper">
-    <div>
-        <h2> - Join Our Family -</h2>
-    </div>
+
     <form action="insertuser.php" method="post">
         <div class="container">
+            <h2>  Join Our Family </h2>
+
             <div class="rad" style="text-align: center;">
                 <label class="radio-inline">
                     <input type="radio" name="utype" checked value="user">User

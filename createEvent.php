@@ -24,7 +24,8 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -111,39 +112,52 @@ $acc=$_SESSION['acctype'];
 </header>
 <!--MAIN CODE-->
 <main>
-    <div class="container">
-        <div>
-            <h2>Get In Touch:</h2>
-            <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
-
-                <p>Date: <input type="text" id="datepicker" name="date"></p>
 
 
-                <div class="demo">
-                    <h2>Basic Example</h2>
-                    <p><input id="basicExample" type="text" class="time" name="time"/></p>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="container">
+                <div>
+                    <h2>Get In Touch:</h2>
+                    <form name="ajaxform" id="ajaxform" action="saveEvent.php" method="POST">
+
+                        <p>Date: <input type="text" id="datepicker" name="date"></p>
+
+
+                        <div class="demo">
+                            <h2>Basic Example</h2>
+                            <p><input id="basicExample" type="text" class="time" name="time"/></p>
+                        </div>
+
+                        <script>
+                            $(function() {
+                                $('#basicExample').timepicker();
+                            });
+                        </script>
+
+
+
+                        <div class="form-group">
+                            <label for="name">Event Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Subject" name="eventName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="desc">Tell People What's It About:</label>
+                            <textarea  class="form-control" id="desc" placeholder="Give a short Description" name="eventDesc" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
+                        <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
+                    </form>
                 </div>
 
-                <script>
-                    $(function() {
-                        $('#basicExample').timepicker();
-                    });
-                </script>
+            </div>
 
-
-
-                <div class="form-group">
-                    <label for="name">Event Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Subject" name="eventName" required>
-                </div>
-                <div class="form-group">
-                    <label for="desc">Tell People What's It About:</label>
-                    <textarea  class="form-control" id="desc" placeholder="Give a short Description" name="eventDesc" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
-                <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
-            </form>
         </div>
+
+
+
+
 
     </div>
 

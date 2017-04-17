@@ -70,7 +70,7 @@ main button {
 
 }
 .header_div{
-    background-color: #212121;
+    border-bottom: #ff3333;
 }
 
 /* Clear floats */

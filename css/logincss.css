@@ -41,14 +41,7 @@ text-align: center;
 	text-align: center;
 	color: #ff3333;
 }
-footer{
-	width:100%;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
 
-}
 .ack p {
     color: red;
     font-weight: bold;

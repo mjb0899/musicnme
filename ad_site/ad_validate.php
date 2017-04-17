@@ -12,6 +12,6 @@ $password=$_GET["password"];
 if(($username=='lucifer')&&($password=='xxxx')){
     session_start();
     $_SESSION["ad_access"]=1;
-    header("location:ad_site/ad_home.html");
+    header("location:ad_home.html");
     exit();
 }

@@ -54,5 +54,9 @@ text-align: center;
     padding: 2rem;
 }
 
+div.label{
+    font-family: Century Gothic, sans-serif;
+    color: #ff3333;
+}
 
 

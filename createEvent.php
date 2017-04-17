@@ -173,6 +173,8 @@ $acc=$_SESSION['acctype'];
 
 </main>
 <!--FOOTER CODE!!-->
+
+</body>
 <footer>
     <div class="footer_left" >
         <h1>Music&Me</h1>
@@ -186,6 +188,5 @@ $acc=$_SESSION['acctype'];
         <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
     </div>
 </footer>
-</body>
 </html>
 

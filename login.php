@@ -10,7 +10,7 @@ else{
 }
 
 if(($username=='admin')&&($password=='admin')){
-  header("location:ad_site/ad_home.html");
+  header("location:ad_site/ad_login.html");
   exit();
 }
 

@@ -64,9 +64,10 @@ main button {
 /* Add padding to container elements */
 .container {
     width: 90%;
-    padding: 1rem;
     background-color: #212121;
     box-shadow: 1rem 1rem  1rem black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 
 }
 .header_div{

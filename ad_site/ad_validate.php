@@ -9,7 +9,7 @@
 $username=$_POST["username"];
 $password=$_POST["password"];
 
-if(($username=='lucifer123456789')&&($password=='x1x2x3x4')){
+if(($username=='lucifer')&&($password=='xxxx')){
     session_start();
     $_SESSION["ad_access"]=1;
     header("location:ad_site/ad_home.html");

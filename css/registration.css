@@ -12,12 +12,14 @@ main{
 .wrapper{
     width: 70%;
     margin: auto;
+    background-color: white;
+
 }
 
 .wrapper h2{
     text-align: center;
     color:#ff3333; 
-    font-weight: lighter;   
+    font-weight: lighter;
 
 
 

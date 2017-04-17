@@ -9,8 +9,9 @@ else{
     $password=$_POST["password"];
 }
 
-if(($username==='admin')&&($password==='admin')){
+if(($username=='admin')&&($password=='admin')){
   header("location:ad_site/ad_home.html");
+  exit();
 }
 
 

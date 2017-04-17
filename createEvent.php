@@ -112,7 +112,7 @@ $acc=$_SESSION['acctype'];
 </header>
 <!--MAIN CODE-->
 <main>
-
+        <div class="img_contain">
             <div class="wrapper">
                     <div class="wrapper_head">
                         <h2>Start Event:</h2>
@@ -151,7 +151,7 @@ $acc=$_SESSION['acctype'];
 
             </div>
 
-
+        </div>
 
 
 

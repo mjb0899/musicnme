@@ -29,3 +29,6 @@ input[type=password] , textarea {
 .wrapper_head>h2{
     text-align: center;
 }
+.wrapper_head{
+    background-color: #9d9d9d;
+}

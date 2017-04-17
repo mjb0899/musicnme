@@ -156,7 +156,7 @@
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
                     </li>
                     <li class="active">
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
                     </li>
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
@@ -517,7 +517,7 @@
                     </div>
                     <div class="col-lg-6">
                         <h2>Bootstrap Docs</h2>
-                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
+                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/tables.php#tables">Bootstrap's Tables Documentation</a>.</p>
                     </div>
                 </div>
                 <!-- /.row -->

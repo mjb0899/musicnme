@@ -1,0 +1,11 @@
+main{
+    width: 100%;
+}
+.wrapper{
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+}

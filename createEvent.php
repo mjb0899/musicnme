@@ -126,7 +126,7 @@ $acc=$_SESSION['acctype'];
 
                         <div class="demo form-group">
                             <label for="basicExample">Event Name:</label>
-                            <input id="basicExample" type="text" class="time form-control" name="time"/>
+                            <input id="basicExample" type="text" class="time" name="time"/>
                         </div>
 
                         <script>

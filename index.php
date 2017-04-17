@@ -81,11 +81,7 @@ if(isset($_SESSION['name'])){
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required="">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Remember me
-                </label>
-            </div>
+
             <div class="buttonholder">
                 <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
             </div>

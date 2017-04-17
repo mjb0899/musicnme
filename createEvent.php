@@ -116,7 +116,7 @@ $acc=$_SESSION['acctype'];
 
     <div class="wrapper">
 
-        <div class="wrapper_one">
+        <div class="wrapper_event">
             <div class="container">
                 <div>
                     <h2>Get In Touch:</h2>

@@ -16,7 +16,7 @@ main{
     font-family: Century Gothic, sans-serif;
     width: 65%;
     margin: auto;
-    background-color: #212121;
+    background-color: white;
     padding: 1rem;
 }
 input[type=text],

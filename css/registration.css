@@ -29,7 +29,7 @@ main{
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-    width: 40%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: block;
@@ -71,9 +71,6 @@ main button {
 }
 .header_div{
     border-bottom: 2px solid #212121;
-}
-.your-class input{
-    float:left;
 }
 
 /* Clear floats */

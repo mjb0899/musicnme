@@ -81,7 +81,7 @@ $artist=$_SESSION['artist'];
                 <h1>morris</h1>
             </div>
             <div class="two">
-                <div class="share">
+
                     <div class="share_align">
                         <div class="container">
                             <ul class="nav nav-pills">
@@ -138,7 +138,7 @@ $artist=$_SESSION['artist'];
                             </div>
                         </div>
                     </div>
-                </div>
+
                 <div class="feed">
                     <?php
                     include('dbConnect.php');

@@ -31,7 +31,7 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 .rating > input:checked ~ label,
 .rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+.rating:not(:checked) > label:hover ~ label { color: #FF3333;  }
 
 .rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover,

@@ -26,8 +26,7 @@ body{
     vertical-align: top;
     width: 80%;
     font-size: 1rem;
-    margin-left: 21rem;
-    padding-left: 9rem;
+    margin-left: 30rem;
     background-color: red;
 }
 
@@ -50,6 +49,10 @@ body{
     padding: 2rem;
     margin-left: 2rem;
 }
+
+
+
+
 .container{
     padding: 2rem;
 }

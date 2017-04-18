@@ -93,3 +93,8 @@ div.tab button.active {
     background-color: #212121;
     margin: auto;
 }
+@media screen and (max-width:500px) {
+    .wrapper {
+    width: 100%;
+    }
+}

@@ -96,7 +96,7 @@
                     <input type="text" class="form-control" id="fname" placeholder="Enter Last Name" name="lname" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Last Name:</label>
+                    <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter Last Name" name="email" required>
                 </div>
                 <div class="form-group">

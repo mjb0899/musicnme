@@ -7,6 +7,7 @@ body{
 .out-wrapper {
     width: 80%;
     margin:auto;
+    background-color: whitesmoke;
 }
 .one {
     margin-top: 6rem;

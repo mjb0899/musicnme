@@ -26,6 +26,8 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+
     <script>
 
     </script>
@@ -69,7 +71,7 @@ $acc=$_SESSION['acctype'];
 </header>
 <!--MAIN CODE-->
 <main>
-    <div class="container">
+    <div class="wrapper">
         <div>
             <h2>Get In Touch:</h2>
             <form id="myform" method="post" action="saveFeedback.php">

@@ -54,3 +54,6 @@ div.wrapper_one h2{
 }
 
 
+footer{
+    flex-grow: 0;
+}

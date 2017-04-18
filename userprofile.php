@@ -52,7 +52,7 @@ if(strcmp($sess,$owner)==0){
 
 <header>
     <!--Menu bar-->
-    <nav class="navbar navbar-inverse navbar-custom">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
         <div class="container-fluid" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

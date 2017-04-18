@@ -225,8 +225,7 @@ $artist=$_SESSION['artist'];
                                           
                                           
                                           
-                                  </div>
-                                    <hr>";
+                                  </div>";
 
                         }
                         $allowed_image = array('jpg','jpeg','png');

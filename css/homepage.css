@@ -56,7 +56,7 @@ body{
 .profile_data button{
     width: 100%;
 }
-.profile_data.btn-place{
+.btn-place{
   width:30% ;
     float: right;
 }

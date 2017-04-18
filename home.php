@@ -82,10 +82,14 @@ $artist=$_SESSION['artist'];
                    <?php
 
                    include("dbConnect.php");
-                   $sql_query = "Select profile_image from users Where username='$sess'";
+                   $sql_query = "Select profile_image,uemail,ufname,ulname from users Where username='$sess'";
                    $result = $db -> query($sql_query);
                    while($row = $result -> fetch_array()){
                        $profile_path=$row['profile_image'];
+                       $userEmail=$row['uemail'];
+                       $firstName=$row['ufname'];
+                       $lastName=$row['ulname'];
+
                        //upload profile picture
                        echo "  <img src=\"$profile_path\" id=\"pic\">
                            ";
@@ -106,10 +110,10 @@ $artist=$_SESSION['artist'];
                             <h3>i</h3>
                             <h3>i</h3>
 
-                                        <h3><?php echo $ufname ?></h3>
-                                        <h3><?php echo $ulname ?></h3>
-                                        <h3><?php echo $ufname ?></h3>
-                                        <h3><?php echo $email ?></h3>
+                                        <h3><?php echo $firstName ?></h3>
+                                        <h3><?php echo $lastName ?></h3>
+                                        <h3><?php echo $userEmail ?></h3>
+
 
                         </div>
                     </div>

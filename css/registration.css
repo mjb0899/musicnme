@@ -70,8 +70,10 @@ main button {
     clear: both;
     display: table;
 }
-main div label{
-    clear: left;
+.form-group>label{
+    color: white;
+    font-family: Century Gothic, sans-serif;
+
 }
 .rad{
     padding-top: 1rem;

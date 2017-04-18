@@ -6,7 +6,6 @@ body{
 }
 .out-wrapper {
     width: 80%;
-    min-width: 600px;
     margin:auto;
 }
 
@@ -20,6 +19,8 @@ body{
     border: 2px solid #ff3333;
     border-radius: 1rem;
     background: #212121;
+    min-width: 600px;
+
 }
 .share_align {
     padding: 2rem;

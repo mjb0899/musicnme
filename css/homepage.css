@@ -116,6 +116,7 @@ body{
 
     }
     .two{
+
     }
     body{
         overflow-x: scroll;
@@ -123,6 +124,7 @@ body{
     }
     .out-wrapper {
         width: 100%;
+        margin:0;
     }
 }
 

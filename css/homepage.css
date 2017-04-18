@@ -47,7 +47,7 @@ body{
     background-color: #ff3333;
     color: white;
 }
-.container li:hover{
+.container li a:hover{
     background-color: #212121;
     color: red;
 }

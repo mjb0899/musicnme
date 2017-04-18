@@ -9,7 +9,8 @@ main{
 }
 .wrapper_pic{
     background-color: #212121;
-	height: 20rem;
+	min-height: 20rem;
+    height: 30%;
 	width: 100%;
 }
 

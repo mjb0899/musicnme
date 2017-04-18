@@ -73,11 +73,11 @@ if(isset($_SESSION['name'])){
         <?php unset($_SESSION['errmsg']); ?>
 
         <form action="login.php" method="post">
-            <label for="exampleInputEmail1">Username</label>
+            <label for="exampleInputEmail1" class="label_font">Username</label>
             <div class="form-group">
                 <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">
             </div>
-            <label for="exampleInputPassword1">Password</label>
+            <label for="exampleInputPassword1" class="label_font">Password</label>
             <div class="form-group">
 
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required="">

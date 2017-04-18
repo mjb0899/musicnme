@@ -70,7 +70,7 @@ main button {
     clear: both;
     display: table;
 }
-.form-group>label{
+.label_font{
     color: #ff3333;
     font-family: Century Gothic, sans-serif;
 

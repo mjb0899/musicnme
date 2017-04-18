@@ -259,11 +259,7 @@ if(strcmp($sess,$owner)==0){
                 ?>
 
             </div>
-
-
             </div>
-
-
     </div>
 </main>
 

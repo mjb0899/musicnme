@@ -43,7 +43,7 @@ body{
 
 .share {
     box-shadow: 1rem 1rem  1rem black;
-    background-color: whitesmoke;
+    background-color: #212121;
     border-radius: 2px;
 }
 
@@ -117,12 +117,12 @@ body{
 #msg{
     padding: 1rem;
 }
-
+/*
 @media screen and (max-width:700px) {
     .cancelbtn, .signupbtn {
         width: 50%;
 
     }
 }
-
+*/
 /*RATING CSS*/

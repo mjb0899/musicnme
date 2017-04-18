@@ -64,7 +64,7 @@ $acc=$_SESSION['acctype'];
             </p>
             <h3 <?php if(isset($sess)) { ?>style="display:none;"<?php } ?> > Don't have a free account yet?</h3>
             <div class="wrapper_signup">
-                <button type="button" class="log-btn" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>  >Create Account</button>
+                <a href="registration.php"> <button type="button" class="log-btn" <?php if(isset($sess)) { ?>style="display:none;"<?php } ?>  >Create Account</button></a>
 
             </div>
         </div>

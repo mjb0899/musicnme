@@ -246,11 +246,12 @@ if(strcmp($sess,$owner)==0){
                                         <div class=\"media-body\">
                                          <h4 class=\"media-heading\">$post_owner</h4>
                                          <p>$status</p>
-                                         </div>
-                                          <div class=\"image_div\">
+                                         </div>                                      
+                                  </div>
+                                  
+                                  <div class=\"image_div\">
                                                  <img style='height: 100%; width: 80%;margin: auto; object-fit: contain' src=".$file_path.">      
                                           </div>  
-                                  </div>
                                        
                      <hr>";
                         }

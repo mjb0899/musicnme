@@ -6,12 +6,6 @@ body{
     width: 100%;
     min-width: 600px;
 }
-.out {
-    width: 100%;
-    color: white;
-    background:#000000;
-}
-
 .share {
     border: 2px solid #ff3333;
     border-radius: 1rem;

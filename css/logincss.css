@@ -59,4 +59,8 @@ text-align: center;
     color: #ff3333;
 }
 
+.rad>input{
+    background-color: #ff3333;
+    border-radius: 1rem;
+}
 

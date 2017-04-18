@@ -116,11 +116,12 @@ body{
 
     }
     .two{
-        margin: 0;
+        margin: auto;
     }
 
     .out-wrapper {
         width: 100%;
+        margin: 0;
     }
 }
 

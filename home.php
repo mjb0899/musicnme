@@ -79,7 +79,7 @@ $artist=$_SESSION['artist'];
     <div class="out-wrapper">
             <div class="one">
                <div class="propic" id="profile_pic">
-
+                   <img src="$profile_path" id="pic">
                </div>
                 <div>
 

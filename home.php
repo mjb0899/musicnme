@@ -246,7 +246,7 @@ $artist=$_SESSION['artist'];
                                              <div style='height: 400px; width: 500px; background-color: #212121;margin: auto'>
                                              <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
                                              </div>
-                                            <h1> Test</h1>
+                                             <h4><span class=\"glyphicon glyphicon - heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon - user\"></span>$votes</h4>
                                          
                                             
                                      </div>";

@@ -87,13 +87,13 @@
 -->
             <!--New form-->
             <div >
-               <div class="form-group">
-                    <label for="email">First Name:</label>
-                    <input type="email" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" name="fname" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Last Name:</label>
-                    <input type="email" class="form-control" id="fname" placeholder="Enter Last Name" name="lname" required>
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" name="lname" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>

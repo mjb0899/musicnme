@@ -88,27 +88,27 @@
             <!--New form-->
             <div >
                 <div class="form-group">
-                    <label for="usr">First Name:</label>
+                    <label for="usr" class="label_font">First Name:</label>
                     <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="usr">Last Name</label>
+                    <label for="usr" class="label_font">Last Name</label>
                     <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" required>
                 </div>
                 <div class="form-group">
-                    <label for="usr">Pick a username:</label>
+                    <label for="usr" class="label_font">Pick a username:</label>
                     <input type="text" class="form-control" id="usr" name="username"placeholder="Select a username" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email" class="label_font">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
+                    <label for="pwd" class="label_font">Password:</label>
                     <input type="password" class="form-control" id="pwd" name="pass">
                 </div>
                 <div class="form-group">
-                    <label for="rep_pwd">Confirm Password:</label>
+                    <label for="rep_pwd" class="label_font">Confirm Password:</label>
                     <input type="password" class="form-control" id="rep_pwd" name="psw-repeat">
                 </div>
 

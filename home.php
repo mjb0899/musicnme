@@ -124,7 +124,6 @@ $artist=$_SESSION['artist'];
                     <!--Collapse 2-->
                     <div class="container">
 
-                        <span style="text-align: center" class="glyphicon glyphicon-fire"></span>
 
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">

@@ -85,13 +85,28 @@
             <label><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-            <input type="checkbox" checked="checked"> Remember me
+            <!--New form-->
             <div >
                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <label for="email">First Name:</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                 </div>
-
+                <div class="form-group">
+                    <label for="email">Last Name:</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter Last Name" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Last Name:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Last Name" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" name="pass">
+                </div>
+                <div class="form-group">
+                    <label for="rep_pwd">Confirm Password:</label>
+                    <input type="password" class="form-control" id="rep_pwd" name="rep_pass">
+                </div>
 
 
 

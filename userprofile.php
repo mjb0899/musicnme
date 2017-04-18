@@ -250,7 +250,7 @@ if(strcmp($sess,$owner)==0){
                                   </div>
                                   
                                   <div class=\"image_div\">
-                                                 <img style='height: 100%; width: 80%;margin: auto; object-fit: contain' src=".$file_path.">      
+                                                 <img style='height: 100%; width: 100%;margin: auto; object-fit: contain' src=".$file_path.">      
                                           </div>  
                                        
                      <hr>";

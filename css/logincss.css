@@ -17,9 +17,8 @@ width: 50%;
 margin: auto;
 padding: 2rem;
 background-color: #212121;
-
-      box-shadow: 1rem 1rem  1rem black;
-
+    box-shadow: 1rem 1rem  1rem black;
+    min-width: 300px;
 }
 .buttonholder{
 text-align: center;

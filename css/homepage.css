@@ -125,6 +125,7 @@ body{
     }
     .two{
         margin-left: auto;
+        overflow-x: auto;
 
     }
 }

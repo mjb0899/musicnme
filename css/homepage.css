@@ -16,6 +16,8 @@ body{
     background: whitesmoke;
     height: 92vh;
     position: fixed;
+    box-shadow: 1rem 1rem  1rem black;
+
 
 }
 .two {
@@ -37,6 +39,8 @@ body{
 .share {
     border: 2px solid #ff3333;
     background: whitesmoke;
+    box-shadow: 1rem 1rem  1rem black;
+
 
 }
 .share_align {

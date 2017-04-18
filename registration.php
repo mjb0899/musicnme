@@ -88,12 +88,16 @@
             <!--New form-->
             <div >
                 <div class="form-group">
-                    <label for="usr">Name:</label>
+                    <label for="usr">First Name:</label>
                     <input type="text" class="form-control" id="usr" name="fname" required>
                 </div>
                 <div class="form-group">
-                    <label for="usr">Name:</label>
+                    <label for="usr">Last Name</label>
                     <input type="text" class="form-control" id="usr" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label for="usr">Pick a username:</label>
+                    <input type="text" class="form-control" id="usr" name="username" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>

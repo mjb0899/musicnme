@@ -50,9 +50,8 @@ body{
 
 .feed {
     margin-top: 1rem;
-    border-radius: 1rem;
     border: 2px solid #ff3333;
-    background: #212121;
+    background: whitesmoke;
 }
 
 div.tab-pane > textarea{

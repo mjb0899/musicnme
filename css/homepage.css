@@ -126,9 +126,14 @@ body{
 }
 
 /*RATING CSS*/
-.rating{
 
-}
 .rater{
+clear: both;
+margin-top: 1rem;
+}
+.rate_icons{
+    float: left;
+}
+.rating{
 
 }

@@ -49,7 +49,7 @@
 <main>
     <div class="wrapper">
 
-    <form action="insertuser.php" method="post" class="form-inline">
+    <form action="insertuser.php" method="post" >
         <div class="container">
             <div class="header_div">
                 <h2>  Join Our Family </h2>
@@ -87,7 +87,7 @@
 
             <input type="checkbox" checked="checked"> Remember me
             <div >
-                <div class="form-group">
+               <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email">
                 </div>

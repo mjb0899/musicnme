@@ -125,4 +125,6 @@ body{
     }
 }
 
-/*RATING CSS*/
+.container{
+    background-color: yellow;
+}

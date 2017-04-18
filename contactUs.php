@@ -26,7 +26,7 @@ $acc=$_SESSION['acctype'];
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="css/event.css">
 
     <script>
 

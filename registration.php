@@ -107,7 +107,10 @@
                     <label for="rep_pwd">Confirm Password:</label>
                     <input type="password" class="form-control" id="rep_pwd" name="psw-repeat">
                 </div>
-
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
 
 
 

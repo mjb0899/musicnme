@@ -188,35 +188,35 @@ $artist=$_SESSION['artist'];
                         //Display status post
                         if($file_title==="status"){
                             echo "<div class=\"media\">
-                                         <div class=\"media-left\">
+                                            <div class=\"media-left\">
                                              <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                          </div>
-                                         <div class=\"media-body\">
+                                            <div class=\"media-body\">
                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
                                                 <p>$status</p>
                                           </div>
                                           
-                                         <div class=\"rater\" style='clear:both'>
-                                         <div style='float:left'>
-                                         <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
-                                         </div>
+                                            <div class=\"rater\" style='clear:both'>
+                                                     <div style='float:left'>
+                                                    <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
+                                                     </div>
+                                                  
+                                                    <div class=\"ratingDiv\" style=\"float:right\">
+                                                    <fieldset  class=\"rating demo1 \">
+                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
+                                                        <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
+                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />
+                                                        <label class = \"full\" for=\"$topic_id"."_star4\" title=\"Pretty good - 4 stars\"></label>
+                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star3\" name=\"rating\" value=\"3\" />
+                                                        <label class = \"full\" for=\"$topic_id"."_star3\" title=\"Meh - 3 stars\"></label>
+                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star2\" name=\"rating\" value=\"2\" />
+                                                        <label class = \"full\" for=\"$topic_id"."_star2\" title=\"Kinda bad - 2 stars\"></label>
+                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star1\" name=\"rating\" value=\"1\" />
+                                                        <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
+                                                    </fieldset>
+                                                  </div>
                                           
-                                          <div class=\"ratingDiv\" style=\"float:right\">
-                                            <fieldset  class=\"rating demo1 \">
-                                                <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
-                                                <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />
-                                                <label class = \"full\" for=\"$topic_id"."_star4\" title=\"Pretty good - 4 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star3\" name=\"rating\" value=\"3\" />
-                                                <label class = \"full\" for=\"$topic_id"."_star3\" title=\"Meh - 3 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star2\" name=\"rating\" value=\"2\" />
-                                                <label class = \"full\" for=\"$topic_id"."_star2\" title=\"Kinda bad - 2 stars\"></label>
-                                                <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star1\" name=\"rating\" value=\"1\" />
-                                                <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
-                                            </fieldset>
-                                          </div>
-                                          
-                                          </div> 
+                                             </div> 
                                           
                                           
                                           

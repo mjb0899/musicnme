@@ -110,9 +110,9 @@ $artist=$_SESSION['artist'];
                             <h3>i</h3>
                             <h3>i</h3>
 
-                                        <h3><?php echo $firstName ?></h3>
-                                        <h3><?php echo $lastName ?></h3>
-                                        <h3><?php echo $userEmail ?></h3>
+                                        <h4><?php echo $firstName ?></h4>
+                                        <h4><?php echo $lastName ?></h4>
+                                        <h4><?php echo $userEmail ?></h4>
 
 
                         </div>

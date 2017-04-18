@@ -249,7 +249,7 @@ if(strcmp($sess,$owner)==0){
                      </div>
                      </div>
                      <div style='height: 100%; width: 100%; background-color: #212121;margin: auto'>
-                      <img style='height: 100%; width: 80%; object-fit: contain' src=".$file_path.">      
+                      <img style='height: 100%; width: 80%;margin: auto; object-fit: contain' src=".$file_path.">      
                     </div>                     
                      <hr>";
                         }

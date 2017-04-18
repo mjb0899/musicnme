@@ -133,7 +133,8 @@ margin-top: 1rem;  display: inline;
 }
 .rate_icons{
     float: left;
+    margin-left: 1rem;
 }
 .ratingDiv{
-
+float: right;
 }

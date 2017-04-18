@@ -3,9 +3,16 @@ body{
     width: 100%;
 }
 .out-wrapper {
-    width: 100%;
+    width: 80%;
     min-width: 600px;
 }
+
+
+
+
+
+
+
 .share {
     border: 2px solid #ff3333;
     border-radius: 1rem;

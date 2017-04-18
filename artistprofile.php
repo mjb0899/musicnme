@@ -2,9 +2,7 @@
 if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
-if(!isset($_SESSION['user'])&&!isset($_SESSION['artist'])){
-    header("location:index.php");
-}
+
 session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];

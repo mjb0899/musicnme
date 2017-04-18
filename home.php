@@ -83,7 +83,7 @@ $artist=$_SESSION['artist'];
             <div class="two">
                 <div class="share">
                     <div class="share_align">
-
+                        <div class="container">
                             <ul class="nav nav-pills">
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
                                 <li><a data-toggle="pill" href="#menu1">Share Image</a></li>
@@ -136,7 +136,7 @@ $artist=$_SESSION['artist'];
                                     </audio>
                                 </div>
                             </div>
-
+                        </div>
                     </div>
                 </div>
                 <div class="feed">

@@ -60,6 +60,9 @@ main button {
     padding-bottom: 1rem;
 
 }
+.container input[type=text],input[type=password],input[type=email]{
+    border: 1px solid #212121;
+}
 .header_div{
     border-bottom: 2px solid #212121;
 }

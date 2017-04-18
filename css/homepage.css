@@ -75,7 +75,12 @@ body{
     margin-bottom: 1rem;
 }
 
-.container{width: 100%}
+.container{
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
 
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

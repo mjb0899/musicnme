@@ -44,9 +44,9 @@ body{
 .share {
     box-shadow: 1rem 1rem  1rem black;
     background-color: whitesmoke;
-
-
+    border-radius: 2px;
 }
+
 .share_align {
     padding: 2rem;
     margin-left: 2rem;

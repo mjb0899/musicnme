@@ -101,7 +101,10 @@ $artist=$_SESSION['artist'];
 
                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Edit Bio:</button>
                         <div id="demo" class="collapse">
-
+                            <h3>i</h3>
+                            <h3>i</h3>
+                            <h3>i</h3>
+                            <h3>i</h3>
 
                                         <h3><?php echo $ufname ?></h3>
                                         <h3><?php echo $ulname ?></h3>

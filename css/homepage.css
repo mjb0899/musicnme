@@ -129,12 +129,11 @@ body{
 
 .rater{
 clear: both;
-margin-top: 1rem;
-    display: inline;
+margin-top: 1rem;  display: inline;
 }
 .rate_icons{
     float: left;
 }
-.rating{
+.ratingDiv{
 
 }

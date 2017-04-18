@@ -198,8 +198,12 @@ $artist=$_SESSION['artist'];
                                           
                                             <div class=\"rater\">
                                                      <div class=\"rate_icons\">
-                                                    <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
+                                                    <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4>
                                                      </div>
+                                                     
+                                                     <div class=\"rate_icons\">
+                                                     <h4><span class=\"glyphicon glyphicon - user\"></span>$votes</h4>
+                                                    </div>
                                                   
                                                     <div class=\"ratingDiv\">
                                                     <fieldset  class=\"rating demo1 \">

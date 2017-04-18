@@ -80,7 +80,6 @@ body{
 }
 
 .tab-pane, .fade{
-    width: 700px;
     padding: 1rem;
     background-color: red;
     border-radius: 1rem;

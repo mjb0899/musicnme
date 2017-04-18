@@ -2,19 +2,24 @@ main{
 	width: 100%;
 }
 .wrapper{
-	width: 90%;
-	margin: auto;
-	margin-top: 10%;
+    width: 60%;
+    margin: auto;
+    margin-top: 6rem;
+    min-width: 270px;
 }
 .wrapper_pic{
 	border: 1px solid white;
 	height: 20rem;
 	width: 100%;
 }
-.wrapper_details{
 
+
+.wrapper_details{
+    background-color: whitesmoke;
 
 }
+
+
 .propic{
 	height: 15rem;
 	width: 15rem;
@@ -73,4 +78,18 @@ div.tab button.active {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.media{
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    padding: 10px  10px 10px  10px;
+    border-radius: 2px;
+
+}
+.image_div{
+    height: 100%;
+    width: 80%;
+    background-color: #212121;
+    margin: auto;
 }

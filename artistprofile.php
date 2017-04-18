@@ -227,8 +227,8 @@ if(strcmp($sess,$owner)==0){
                      <p>$status</p>
                      </div>
                      </div>
-                     <div style='height: 300px; width: 400px; background-color: #212121;margin: auto'>
-                      <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
+                     <div class=\"image_div\">
+                      <img style='height: 100%; width:100%; object-fit: contain' src=".$file_path.">      
                     </div>                    
                      <hr>";
 

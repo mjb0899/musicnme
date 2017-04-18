@@ -62,7 +62,9 @@ body{
 
 
 }
-
+.collapse2{
+    margin-top: 2rem;
+}
 .media{
     margin-top: 1rem;
     background-color: whitesmoke;

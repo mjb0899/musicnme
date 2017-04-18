@@ -122,7 +122,7 @@ $artist=$_SESSION['artist'];
                     </div>
 
                     <!--Collapse 2-->
-                    <div class="container">
+                    <div class="container collapse2">
 
 
                         <div class="panel-group" id="accordion">

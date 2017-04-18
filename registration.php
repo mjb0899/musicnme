@@ -57,30 +57,13 @@
 
 
             <div class="rad" style="text-align: center;">
-                <label class="radio-inline">
+                <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="tooltip on radio!">
                     <input type="radio" name="utype" checked value="user">User
                 </label>
                 <label class="radio-inline">
                     <input type="radio" name="utype" value="artist">Artist
                 </label>
             </div>
-            <div>
-                <div class="btn-group" data-toggle="buttons">
-
-                    <label class="btn btn-primary active" data-toggle="tooltip" data-placement="bottom" title="tooltip on radio!">
-                        <input type="radio" name="options" id="radio1" autocomplete="off">Radio 1
-                    </label>
-
-                    <label class="btn btn-primary">
-                        <input type="radio" name="options" id="radio2" autocomplete="off">Radio 2
-                    </label>
-
-
-                </div>
-
-
-
-
 
             <label><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="fname" required>

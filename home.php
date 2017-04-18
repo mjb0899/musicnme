@@ -79,7 +79,19 @@ $artist=$_SESSION['artist'];
     <div class="out-wrapper">
             <div class="one">
                <div class="propic" id="profile_pic">
-                   <img src="$profile_path" id="pic">
+                   <?php
+
+                   include("dbConnect.php");
+                   $sql_query = "Select profile_image from users Where username='$owner'";
+                   $result = $db -> query($sql_query);
+                   while($row = $result -> fetch_array()){
+                       $profile_path=$row['profile_image'];
+                       //upload profile picture
+                       echo "  <img src=\"$profile_path\" id=\"pic\">
+                           ";
+                   }
+                   ?>
+
                </div>
                 <div>
 

@@ -72,6 +72,9 @@ main button {
 .header_div{
     border-bottom: 2px solid #212121;
 }
+.your-class input{
+    float:left;
+}
 
 /* Clear floats */
 .clearfix::after {

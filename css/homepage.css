@@ -36,7 +36,6 @@ body{
 
 .share {
     border: 2px solid #ff3333;
-    border-radius: 1rem;
     background: whitesmoke;
 
 }
@@ -48,10 +47,18 @@ body{
     padding: 2rem;
 }
 
+
+
+
 .feed {
     margin-top: 1rem;
     background: whitesmoke;
 }
+
+
+
+
+
 
 div.tab-pane > textarea{
     margin-top: 1rem;

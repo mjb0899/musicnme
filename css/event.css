@@ -1,11 +1,10 @@
 main{
     width: 100%;
-
-
 }
 
 
 .wrapper{
+    margin-top: 6rem;
     font-family: Century Gothic, sans-serif;
     width: 65%;
     margin: auto;

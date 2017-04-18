@@ -75,11 +75,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.tab-pane, .fade{
-    padding: 1rem;
-    background-color: red;
-    border-radius: 1rem;
-}
+
 
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */

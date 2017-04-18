@@ -64,7 +64,7 @@
                     <input type="radio" name="utype" value="artist">Artist
                 </label>
             </div>
-
+<!--
             <label><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="fname" required>
 
@@ -84,7 +84,7 @@
 
             <label><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
+-->
             <!--New form-->
             <div >
                <div class="form-group">
@@ -107,14 +107,6 @@
                     <label for="rep_pwd">Confirm Password:</label>
                     <input type="password" class="form-control" id="rep_pwd" name="psw-repeat">
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-
-
-
-
 
             </div>
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>

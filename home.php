@@ -119,6 +119,11 @@ $artist=$_SESSION['artist'];
 
                                 <!-- Modal -->
 
+
+
+
+
+
                                 <!--End Modal-->
 
 

@@ -11,7 +11,6 @@ body{
     text-align: center;
     background-color: white;
     border: 2px solid white;
-    flex-grow: 1;
     width: 60%;
     min-width: 700px;
     box-sizing: border-box;
@@ -49,7 +48,3 @@ div.wrapper_one h2{
     margin:auto;
 }
 
-
-footer{
-    flex-grow: 0;
-}

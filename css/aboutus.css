@@ -3,18 +3,19 @@ html{
 }
 body{
   width: 100%;
+    margin-top: 6rem;
+
 }
 
 .wrapper{
-    margin-top: 6rem;
     font-family: Century Gothic, sans-serif;
     text-align: center;
     background-color: white;
     border: 2px solid white;
     width: 60%;
     min-width: 700px;
-    box-sizing: border-box;
     margin: auto;
+    padding: 1rem;
 
 }
 

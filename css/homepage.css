@@ -46,8 +46,10 @@ body{
 .container li a{
     background-color: #ff3333;
     color: white;
-
-
+}
+.container li:hover{
+    background-color: #212121;
+    color: red;
 }
 
 .share_align {

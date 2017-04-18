@@ -1,7 +1,11 @@
 main{
     width: 100%;
 }
+body{
+    width: 100%;
+    margin-top: 6rem;
 
+}
 
 .wrapper{
     font-family: Century Gothic, sans-serif;

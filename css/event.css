@@ -33,6 +33,9 @@ border-bottom: 1px solid #212121;
 .wrapper_form{
     padding: 2rem;
 }
+.wrapper_form input[type=submit]{
+    background-color: #ff3333;
+}
 @media screen and (max-width:960px) {
     .wrapper {
         width: 90%;

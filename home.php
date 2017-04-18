@@ -196,33 +196,6 @@ $artist=$_SESSION['artist'];
                                                 <p>$status</p>
                                           </div>
                                           
-                                            <div class=\"rater\">
-                                            
-                                                     <div style='float:left'>
-                                                    <h4><span class=\"glyphicon glyphicon - heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon - user\"></span>$votes</h4>
-                                                     </div>
-                                                   
-                                                  
-                                                  
-                                                    <div class=\"ratingDiv\">
-                                                    <fieldset  class=\"rating demo1 \">
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star4\" title=\"Pretty good - 4 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star3\" name=\"rating\" value=\"3\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star3\" title=\"Meh - 3 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star2\" name=\"rating\" value=\"2\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star2\" title=\"Kinda bad - 2 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star1\" name=\"rating\" value=\"1\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
-                                                    </fieldset>
-                                                  </div>
-                                                        
-                                          
-                                          
-                                          
-                                             </div> 
                                           
                                           
                                           

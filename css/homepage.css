@@ -43,11 +43,10 @@ body{
 
 
 
-.container li{
+.container li a{
     background-color: #ff3333;
     color: white;
-    font-size: large;
-    border-radius: 2px;
+
 
 }
 

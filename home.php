@@ -123,7 +123,8 @@ $artist=$_SESSION['artist'];
 
                     <!--Collapse 2-->
                     <div class="container">
-                        <h4>Welcome Back</h4>
+
+                        <span style="text-align: center" class="glyphicon glyphicon-fire"></span>
 
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">

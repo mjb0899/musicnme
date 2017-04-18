@@ -199,7 +199,6 @@ $artist=$_SESSION['artist'];
                                 <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
                                 <li><a data-toggle="pill" href="#menu1">Share Image</a></li>
                                 <?php if(isset($sess,$artist)){ echo ' <li><a data-toggle="pill" href="#menu2">Share Music</a></li>';}?>
-                                <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div id="home" class="tab-pane fade in active">
@@ -237,14 +236,6 @@ $artist=$_SESSION['artist'];
                                         </div>
                                         <button type="submit" class="btn btn-default" id="button_col" name="submit">Post</button>
                                     </form>
-                                </div>
-                                <div id="menu3" class="tab-pane fade">
-                                    <h3>Menu 3</h3>
-                                    <audio controls>
-                                        <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
-                                        <source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
-                                        <a href="http://www.w3schools.com/html/horse.mp3">horse</a>
-                                    </audio>
                                 </div>
                             </div>
                         </div>

@@ -82,7 +82,7 @@ $artist=$_SESSION['artist'];
                    <?php
 
                    include("dbConnect.php");
-                   $sql_query = "Select profile_image from users Where username='$owner'";
+                   $sql_query = "Select profile_image from users Where username='$sess'";
                    $result = $db -> query($sql_query);
                    while($row = $result -> fetch_array()){
                        $profile_path=$row['profile_image'];

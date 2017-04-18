@@ -89,19 +89,19 @@
             <div >
                 <div class="form-group">
                     <label for="usr">First Name:</label>
-                    <input type="text" class="form-control" id="usr" name="fname" required>
+                    <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" required>
                 </div>
                 <div class="form-group">
                     <label for="usr">Last Name</label>
-                    <input type="text" class="form-control" id="usr" name="lname" required>
+                    <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" required>
                 </div>
                 <div class="form-group">
                     <label for="usr">Pick a username:</label>
-                    <input type="text" class="form-control" id="usr" name="username" required>
+                    <input type="text" class="form-control" id="usr" name="username"placeholder="Select a username" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Last Name" name="email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>

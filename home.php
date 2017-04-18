@@ -238,15 +238,15 @@ $artist=$_SESSION['artist'];
                                              <div class=\"media-left\">
                                                 <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                              </div>
-                                             <div class=\"media-body\">
+                                              <div class=\"media-body\">
                                                  <h4 class=\"media-heading\">$post_owner</h4>
                                                  <p>$status</p>
-                                            </div>
+                                              </div>
                                     
-                                            <div style='height: 400px; width: 500px; background-color: #212121;margin: auto'>
-                                            <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
-                                            </div>
-                                            
+                                             <div style='height: 400px; width: 500px; background-color: #212121;margin: auto'>
+                                             <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
+                                             </div>
+                                            <h1> Test</h1>
                                          
                                             
                                      </div>";

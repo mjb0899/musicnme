@@ -115,6 +115,9 @@ body{
         display: none;
 
     }
+    .two{
+        margin: 0;
+    }
 
     .out-wrapper {
         width: 100%;

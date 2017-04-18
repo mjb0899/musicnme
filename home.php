@@ -218,6 +218,7 @@ $artist=$_SESSION['artist'];
                                                         <span class=\"glyphicon glyphicon - heart\"></span>
                                                        <div class=\"rate_icons\"><h4>$post_hits</h4></div>
                                                        <div class=\"rate_icons\"><h4><span class=\"glyphicon glyphicon - user\"></span>$votes</h4></div>
+                                                        <h4><span class=\"glyphicon glyphicon - heart\"></span>$post_hits</h4>
                                           
                                           
                                           

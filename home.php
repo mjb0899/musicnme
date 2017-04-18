@@ -197,7 +197,7 @@ $artist=$_SESSION['artist'];
                                           </div>
                                           
                                             <div class=\"rater\">
-                                                     <
+                                                     
                                                    
                                                   
                                                   
@@ -215,8 +215,8 @@ $artist=$_SESSION['artist'];
                                                         <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
                                                     </fieldset>
                                                   </div>
-                                          
-                                                       <div class=\"rate_icons\"><h4><span class=\"glyphicon glyphicon - heart\"></span>$post_hits</h4></div>
+                                                        <span class=\"glyphicon glyphicon - heart\"></span>
+                                                       <div class=\"rate_icons\"><h4>$post_hits</h4></div>
                                                        <div class=\"rate_icons\"><h4><span class=\"glyphicon glyphicon - user\"></span>$votes</h4></div>
                                           
                                           

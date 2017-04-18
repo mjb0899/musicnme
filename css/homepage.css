@@ -17,8 +17,6 @@ body{
     height: 92vh;
     position: fixed;
     box-shadow: 1rem 1rem  1rem black;
-
-
 }
 .two {
     margin-top: 6rem;
@@ -84,7 +82,7 @@ body{
 .tab-pane, .fade{
     width: 700px;
     padding: 1rem;
-    background-color: #212121;
+    background-color: red;
     border-radius: 1rem;
 }
 

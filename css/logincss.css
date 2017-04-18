@@ -54,11 +54,11 @@ text-align: center;
     padding: 2rem;
 }
 
-.form-group>label{
-    font-family: Century Gothic, sans-serif;
+.label_font{
     color: #ff3333;
-}
+    font-family: Century Gothic, sans-serif;
 
+}
 .rad>input{
     background-color: #ff3333;
     border-radius: 1rem;

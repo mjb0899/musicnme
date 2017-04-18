@@ -95,7 +95,7 @@ $artist=$_SESSION['artist'];
                </div>
                 <div>
                     <h1>test</h1>
-                    <h2><a href="userprofile.php"><?php $sess  ?></a></h2>
+                    <a href="userprofile.php"><h2><?php $sess  ?></h2></a>
 
                 </div>
             </div>

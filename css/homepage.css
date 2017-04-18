@@ -53,6 +53,9 @@ body{
 .user_display{
     text-align: center;
 }
+.profile_data button{
+    width: 100%;
+}
 
 .media{
     margin-top: 1rem;

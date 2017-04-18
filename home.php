@@ -196,12 +196,12 @@ $artist=$_SESSION['artist'];
                                                 <p>$status</p>
                                           </div>
                                           
-                                            <div class=\"rater\" style='clear:both'>
+                                            <div class=\"rater\">
                                                      <div class=\"rate_icons\">
                                                     <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
                                                      </div>
                                                   
-                                                    <div class=\"ratingDiv\" style=\"float:right\">
+                                                    <div class=\"ratingDiv\">
                                                     <fieldset  class=\"rating demo1 \">
                                                         <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
                                                         <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>

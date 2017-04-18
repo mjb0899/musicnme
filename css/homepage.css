@@ -7,7 +7,6 @@ body{
 .out-wrapper {
     width: 80%;
     margin:auto;
-    background-color: whitesmoke;
 }
 .one {
     margin-top: 6rem;
@@ -41,7 +40,6 @@ body{
 /*share box*/
 
 .share {
-    background: whitesmoke;
     box-shadow: 1rem 1rem  1rem black;
 
 

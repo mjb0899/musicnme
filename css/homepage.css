@@ -50,6 +50,9 @@ body{
 
 }
 
+.user_display{
+    text-align: center;
+}
 
 .media{
     margin-top: 1rem;

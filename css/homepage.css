@@ -48,7 +48,7 @@ body{
     color: white;
 }
 .container li a:hover{
-    background-color: #9d9d9d;
+    background-color: whitesmoke;
     color: red;
 }
 

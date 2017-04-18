@@ -78,7 +78,12 @@ $artist=$_SESSION['artist'];
 <main>
     <div class="out-wrapper">
             <div class="one">
-                <h1>morris</h1>
+               <div class="propic" id="profile_pic">
+
+               </div>
+                <div>
+
+                </div>
             </div>
             <div class="two">
 

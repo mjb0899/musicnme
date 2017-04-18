@@ -1,8 +1,10 @@
 <?php
-if(!isset($_SESSION['name'])){
+if(isset($_SESSION['name'])){
+    header("location:home.php");
+}else{
     header("location:index.php");
-}
 
+}
 session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];

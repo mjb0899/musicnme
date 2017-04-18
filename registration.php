@@ -58,7 +58,7 @@
             </div>
 
 
-            <div class="rad btn-group" data-toggle="buttons"  style="text-align: center;">
+            <div class="rad"  style="text-align: center;">
                 <p>Select Account type:</p>
                 <label class="radio-inline">
                     <input type="radio" name="utype" checked value="user">User

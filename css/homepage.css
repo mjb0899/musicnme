@@ -37,7 +37,25 @@ body{
     border: 2px solid #ff3333;
     background: #212121;
 }
-
+.one {
+    margin-top: 6rem;
+    float: left;
+    width: 20rem;
+    background: #212121;
+    height: 92vh;
+    position: fixed;
+    border: 2px solid #ff3333;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.two {
+    margin-top: 6rem;
+    float: left;
+    vertical-align: top;
+    width: 80%;
+    font-size: 1rem;
+    margin-left: 21rem;
+}
 div.tab-pane > textarea{
     margin-top: 1rem;
     margin-bottom: 1rem;

@@ -45,6 +45,9 @@ body{
 
 .container li{
     background-color: #ff3333;
+    color: white;
+    font-size: large;
+    border-radius: 2px;
 
 }
 

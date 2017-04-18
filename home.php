@@ -77,7 +77,6 @@ $artist=$_SESSION['artist'];
 <!--MAIN PAGE-->
 <main>
     <div class="out-wrapper">
-        <div class="out">
             <div class="one">
                 <h1>morris</h1>
             </div>
@@ -295,7 +294,6 @@ $artist=$_SESSION['artist'];
                     ?>
                 </div>
             </div>
-        </div>
     </div>
     <!--FOOTER-->
     <footer>

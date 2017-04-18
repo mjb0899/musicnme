@@ -107,6 +107,10 @@
                     <label for="rep_pwd">Confirm Password:</label>
                     <input type="password" class="form-control" id="rep_pwd" name="rep_pass">
                 </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
 
 
 

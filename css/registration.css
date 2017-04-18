@@ -82,7 +82,9 @@ main button {
 main div label{
     clear: left;
 }
-
+.rad{
+    padding-top: 1rem;
+}
 /* Change styles for cancel button and signup button on extra small screens */
 
 @media screen and (max-width: 960px) {

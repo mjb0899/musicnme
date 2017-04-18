@@ -72,8 +72,9 @@ $acc=$_SESSION['acctype'];
 <!--MAIN CODE-->
 <main>
     <div class="wrapper">
-        <div>
+
            <div class="wrapper_head" > <h2>Get In Touch:</h2></div>
+        <div class="wrapper_form">
             <form id="myform" method="post" action="saveFeedback.php">
                 <div class="form-group">
                     <label for="subject">Enter Subject:</label>

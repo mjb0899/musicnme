@@ -4,13 +4,16 @@ main{
 
 
 .wrapper{
-    margin-top: 6rem;
     font-family: Century Gothic, sans-serif;
-    width: 65%;
-    margin: auto;
+    text-align: center;
     background-color: white;
+    border: 2px solid white;
+    width: 60%;
+    margin: auto;
     padding: 1rem;
+
 }
+
 input[type=text],
 input[type=password] , textarea {
     box-sizing : border-box;
@@ -23,4 +26,9 @@ border-bottom: 1px solid #212121;
 }
 .wrapper_form{
     padding: 2rem;
+}
+@media screen and (max-width:960px) {
+    .wrapper {
+        width: 90%;
+    }
 }

@@ -140,9 +140,6 @@ $artist=$_SESSION['artist'];
                     </div>
                 </div>
                 <div class="feed">
-                    <div style="margin-top: 1rem;">
-
-                    </div>
                     <?php
                     include('dbConnect.php');
 

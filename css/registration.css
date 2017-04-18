@@ -89,4 +89,7 @@ main button {
         width: 50%;
 
     }
+    .container {
+        width: 90%;
+    }
 }

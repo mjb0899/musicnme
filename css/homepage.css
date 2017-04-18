@@ -118,12 +118,11 @@ body{
 #msg{
     padding: 1rem;
 }
-/*
-@media screen and (max-width:700px) {
-    .cancelbtn, .signupbtn {
-        width: 50%;
 
+@media screen and (max-width:700px) {
+    .one {
+        display: none;
     }
 }
-*/
+
 /*RATING CSS*/

@@ -25,6 +25,7 @@ input[type=password] , textarea {
 }
 .wrapper_head>h2{
     text-align: center;
+    color: #ff3333;
 }
 .wrapper_head{
 border-bottom: 1px solid #212121;

@@ -7,13 +7,8 @@ body{
 .out-wrapper {
     width: 80%;
     margin:auto;
-    border: 10px solid yellow;
+    background-color: yellow;
 }
-
-
-
-
-
 
 
 .share {

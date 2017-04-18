@@ -16,9 +16,7 @@ body{
     background: #212121;
     height: 92vh;
     position: fixed;
-    border: 2px solid #ff3333;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+
 }
 .two {
     margin-top: 6rem;

@@ -56,7 +56,10 @@ body{
 .profile_data button{
     width: 100%;
 }
-
+.data_box{
+    border-radius: 1rem;
+    border: 2px solid white;
+}
 
 .media{
     margin-top: 1rem;

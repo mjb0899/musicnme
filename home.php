@@ -101,6 +101,7 @@ $artist=$_SESSION['artist'];
                     <a href="userprofile.php"><h2><?php echo $sess  ?></h2></a>
                 </div>
                 <div class="profile_data">
+                    <!--Collapse 1-->
                     <div class="container">
 
                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Profile Details</button>
@@ -110,16 +111,7 @@ $artist=$_SESSION['artist'];
                                 <h4><?php echo $lastName ?></h4>
                                 <h4><?php echo $userEmail ?></h4>
                                 <button type="button" class="btn-place" data-toggle="modal" ><span class="glyphicon glyphicon-pencil">Edit</button>
-                                <div class="container">
-                                    <h2>Simple Collapsible</h2>
-                                    <p>Click on the button to toggle between showing and hiding content.</p>
-                                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-                                    <div id="demo" class="collapse">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </div>
-                                </div>
+
                             </div>
 
 
@@ -128,6 +120,57 @@ $artist=$_SESSION['artist'];
 
                         </div>
                     </div>
+
+                    <!--Collapse 2-->
+                    <div class="container">
+                        <h2>Accordion Example</h2>
+                        <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!--End collapse 2-->
 
                 </div>
             </div>

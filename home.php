@@ -129,7 +129,7 @@ $artist=$_SESSION['artist'];
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Your Last Status</a>
                                     </h4>
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
@@ -141,7 +141,7 @@ $artist=$_SESSION['artist'];
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Rate Meter:</a>
                                     </h4>
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse">
@@ -153,7 +153,7 @@ $artist=$_SESSION['artist'];
                             <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Check out latest Artists</a>
                                     </h4>
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse">

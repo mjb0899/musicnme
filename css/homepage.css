@@ -1,10 +1,14 @@
+
+body{
+    width: 100%;
+}
 .out-wrapper {
     width: 100%;
+    min-width: 600px;
 }
 .out {
     width: 100%;
     color: white;
-    overflow: hidden;
     background:#000000;
 }
 
@@ -46,7 +50,6 @@
     font-size: 1rem;
 
     margin-left: 21rem;
-    min-width: 500px;
 }
 div.tab-pane > textarea{
     margin-top: 1rem;

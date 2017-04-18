@@ -84,7 +84,7 @@ $acc=$_SESSION['acctype'];
                     <label for="matter">Description:</label>
                     <textarea  class="form-control" id="matter" placeholder="Give a short Description" name="matter" required></textarea>
                 </div>
-                <input type="submit" class="btn btn-default" >Submit</input>
+                <input type="submit" class="btn btn-default" value="Send">
                 <div id="alert" >Thank you for getting in touch! Our team will get back to you via email!</div>
             </form>
         </div>

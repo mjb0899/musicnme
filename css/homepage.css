@@ -44,8 +44,10 @@ body{
 
 }
 
-.nav-pills{
+
+.container li{
     background-color: #ff3333;
+
 }
 
 .share_align {

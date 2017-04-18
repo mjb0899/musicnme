@@ -24,6 +24,7 @@ body{
     width: 70%;
     min-width: 700px;
     box-sizing: border-box;
+    margin: auto;
 
 
 }
@@ -54,7 +55,7 @@ div.wrapper_one h2{
 
 .wrapper_signup{
     margin:auto;
-    width: 3rem;
+    width: 6rem;
 
 }
 

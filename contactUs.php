@@ -5,13 +5,11 @@
  * Date: 16/04/2017
  * Time: 15:25
  */
+
+session_start();
 if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
-if(!isset($_SESSION['user'])&&!isset($_SESSION['artist'])){
-    header("location:index.php");
-}
-session_start();
 $sess=$_SESSION['name'];
 $acc=$_SESSION['acctype'];
 ?>

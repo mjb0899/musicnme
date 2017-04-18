@@ -1,9 +1,10 @@
 <?php
+
+session_start();
 if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
 
-session_start();
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];

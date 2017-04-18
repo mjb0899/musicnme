@@ -15,7 +15,8 @@ main{
 .wrapper_pic{
     padding-top: 2rem;
     background-color: #212121;
-	height: 20rem;
+    height: 30%;
+	min-height: 25rem;
 	width: 100%;
 }
 .wrapper_details{

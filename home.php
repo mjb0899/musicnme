@@ -103,13 +103,8 @@ $artist=$_SESSION['artist'];
                 <div class="profile_data">
                     <div class="container">
 
-                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Edit Bio:</button>
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Profile Details</button>
                         <div id="demo" class="collapse">
-                            <h3>i</h3>
-                            <h3>i</h3>
-                            <h3>i</h3>
-                            <h3>i</h3>
-
                                         <h4><?php echo $firstName ?></h4>
                                         <h4><?php echo $lastName ?></h4>
                                         <h4><?php echo $userEmail ?></h4>

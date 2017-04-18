@@ -25,6 +25,7 @@ body{
     width: 80%;
     font-size: 1rem;
     margin-left: 30rem;
+    min-width: 500px;
 }
 
 .media{
@@ -124,6 +125,7 @@ body{
     }
     .two{
         margin-left: auto;
+
     }
 }
 

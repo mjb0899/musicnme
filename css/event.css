@@ -26,7 +26,6 @@ input[type=password] , textarea {
 }
 .wrapper_head{
 border-bottom: 1px solid #212121;
-    background-color: #212121;
 }
 .wrapper_form{
     padding: 2rem;

@@ -116,12 +116,12 @@ body{
 
     }
     .two{
-        margin: auto;
-        width: 80%;
+        width: 100%;
 
     }
     body{
         overflow-x: scroll;
+        width: 100%;
 
     }
     .out-wrapper {

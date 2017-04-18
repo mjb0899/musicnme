@@ -116,7 +116,6 @@ body{
 
     }
     .two{
-padding: 0;
     }
     body{
         overflow-x: scroll;
@@ -124,7 +123,6 @@ padding: 0;
     }
     .out-wrapper {
         width: 100%;
-        padding: 0;
     }
 }
 

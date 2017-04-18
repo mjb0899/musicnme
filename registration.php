@@ -67,19 +67,30 @@
 
             <label><b>First Name</b></label>
             <input type="text" placeholder="Enter First Name" name="fname" required>
+
             <label><b>Last Name</b></label>
             <input type="text" placeholder="Enter Last Name" name="lname" required>
+
+
             <label><b>Select a username</b></label>
             <input type="text" placeholder="Select a username" name="username" required>
+
             <label><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" required>
+
+
             <label><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="pass" required>
+
             <label><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-            <input type="checkbox" checked="checked"> Remember me
-            <div class="your-class">
 
+            <input type="checkbox" checked="checked"> Remember me
+            <div >
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
 
 
 

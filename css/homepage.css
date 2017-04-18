@@ -67,15 +67,6 @@ body{
 }
 
 
-
-
-
-
-div.tab-pane > textarea{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
 .col{
     background-color:black;
     border:none;

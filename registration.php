@@ -89,11 +89,11 @@
             <div >
                <div class="form-group">
                     <label for="email">First Name:</label>
-                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                    <input type="email" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Last Name:</label>
-                    <input type="text" class="form-control" id="fname" placeholder="Enter Last Name" name="lname" required>
+                    <input type="email" class="form-control" id="fname" placeholder="Enter Last Name" name="lname" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
@@ -105,12 +105,9 @@
                 </div>
                 <div class="form-group">
                     <label for="rep_pwd">Confirm Password:</label>
-                    <input type="password" class="form-control" id="rep_pwd" name="rep_pass">
+                    <input type="password" class="form-control" id="rep_pwd" name="psw-repeat">
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
+
 
 
 

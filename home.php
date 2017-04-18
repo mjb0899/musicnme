@@ -105,12 +105,12 @@ $artist=$_SESSION['artist'];
 
                         <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Profile Details</button>
                         <div id="demo" class="collapse">
-                            <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button>
 
                             <h4><?php echo $firstName ?></h4>
                                         <h4><?php echo $lastName ?></h4>
                                         <h4><?php echo $userEmail ?></h4>
 
+                            <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button>
 
 
 

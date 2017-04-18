@@ -100,20 +100,7 @@ $artist=$_SESSION['artist'];
                 <div class="user_display">
                     <a href="userprofile.php"><h2><?php echo $sess  ?></h2></a>
                 </div>
-                <div class="profile_data">
-                    <div class="container">
 
-                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Edit Profile</button>
-                        <div id="demo" class="collapse">
-                        <h3><?php echo $ufname ?></h3>
-                        <h3><?php echo $ufname ?></h3>
-                        <h3><?php echo $ufname ?></h3>
-                        <h3><?php echo $email ?></h3>
-
-                        </div>
-                    </div>
-
-                </div>
             </div>
             <div class="two">
 

@@ -128,13 +128,9 @@ body{
 /*RATING CSS*/
 
 .rater{
-clear: both;
 margin-top: 1rem;  display: inline;
 }
-.rate_icons{
+.rater>.rate_icons,.ratingDiv{
     float: left;
     margin-left: 1rem;
-}
-.ratingDiv{
-float: right;
 }

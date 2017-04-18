@@ -12,7 +12,7 @@ body{
 .one {
     margin-top: 6rem;
     float: left;
-    width: 20rem;
+    width: 25rem;
     background: whitesmoke;
     height: 92vh;
     position: fixed;
@@ -37,8 +37,7 @@ body{
 .share {
     border: 2px solid #ff3333;
     border-radius: 1rem;
-    background: #212121;
-    min-width: 600px;
+    background: whitesmoke;
 
 }
 .share_align {

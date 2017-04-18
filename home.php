@@ -123,7 +123,7 @@ $artist=$_SESSION['artist'];
 
                     <!--Collapse 2-->
                     <div class="container">
-                        <h4>Welcome <?php echo $firstName ?></h4>
+                        <h4>Welcome Back</h4>
 
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">

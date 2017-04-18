@@ -126,11 +126,3 @@ body{
 }
 
 /*RATING CSS*/
-
-.rater{
-margin-top: 1rem;  display: inline; clear: left;
-}
-.rater>.rate_icons,.ratingDiv{
-    float: left;
-    margin-left: 1rem;
-}

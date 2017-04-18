@@ -82,14 +82,10 @@ $artist=$_SESSION['artist'];
                    <?php
 
                    include("dbConnect.php");
-                   $sql_query = "Select profile_image,email,ufname,ulname from users Where username='$sess'";
+                   $sql_query = "Select profile_image from users Where username='$sess'";
                    $result = $db -> query($sql_query);
                    while($row = $result -> fetch_array()){
                        $profile_path=$row['profile_image'];
-                       $email=$row['email'];
-                       $ufname=$row['ufname'];
-                       $ulname=$row['ulname'];
-
                        //upload profile picture
                        echo "  <img src=\"$profile_path\" id=\"pic\">
                            ";
@@ -100,7 +96,18 @@ $artist=$_SESSION['artist'];
                 <div class="user_display">
                     <a href="userprofile.php"><h2><?php echo $sess  ?></h2></a>
                 </div>
+                <div class="profile_data">
+                    <div class="container">
 
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Edit Bio:</button>
+                        <div id="demo" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="two">
 

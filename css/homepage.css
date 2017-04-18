@@ -8,22 +8,7 @@ body{
     width: 80%;
     margin:auto;
 }
-.one {
-    margin-top: 6rem;
-    float: left;
-    width: 20rem;
-    background: #212121;
-    height: 100%;
-    border: 2px solid #ff3333;
 
-}
-.two {
-    margin-top: 6rem;
-    float: left;
-    width: 80%;
-    font-size: 1rem;
-    margin-left: 21rem;
-}
 
 
 

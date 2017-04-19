@@ -206,8 +206,16 @@ if(strcmp($sess,$owner)==0){
 
                 </table>
                 </form>
-                <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
-                <button type="submit" id="submit_data"> Save</button>
+                <table style="width:100%">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
+                            <button type="submit" id="submit_data"> Save</button>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
 
                 <p>Try to change the border-spacing to 5px.</p>
 

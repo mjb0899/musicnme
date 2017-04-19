@@ -58,7 +58,7 @@
 
             <div class="rad" >
                 <div class="radio_label">
-                    <label>Select Account type</label>
+                    <label>Select Account type?</label>
                 </div>
                 <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="Discover a number of artist sharing music!">
                     <input type="radio" name="utype" checked value="user" >User

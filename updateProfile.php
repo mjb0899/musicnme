@@ -20,7 +20,7 @@ include("dbConnect.php");
 
 if(isset($_POST['firstname'])){
 
-
+    if($fname!=null){
 
         $sql = "UPDATE users SET ufname='$fname' Where username='$sess'";
         if(mysqli_query($db,$sql)){
@@ -29,14 +29,14 @@ if(isset($_POST['firstname'])){
         else{
             echo"Error:".$sql."<br>" . mysqli_error($db);
         }
-
+    }
 
 
 
 }
 
 if(isset($_POST['lastname'])){
-    if($lname=!null) {
+    if($lname!=null) {
 
         $sql = "UPDATE users SET ulname='$lname' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
@@ -49,7 +49,7 @@ if(isset($_POST['lastname'])){
 }
 
 if(isset($_POST['email'])){
-    if($email=!null) {
+    if($email!=null) {
 
         $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
@@ -63,7 +63,7 @@ if(isset($_POST['email'])){
 }
 
 if(isset($_POST['psw'])){
-    if($pass!=null) {
+    if($pass=!null) {
 
         $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
         if (mysqli_query($db, $sql)) {

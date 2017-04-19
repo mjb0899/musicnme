@@ -76,10 +76,10 @@ if(isset($_POST['psw'])){
 
 }
 
-if((($pass=null))&&(($email=null))&&(($fname=null))&&(($lname=null))){
-    echo "Nothing Saved";
+if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))){
+    echo 0;
 }
 else{
-    echo "Your changes have been saved";
+    echo 1;
 }
 

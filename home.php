@@ -392,8 +392,7 @@ $artist=$_SESSION['artist'];
                                                 <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                              </div>
                                               <div class=\"media-body\">
-                                                 <h4 class=\"media-heading\">$post_owner</h4>
-                                                 <p>$status</p>
+                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>                                                 <p>$status</p>
                                               </div>
                                     
                                              <div style='height: 100%; width: 80%; background-color: #212121;margin: auto'>
@@ -437,7 +436,7 @@ $artist=$_SESSION['artist'];
                                                  <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
                                              </div>
                                               <div class=\"media-body\">
-                                                 <h4 class=\"media-heading\">$post_owner</h4>
+                                                     <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
                                                  <p>$status</p>
                                              </div>
                                   

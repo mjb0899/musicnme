@@ -51,7 +51,23 @@ if(strcmp($sess,$owner)==0){
         padding: 1rem;
     }
 </style>
+    <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#show").hide();
+                $("#hide").show();
 
+
+            });
+        });
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#hide").hide();
+                $("#show").show();
+
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -179,7 +195,8 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $email?></td>
                         <td><input type="text"></td>
-                        <td></td>
+                        <td><button id="show">Toggle between  show()</button>
+                            <button id="hide">Toggle between hide() </button></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>

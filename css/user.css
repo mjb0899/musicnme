@@ -111,3 +111,7 @@ table {
 #submit_data{
     display: none;
 }
+#hide{
+    color:red;
+    display:none;
+}

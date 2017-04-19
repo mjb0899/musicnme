@@ -8,7 +8,9 @@ if(!isset($_SESSION['name'])){
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
+
 $_SESSION['match']=null;
+
 if(isset($_GET['owner'])){
     $owner=$_GET['owner'];
 
@@ -148,10 +150,11 @@ if(strcmp($sess,$owner)==0){
                 <?php
 
                 include("dbConnect.php");
-                $sql_query = "Select profile_image from users Where username='$owner'";
+                $sql_query = "Select profile_image,username from users Where username='$owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                   $profile_path=$row['profile_image'];
+                  $post_owner=$row['username'];
                   //upload profile picture
                   echo "  <img src=\"$profile_path\" id=\"pic\">
                            ";
@@ -211,7 +214,7 @@ if(strcmp($sess,$owner)==0){
             <div id="info" class="tabcontent">
                 <?php
                 include("dbConnect.php");
-                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+                $sql_query = "Select ufname,ulname,uemail from users Where username='$post_owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $firstname= $row['ufname'];

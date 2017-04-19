@@ -86,7 +86,8 @@ main button {
     margin-bottom: 2rem;
     color: #ff3333;
     font-size: large;
-    border-radius: 2px ;
+    border-radius: 5px ;
+    background-color: #212121;
 
 }
 

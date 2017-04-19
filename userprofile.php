@@ -51,20 +51,23 @@ if(strcmp($sess,$owner)==0){
         padding: 1rem;
     }
 </style>
+
     <script>
         $(document).ready(function(){
-            $("#show").click(function(){
-                $("#show").hide();
-                $("#hide").show();
-
-
+            evt.preventDefault();
+            $("#edit_data").on("click",function(){
+                $("#edit_data").hide();
+                $("#submit_data").show();
             });
         });
-        $(document).ready(function(){
-            $("#hide").click(function(){
-                $("#hide").hide();
-                $("#show").show();
 
+    </script>
+    <script>
+        $(document).ready(function(){
+            evt.preventDefault();
+            $("#submit_data").on("click",function(){
+                $("#edit_data").show();
+                $("#submit_data").hide();
             });
         });
     </script>
@@ -351,23 +354,7 @@ if(strcmp($sess,$owner)==0){
  * Time: 15:51
  */?>
 </body>
-<script>
-    $(document).ready(function(){
-        $("#edit_data").on("click",function(){
-            $("#edit_data").hide();
-            $("#submit_data").show();
-        });
-    });
 
-    </script>
-<script>
-    $(document).ready(function(){
-        $("#submit_data").on("click",function(){
-            $("#edit_data").show();
-            $("#submit_data").hide();
-        });
-    });
-</script>
 </html>
 
 

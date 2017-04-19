@@ -207,7 +207,7 @@ if(strcmp($sess,$owner)==0){
                 </table>
                 </form>
                 <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
-                <button id="submit_data"> Save</button>
+                <button type="submit" id="submit_data"> Save</button>
 
                 <p>Try to change the border-spacing to 5px.</p>
 

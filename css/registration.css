@@ -93,6 +93,7 @@ main button {
 }
 #radio_label{
  color: #ff3333;
+    background-color: whitesmoke;
  }
 /* Change styles for cancel button and signup button on extra small screens */
 

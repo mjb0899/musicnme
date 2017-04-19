@@ -103,7 +103,7 @@ div.tab button.active {
 }
 table, th, td {
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
 }
 table {
     border-spacing: 15px;

@@ -97,6 +97,7 @@ main button {
     background-color: whitesmoke;
     font-weight: lighter;
     font-size: large;
+    text-align: left;
 }
 /* Change styles for cancel button and signup button on extra small screens */
 

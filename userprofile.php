@@ -100,7 +100,15 @@ if(strcmp($sess,$owner)==0){
                 cache:false,
                 success:function (html) {
                     $("#test").html(html);
-                    setTimeout(function(){location.reload();},3000);
+
+                    if(html==null){
+                        html="Not Saved";
+                        $("#test").html(html);
+
+                    }else{
+                        setTimeout(function(){location.reload();},2000);
+                    }
+
                 }
             });
             return false

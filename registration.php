@@ -55,9 +55,12 @@
                 <h2>  Join Our Family </h2>
             </div>
 
-            <label for="usr" class="label_font">Select Account type</label>
 
             <div class="rad" >
+                <div>
+                    <label for="usr" class="label_font">Select Account type</label>
+
+                </div>
                 <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="Discover a number of artist sharing music!">
                     <input type="radio" name="utype" checked value="user" >User
                 </label>

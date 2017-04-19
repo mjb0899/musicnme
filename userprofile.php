@@ -164,6 +164,34 @@ if(strcmp($sess,$owner)==0){
                     echo "<h2>$firstname".".. "."$lastname$owner </h2>";
                 }
                 ?>
+                <table style="width:100%">
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+
+                <p>Try to change the border-spacing to 5px.</p>
+
+
+
+
             </div>
 
             <div id="status" class="tabcontent">

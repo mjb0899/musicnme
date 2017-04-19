@@ -51,6 +51,23 @@ if(strcmp($sess,$owner)==0){
         padding: 1rem;
     }
 </style>
+    <script>
+        $(document).ready(function(){
+            $("#edit_data").click(function(){
+                $("#edit_data").hide();
+                $("#submit_data").show();
+
+
+            });
+        });
+        $(document).ready(function(){
+            $("#submit_data").click(function(){
+                $("#submit_data").hide();
+                $("#edit_data").show();
+
+            });
+        });
+    </script>
 
 </head>
 <body>

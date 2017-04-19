@@ -343,6 +343,9 @@ if(strcmp($sess,$owner)==0){
 
         });
     });
+
+    </script>
+<script>
     $(document).ready(function(){
         $("#submit_data").click(function(){
             $("#submit_data").hide();

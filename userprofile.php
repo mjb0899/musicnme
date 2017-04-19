@@ -168,7 +168,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td><input type="text"></td>
-                        <td><button><span class="glyphicon glyphicon-pencil"></button></td>
+                        <td><button id="edit_data"><span class="glyphicon glyphicon-pencil"></button></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
@@ -183,7 +183,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td>Change Password</td>
                         <td><input type="text"></td>
-                        <td><input type="submit" value="Save" class="submit_data"></td>
+                        <td><input type="submit" value="Save" id="submit_data"></td>
                     </tr>
 
                 </table>

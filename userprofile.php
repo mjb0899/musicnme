@@ -161,7 +161,7 @@ if(strcmp($sess,$owner)==0){
                     $firstname= $row['ufname'];
                     $lastname= $row['ulname'];
                     $email= $row['uemail'];
-                    echo "<h2>$firstname"." "."$lastname$owner </h2>";
+                    echo "<h2>$firstname".".. "."$lastname$owner </h2>";
                 }
                 ?>
             </div>

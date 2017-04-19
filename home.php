@@ -165,7 +165,7 @@ $artist=$_SESSION['artist'];
                                         $result = $db -> query($sql_query);
                                         while($row = $result -> fetch_array()) {
                                             $description=$row['description'];
-
+                                            echo'<div>'. $description.'</div>';
                                         }
 
 

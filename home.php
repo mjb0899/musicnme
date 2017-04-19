@@ -157,13 +157,7 @@ $artist=$_SESSION['artist'];
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <?php
-
-
-
-
-
-                                        ?>
+                                       gge
                                     </div>
                                 </div>
                             </div>
@@ -186,9 +180,24 @@ $artist=$_SESSION['artist'];
                                     </h4>
                                 </div>
                                 <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                    <div class="panel-body">
+                                        <?php
+
+                                        include("dbConnect.php");
+
+                                        $sql_query = 'SELECT username from users where utype="artist" LIMIT 5';
+                                        $result = $db -> query($sql_query);
+                                        while($row = $result -> fetch_array()) {
+                                            $new_user=$row['username'];
+                                            echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span>';
+
+                                        }
+
+
+
+                                        ?>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>

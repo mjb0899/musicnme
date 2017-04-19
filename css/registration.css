@@ -85,6 +85,9 @@ main button {
 .rad{
     padding-top: 1rem;
     text-align: center;
+    background-color: #212121;
+    color: #ff3333;
+    border-radius: 1rem;
 }
 /* Change styles for cancel button and signup button on extra small screens */
 

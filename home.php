@@ -161,11 +161,11 @@ $artist=$_SESSION['artist'];
 
                                         include("dbConnect.php");
 
-                                        $sql_query = 'SELECT description from statuses where username='.$sess .' && title="status" ORDER BY dateposted DESC LIMIT 1';
+                                        $sql_query = 'SELECT description from statuses where username='.$sess .' title="status" ORDER BY dateposted DESC LIMIT 1';
                                         $result = $db -> query($sql_query);
                                         while($row = $result -> fetch_array()) {
                                             $description=$row['description'];
-                                            echo'<div>'. $description.'</div>';
+                                            echo $description;
                                         }
 
 

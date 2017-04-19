@@ -57,6 +57,12 @@ if(strcmp($sess,$owner)==0){
             $("#edit_data").click(function(){
                 $("#edit_data").hide();
                 $("#submit_data").show();
+                $("#firstname").show();
+                $("#lastname").show();
+                $("#email").show();
+                $("#psw").show();
+
+
             });
         });
 
@@ -66,6 +72,10 @@ if(strcmp($sess,$owner)==0){
             $("#submit_data").click(function(){
                 $("#edit_data").show();
                 $("#submit_data").hide();
+                $("#firstname").hide();
+                $("#lastname").hide();
+                $("#email").hide();
+                $("#psw").hide();
             });
         });
     </script>

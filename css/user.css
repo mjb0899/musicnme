@@ -108,9 +108,10 @@ table, th, td {
 table {
     border-spacing: 15px;
 }
-#submit_data{
+#submit_data,#firstname,#lastname,#email,#psw{
     display: none;
 }
+
 #hide{
     color:red;
     display:none;

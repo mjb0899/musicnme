@@ -64,27 +64,7 @@
                     <input type="radio" name="utype" value="artist">Artist<span class="glyphicon glyphicon-headphones"></span>
                 </label>
             </div>
-<!--
-            <label><b>First Name</b></label>
-            <input type="text" placeholder="Enter First Name" name="fname" required>
 
-            <label><b>Last Name</b></label>
-            <input type="text" placeholder="Enter Last Name" name="lname" required>
-
-
-            <label><b>Select a username</b></label>
-            <input type="text" placeholder="Select a username" name="username" required>
-
-            <label><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="pass" required>
-
-            <label><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
--->
             <!--New form-->
             <div >
                 <div class="form-group">

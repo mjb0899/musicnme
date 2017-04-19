@@ -89,7 +89,6 @@ main button {
     background-color: #212121;
     color: #ff3333;
     font-size: larger;
-    border-left: 2px solid #ff3333;
 }
 /* Change styles for cancel button and signup button on extra small screens */
 

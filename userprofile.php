@@ -350,21 +350,21 @@ if(strcmp($sess,$owner)==0){
                     //uploads image and music
                     if($file_title==="upload") {
                         if(in_array($file_type,$allowed_image)) {
-                            echo "<div class=\"media\">
-                                          <div class=\"media-left\">
-                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                            echo '<div class="media">
+                                          <div class="media-left">
+                                             <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                           </div>
-                                            <div class=\"media-body\">
-                                            <h4 class=\"media-heading\">$post_owner</h4>
-                                            <p>$status</p>
+                                            <div class="media-body">
+                                            <h4 class="media-heading">'.$post_owner.'</h4>
+                                            <p>'.$status.'</p>
                                              </div>                                      
                                   </div>
                                   
-                                            <div class=\"image_div\">
-                                                 <img style='height: 100%; width: 100%;margin: auto; object-fit: contain' src=".$file_path.">      
+                                            <div class="image_div">
+                                                 <img style="height: 100%; width: 100%;margin: auto; object-fit: contain" src="'.$file_path.'">      
                                           </div>  
                                           
-                     <hr>";
+                     <hr>';
                         }
                     }
                 }//end while

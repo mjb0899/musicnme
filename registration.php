@@ -55,6 +55,7 @@
                 <h2>  Join Our Family </h2>
             </div>
 
+            <label for="usr" class="label_font">Select Account type</label>
 
             <div class="rad" >
                 <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="Discover a number of artist sharing music!">

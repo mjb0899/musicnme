@@ -454,9 +454,9 @@ if(isset($_SESSION['match'])){
 
             </div>
             <div id="followme" class="tabcontent">
-                <h1><?php $sess ?></h1>
-                <h1><?php $owner ?></h1>
-                <h1><?php $_SESSION['match'] ?></h1>
+                <h1><?php echo $sess ?></h1>
+                <h1><?php echo $owner ?></h1>
+                <h1><?php echo $_SESSION['match'] ?></h1>
 
             </div>
 

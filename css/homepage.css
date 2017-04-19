@@ -164,13 +164,19 @@ textarea{
         display: none;
 
     }
-    .two{
-
-        margin: auto;
+    body{
+        width: 100%;
     }
-
     .out-wrapper {
         width: 100%;
     }
+    .two{
+        width: 100%;
+    }
+    .media{
+        width: 100%;
+    }
+
+
 }
 

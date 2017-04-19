@@ -193,7 +193,7 @@ $artist=$_SESSION['artist'];
                                     <?php
 
                                     include("dbConnect.php");
-                                    $sql_query = "SELECT description from statuses where title='status' and username=$sess  ORDER BY dateposted DESC LIMIT 1";
+                                    $sql_query = "SELECT description from statuses where title='status' and username='$sess'ORDER BY dateposted DESC LIMIT 1";
                                     $result = $db -> query($sql_query);
                                     while($row = $result -> fetch_array()) {
                                     $user_status=$row['description'];

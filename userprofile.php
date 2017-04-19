@@ -201,13 +201,13 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td>Change Password</td>
                         <td><input type="text"></td>
-                        <td><button value="Save" id="submit_data"></button></td>
+                        <td></td>
                     </tr>
 
                 </table>
                 </form>
                 <p>Try to change the border-spacing to 5px.</p>
-
+                <button value="Save" id="submit_data"></button>
 
 
 

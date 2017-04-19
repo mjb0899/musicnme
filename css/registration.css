@@ -92,10 +92,7 @@ main button {
     border-radius: 2px ;
 
 }
-input[type=radio]{
-    background-color: #ff3333;
-    color: white;
-}
+
 .radio_label{
  color: #212121;
     background-color: whitesmoke;

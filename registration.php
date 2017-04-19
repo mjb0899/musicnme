@@ -56,7 +56,7 @@
             </div>
 
 
-            <div class="rad" style="text-align: center;">
+            <div class="rad" >
                 <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="Discover a number of artist sharing music!">
                     <input type="radio" name="utype" checked value="user" >User
                 </label>

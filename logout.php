@@ -6,8 +6,10 @@
  * Time: 21:53
  */
 session_start();
+$_SESSION['name']="";
 unset($_SESSION['name']);
 unset($_SESSION['acctype']);
+
 session_destroy();
 var_dump($_SESSION);
 //header("location:index.php");

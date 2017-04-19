@@ -352,7 +352,7 @@ $artist=$_SESSION['artist'];
                                          </div>
                                             <div class="media-body">
                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>
-                                                <p>$status</p>
+                                                <p>'.$status.'</p>
                                           </div>
                                           
                                                  <div class="rater" style="clear:both">

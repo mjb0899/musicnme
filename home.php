@@ -64,7 +64,6 @@ $artist=$_SESSION['artist'];
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.php">Home</a></li>
-                    <li><a href="rating.html">Test Rating</a></li>
                     <li><a href="createEvent.php">Events</a></li>
                     <li><a href="contactUs.php">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>

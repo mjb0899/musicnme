@@ -163,11 +163,12 @@ if(strcmp($sess,$owner)==0){
                     $email= $row['uemail'];
                 }
                 ?>
+                <form>
                 <table style="width:100%">
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td><input type="text"></td>
-                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
+                        <td><a><span class="glyphicon glyphicon-pencil" onclick="sub_active()"></a></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
@@ -182,10 +183,11 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td>Change Password</td>
                         <td><input type="text"></td>
-                        <td><input type="submit"></td>
+                        <td><input type="submit" value="Save" class="submit_data"></td>
                     </tr>
-                </table>
 
+                </table>
+                </form>
                 <p>Try to change the border-spacing to 5px.</p>
 
 

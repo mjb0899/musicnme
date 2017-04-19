@@ -63,7 +63,7 @@ if(isset($_POST['email'])){
 }
 
 if(isset($_POST['psw'])){
-    if($pass=!null) {
+    if($pass!=null) {
 
         $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
         if (mysqli_query($db, $sql)) {

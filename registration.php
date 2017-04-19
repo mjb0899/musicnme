@@ -65,7 +65,7 @@
                     <input type="radio" name="utype" checked value="user" >User
                 </label>
                 <label class="radio-inline" data-toggle="tooltip" data-placement="bottom" title="Share your music and build a profile">
-                    <input type="radio" name="utype" value="artist">Artist
+                    <input type="radio" name="utype" value="artist">Artist<span class="glyphicon glyphicon-heart"></span>
                 </label>
             </div>
 <!--

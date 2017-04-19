@@ -164,12 +164,14 @@ textarea{
         display: none;
 
     }
-
     .two{
-        width: 100%;
+
+        margin: auto;
     }
 
-
-
+    .out-wrapper {
+        width: 100%;
+        margin: 0;
+    }
 }
 

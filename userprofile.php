@@ -54,8 +54,7 @@ if(strcmp($sess,$owner)==0){
 
     <script>
         $(document).ready(function(){
-            evt.preventDefault();
-            $("#edit_data").on("click",function(){
+            $("#edit_data").click(function(){
                 $("#edit_data").hide();
                 $("#submit_data").show();
             });
@@ -64,8 +63,7 @@ if(strcmp($sess,$owner)==0){
     </script>
     <script>
         $(document).ready(function(){
-            evt.preventDefault();
-            $("#submit_data").on("click",function(){
+            $("#submit_data").click(function(){
                 $("#edit_data").show();
                 $("#submit_data").hide();
             });

@@ -237,14 +237,17 @@ if(strcmp($sess,$owner)==0){
 
                     </table>
                 </form>
+<?php
 
-                <div>
-                    <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
-                    <button type="submit" id="submit_data" onclick="return chk()"> Save</button>
-                </div>
+if(isset($_SESSION['match'])){
+                echo"<div>
+                    <button id=\"edit_data\"><span class=\"glyphicon glyphicon-pencil\"></button>
+                    <button type=\"submit\" id=\"submit_data\" onclick=\"return chk()\"> Save</button>
+                </div>";
 
+}
 
-
+?>
                 <div id="test"></div>
 
 

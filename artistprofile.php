@@ -155,7 +155,7 @@ if(strcmp($sess,$owner)==0){
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $profile_path=$row['profile_image'];
-                    $post_owner=['username'];
+                    $post_owner=$row['username'];
                     if($profile_path!=null){
 
                     }else{
@@ -164,6 +164,7 @@ if(strcmp($sess,$owner)==0){
                     echo "  <img src=\"$profile_path\" id=\"pic\">";
                 }
                 ?>
+
                 <!--Modal For Profile Pic Upload-->
                 <?php
 

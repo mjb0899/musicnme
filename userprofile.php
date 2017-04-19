@@ -185,19 +185,19 @@ if(strcmp($sess,$owner)==0){
                 <table style="width:100%">
                     <tr>
                         <td><?php echo $firstname?></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="firstname" id="firstname"></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="firstname" id="lastname"></td>
                     </tr>
                     <tr>
                         <td><?php echo $email?></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="email" id="email"></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="psw" id="psw"></td>
                     </tr>
 
                 </table>

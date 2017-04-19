@@ -421,13 +421,28 @@ if(strcmp($sess,$owner)==0){
             <div id="events" class="tabcontent">
                 <?php
                 include("dbConnect.php");
-                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+
+                //get events
+                $sql_query = "Select * from view_event Where username='$owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
-                    $firstname= $row['ufname'];
-                    $lastname= $row['ulname'];
-                    $email= $row['uemail'];
-                    echo "<h2>$firstname"." "."$lastname$owner</h2>";
+                    $ename= $row['ename'];
+                    $edesc= $row['edesc'];
+                    $edate= $row['edate'];
+                    $etime= $row['etime'];
+                        echo "<div class=\"media\">
+                                     <div class=\"media-left\">
+                                        <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                    </div>
+                                     <div class=\"media-body\">
+                                         <h4 class=\"media-heading\">".$post_owner."</h4>
+                                     <h2>".$ename."</h2>
+                                     <p>".$edesc."</p>
+                                      <p>".$edate."</p>
+                                       <p>".$etime."</p>
+                                     
+                                    </div>
+                                </div>";
                 }
                 ?>
 

@@ -236,11 +236,16 @@ if(strcmp($sess,$owner)==0){
                         <td><?php echo $email?></td>
                         <td><input type="email" name="email" id="email"></td>
                     </tr>
-                    <tr>
-                        <td>Change Password</td>
-                        <td><input type="password" name="psw" id="psw"></td>
-                    </tr>
+                    <?php
+                    if(isset($_SESSION['match'])){
+                        echo' <tr>
+                                      <td>Change Password</td>
+                                      <td><input type="password" name="psw" id="psw"></td>
+                                 </tr>';
 
+                    }
+
+                    ?>
                 </table>
                 </form>
                 <?php

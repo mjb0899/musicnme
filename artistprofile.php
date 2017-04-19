@@ -151,10 +151,11 @@ if(strcmp($sess,$owner)==0){
                 <?php
 
                 include("dbConnect.php");
-                $sql_query = "Select profile_image from users Where username='$owner'";
+                $sql_query = "Select profile_image,username from users Where username='$owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $profile_path=$row['profile_image'];
+                    $post_owner=['username'];
                     if($profile_path!=null){
 
                     }else{
@@ -211,7 +212,7 @@ if(strcmp($sess,$owner)==0){
             <div id="info" class="tabcontent">
                 <?php
                 include("dbConnect.php");
-                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+                $sql_query = "Select ufname,ulname,uemail from users Where username='$post_owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $firstname= $row['ufname'];
@@ -233,11 +234,16 @@ if(strcmp($sess,$owner)==0){
                             <td><?php echo $email?></td>
                             <td><input type="email" name="email" id="email"></td>
                         </tr>
-                        <tr>
-                            <td>Change Password</td>
-                            <td><input type="password" name="psw" id="psw"></td>
-                        </tr>
+                      <?php
+                        if(isset($_SESSION['match'])){
+                            echo' <tr>
+                                      <td>Change Password</td>
+                                      <td><input type="password" name="psw" id="psw"></td>
+                                 </tr>';
 
+                          }
+
+                            ?>
                     </table>
                 </form>
 <?php

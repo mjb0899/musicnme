@@ -14,7 +14,7 @@ $artist=$_SESSION['artist'];
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PageOutline</title>
+    <title>MusicAndMe</title>
     <!--AUDIO CSS-->
 
     <!--MENUBAR CSS-->

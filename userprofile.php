@@ -25,7 +25,7 @@ if(strcmp($sess,$owner)==0){
 <html >
 <head>
     <meta charset="UTF-8">
-    <title>PageOutline</title>
+    <title>MusicAndMe</title>
 
     <!--MENUBAR CSS-->
     <meta name="viewport" content="width=device-width, initial-scale=1">

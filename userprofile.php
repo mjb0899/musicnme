@@ -167,22 +167,22 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td>Smith</td>
-                        <td>50</td>
+                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
                         <td>Jackson</td>
-                        <td>94</td>
+                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
                     </tr>
                     <tr>
                         <td><?php echo $email?></td>
                         <td>Doe</td>
-                        <td>80</td>
+                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
                         <td>Doe</td>
-                        <td>80</td>
+                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
                     </tr>
                 </table>
 

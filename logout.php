@@ -13,5 +13,4 @@ unset($_SESSION['name']);
 unset($_SESSION['user']);
 unset($_SESSION['match']);
 session_destroy();
-var_dump($_SESSION);
-//header("location:index.php");
+header("location:index.php");

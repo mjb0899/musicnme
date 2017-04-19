@@ -289,16 +289,16 @@ if(isset($_SESSION['match'])){
 
                     //upload status
                     if($file_title==="status"){
-                        echo "<div class=\"media\">
-                                         <div class=\"media-left\">
-                                             <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                        echo '<div class="media">
+                                         <div class="media-left">
+                                             <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                          </div>
-                                         <div class=\"media-body\">
-                                          <h4 class=\"media-heading\">".$post_owner."</h4>
-                                                <p>$status</p>
+                                         <div class="media-body">
+                                          <h4 class="media-heading">'.$post_owner.'</h4>
+                                                <p>'.$status.'</p>
                                           </div>
                                   </div>
-                                    <hr>";
+                                    <hr>';
                     }
 
 

@@ -95,3 +95,17 @@ div.tab button.active {
     background-color: #212121;
     margin: auto;
 }
+table, th, td {
+    padding: 10px;
+}
+table {
+    border-spacing: 15px;
+}
+#submit_data,#firstname,#lastname,#email,#psw{
+    display: none;
+}
+
+#hide{
+    color:red;
+    display:none;
+}

@@ -54,7 +54,10 @@
             <div class="header_div">
                 <h2>  Join Our Family </h2>
             </div>
-
+            <div >
+                <div class="form-group">
+                    <label class="label_font">Select account type?</label>
+                </div>
 
             <div class="rad" >
 

@@ -108,6 +108,6 @@ table, th, td {
 table {
     border-spacing: 15px;
 }
-.submit_data{
+#submit_data{
     display: none;
 }

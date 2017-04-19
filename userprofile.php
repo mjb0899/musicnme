@@ -98,15 +98,14 @@ if(strcmp($sess,$owner)==0){
                 url:"updateProfile.php",
                 data: dataString,
                 cache:false,
-                success:function (html) {
-                    $("#test").html(html);
+                success:function (d) {
 
-                    if(html==null){
-                        html="Not Saved";
-                        $("#test").html(html);
+                    if(d>0){
+                        $("#test").html("Your changes have been saved.");
+                        setTimeout(function(){location.reload();},2000);
 
                     }else{
-                        setTimeout(function(){location.reload();},2000);
+                        $("#test").html("Not saved.");
                     }
 
                 }

@@ -9,4 +9,5 @@ session_start();
 unset($_SESSION['name']);
 unset($_SESSION['acctype']);
 session_destroy();
+var_dump($_SESSION);
 header("location:index.php");

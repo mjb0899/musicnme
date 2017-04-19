@@ -188,7 +188,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td><input type="text"></td>
-                        <td><button id="edit_data"><span class="glyphicon glyphicon-pencil"></button></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
@@ -208,6 +208,7 @@ if(strcmp($sess,$owner)==0){
 
                 </table>
                 </form>
+                <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
                 <button id="submit_data"> Save</button>
 
                 <p>Try to change the border-spacing to 5px.</p>

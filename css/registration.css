@@ -7,15 +7,13 @@ main{
     width:100%;
 }
 
-*{
-    font-family: Century Gothic, sans-serif;
 
-}
 .wrapper{
     width: 70%;
     margin: auto;
     padding-bottom: 1rem;
     min-width: 250px;
+    font-family: Century Gothic, sans-serif;
 
 }
 

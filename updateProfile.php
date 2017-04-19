@@ -11,9 +11,16 @@ $lname=$_POST['lastname'];
 $email=$_POST['email'];
 $pass=$_POST['psw'];
 
+session_start();
+$sess=$_SESSION['name'];
+$user=$_SESSION['user'];
+$artist=$_SESSION['artist'];
+
+include("dbConnect.php");
+
 if(isset($_POST['firstname'])){
 
-    $sql_query = "UPDATE users SET ufname='$fname'";
+    $sql_query = "UPDATE users SET ufname='$fname' Where username='$sess'";
     if(mysqli_query($db,$sql)){
 
         echo "Your changes have been Saved.";
@@ -26,7 +33,7 @@ if(isset($_POST['firstname'])){
 
 if(isset($_POST['lastname'])){
 
-    $sql_query = "UPDATE users SET ulname='$lname'";
+    $sql_query = "UPDATE users SET ulname='$lname' Where username='$sess'";
     if(mysqli_query($db,$sql)){
 
         echo "Your changes have been Saved.";
@@ -39,7 +46,7 @@ if(isset($_POST['lastname'])){
 
 if(isset($_POST['email'])){
 
-    $sql_query = "UPDATE users SET uemail='$email'";
+    $sql_query = "UPDATE users SET uemail='$email' Where username='$sess'";
     if(mysqli_query($db,$sql)){
 
         echo "Your changes have been Saved.";
@@ -52,7 +59,7 @@ if(isset($_POST['email'])){
 
 if(isset($_POST['psw'])){
 
-    $sql_query = "UPDATE users SET uemail='$pass'";
+    $sql_query = "UPDATE users SET uemail='$pass' Where username='$sess'";
     if(mysqli_query($db,$sql)){
 
         echo "Your changes have been Saved.";

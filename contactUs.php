@@ -11,7 +11,8 @@ if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
 $sess=$_SESSION['name'];
-$acc=$_SESSION['acctype'];
+$user=$_SESSION['user'];
+$artist=$_SESSION['artist'];
 ?>
 
 <!DOCTYPE html>

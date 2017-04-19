@@ -168,7 +168,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td><input type="text"></td>
-                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
+                        <td><button><span class="glyphicon glyphicon-pencil"></button></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>

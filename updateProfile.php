@@ -76,7 +76,7 @@ if(isset($_POST['psw'])){
 
 }
 
-if((($_POST['psw']=null))&&(($_POST['email']=null))&&(($_POST['lastname']=null))&&(($_POST['firstname']=null))){
+if((($pass=null))&&(($email=null))&&(($fname=null))&&(($lname=null))){
     echo "Nothing Saved";
 }
 else{

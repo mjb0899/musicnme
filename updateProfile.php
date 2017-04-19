@@ -76,12 +76,10 @@ if(isset($_POST['psw'])){
 
 }
 
-if((isset($_POST['psw']))||(isset($_POST['email']))||(isset($_POST['lastname']))||(isset($_POST['firstname']))){
-    echo "Your changes have been Saved.";
-}else if((($_POST['psw']=null))&&(($_POST['email']=null))&&(($_POST['lastname']=null))&&(($_POST['firstname']=null))){
+if((($_POST['psw']=null))&&(($_POST['email']=null))&&(($_POST['lastname']=null))&&(($_POST['firstname']=null))){
     echo "Nothing Saved";
 }
 else{
-    echo "Not saved";
+    echo "Your changes have been saved";
 }
 

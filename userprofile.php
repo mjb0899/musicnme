@@ -201,7 +201,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td>Change Password</td>
                         <td><input type="text"></td>
-                        <td><input type="button" value="Save" id="submit_data"></td>
+                        <td><button value="Save" id="submit_data"></button></td>
                     </tr>
 
                 </table>

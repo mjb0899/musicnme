@@ -41,7 +41,7 @@ if(isset($_POST['lastname'])){
         $sql = "UPDATE users SET ulname='$lname' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
 
-            echo "Your changes have been Saved.";
+
         } else {
             echo "Error:" . $sql . "<br>" . mysqli_error($db);
         }
@@ -54,7 +54,7 @@ if(isset($_POST['email'])){
         $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
 
-            echo "Your changes have been Saved.";
+
         } else {
             echo "Error:" . $sql . "<br>" . mysqli_error($db);
         }
@@ -68,10 +68,17 @@ if(isset($_POST['psw'])){
         $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
 
-            echo "Your changes have been Saved.";
+
         } else {
             echo "Error:" . $sql . "<br>" . mysqli_error($db);
         }
     }
 
 }
+if((isset($_POST['psw']))||(isset($_POST['email']))||(isset($_POST['lastname']))||(isset($_POST['firstname']))){
+    echo "Your changes have been Saved.";
+}
+else{
+    echo "Not saved";
+}
+

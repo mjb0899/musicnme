@@ -209,9 +209,8 @@ if(strcmp($sess,$owner)==0){
                 </table>
                 </form>
                 <p>Try to change the border-spacing to 5px.</p>
-                <button value="Save" id="submit_data"></button>
-                <button id="show">Toggle between  show()</button>
-                <button id="hide">Toggle between hide() </button>
+                <button value="Submit" id="submit_data"> Save</button>
+
 
 
             </div>

@@ -7,9 +7,11 @@
  */
 session_start();
 $_SESSION['name']="";
+$_SESSION['user']="";
+$_SESSION['match']=0;
 unset($_SESSION['name']);
-unset($_SESSION['acctype']);
-
+unset($_SESSION['user']);
+unset($_SESSION['match']);
 session_destroy();
 var_dump($_SESSION);
 //header("location:index.php");

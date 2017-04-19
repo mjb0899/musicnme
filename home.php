@@ -196,8 +196,8 @@ $artist=$_SESSION['artist'];
                                     $sql_query = 'SELECT description from statuses where title="status" ORDER BY dateposted DESC LIMIT 1';
                                     $result = $db -> query($sql_query);
                                     while($row = $result -> fetch_array()) {
-                                    $stat=$row['description'];
-                                    echo $stat;
+                                    $user_status=$row['description'];
+                                    echo $user_status;
                                     }
 
                                     ?>

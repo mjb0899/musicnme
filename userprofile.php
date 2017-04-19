@@ -186,36 +186,29 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $firstname?></td>
                         <td><input type="text"></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
                         <td><input type="text"></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td><?php echo $email?></td>
                         <td><input type="text"></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
                         <td><input type="text"></td>
-                        <td></td>
                     </tr>
 
                 </table>
                 </form>
-                <table style="width:100%">
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
-                            <button type="submit" id="submit_data"> Save</button>
-                        </td>
-                        <td></td>
-                    </tr>
-                </table>
+
+               <div>
+                   <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
+                   <button type="submit" id="submit_data"> Save</button>
+               </div>
+
+
 
                 <p>Try to change the border-spacing to 5px.</p>
 

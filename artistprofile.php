@@ -443,19 +443,19 @@ if(isset($_SESSION['match'])){
                     $edesc= $row['edesc'];
                     $edate= $row['edate'];
                     $etime= $row['etime'];
-                        echo "<div class=\"media\">
-                                     <div class=\"media-left\">
-                                        <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                        echo  '<div class="media">
+                                     <div class="media-left">
+                                        <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                     </div>
-                                     <div class=\"media-body\">
-                                         <h4 class=\"media-heading\">".$post_owner."</h4><p>posted an event</p>
-                                     <h2>".$ename."</h2>
-                                     <p>".$edesc."</p>
-                                      <p>".$edate."</p>
-                                       <p>".$etime."</p>
+                                     <div class="media-body">
+                                         <h4 class="media-heading">"'.$post_owner.'"</h4><p>posted an event</p>
+                                     <h2>"'.$ename.'"</h2>
+                                     <p>"'.$edesc.'"</p>
+                                      <p>"'.$edate.'"</p>
+                                       <p>"'.$etime.'"</p>
                                      
                                     </div>
-                                </div>";
+                                </div>';
                 }
                 ?>
 

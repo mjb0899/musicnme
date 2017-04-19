@@ -165,17 +165,17 @@ if(strcmp($sess,$owner)==0){
                 ?>
                 <table style="width:100%">
                     <tr>
-                        <td><?php $firstname?></td>
+                        <td><?php echo $firstname?></td>
                         <td>Smith</td>
                         <td>50</td>
                     </tr>
                     <tr>
-                        <td><?php $lastname?></td>
+                        <td><?php echo $lastname?></td>
                         <td>Jackson</td>
                         <td>94</td>
                     </tr>
                     <tr>
-                        <td><?php $email?></td>
+                        <td><?php echo $email?></td>
                         <td>Doe</td>
                         <td>80</td>
                     </tr>

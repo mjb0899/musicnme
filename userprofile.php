@@ -156,10 +156,10 @@ if(strcmp($sess,$owner)==0){
                   $profile_path=$row['profile_image'];
                   $post_owner=$row['username'];
                   //upload profile picture
-                  echo "  <img src=\"$profile_path\" id=\"pic\">
-                           ";
+                  echo "<img src=\"$profile_path\" id=\"pic\">";
                 }
                 ?>
+
                 <!--Modal For Profile Pic Upload-->
                 <?php
 

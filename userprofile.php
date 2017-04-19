@@ -198,8 +198,7 @@ if(strcmp($sess,$owner)==0){
                     <tr>
                         <td><?php echo $email?></td>
                         <td><input type="text"></td>
-                        <td><button id="show">Toggle between  show()</button>
-                            <button id="hide">Toggle between hide() </button></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
@@ -211,7 +210,8 @@ if(strcmp($sess,$owner)==0){
                 </form>
                 <p>Try to change the border-spacing to 5px.</p>
                 <button value="Save" id="submit_data"></button>
-
+                <button id="show">Toggle between  show()</button>
+                <button id="hide">Toggle between hide() </button>
 
 
             </div>

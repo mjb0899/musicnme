@@ -99,10 +99,8 @@ if(strcmp($sess,$owner)==0){
                 data: dataString,
                 cache:false,
                 success:function (html) {
-
-                $("#test").html(html)
-
-
+                    $("#test").html(html)
+                    setTimeout(function(){location.reload();},3000);
                 }
             });
             return false

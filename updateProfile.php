@@ -20,52 +20,58 @@ include("dbConnect.php");
 
 if(isset($_POST['firstname'])){
 
-    $sql = "UPDATE users SET ufname='$fname' Where username='$sess'";
-    if(mysqli_query($db,$sql)){
+    if($fname=!null){
 
-        echo "Your changes have been Saved.";
+        $sql = "UPDATE users SET ufname='$fname' Where username='$sess'";
+        if(mysqli_query($db,$sql)){
+
+        }
+        else{
+            echo"Error:".$sql."<br>" . mysqli_error($db);
+        }
     }
-    else{
-        echo"Error:".$sql."<br>" . mysqli_error($db);
-    }
+
+
 
 }
 
 if(isset($_POST['lastname'])){
+    if($fname=!null) {
 
-    $sql = "UPDATE users SET ulname='$lname' Where username='$sess'";
-    if(mysqli_query($db,$sql)){
+        $sql = "UPDATE users SET ulname='$lname' Where username='$sess'";
+        if (mysqli_query($db, $sql)) {
 
-        echo "Your changes have been Saved.";
+            echo "Your changes have been Saved.";
+        } else {
+            echo "Error:" . $sql . "<br>" . mysqli_error($db);
+        }
     }
-    else{
-        echo"Error:".$sql."<br>" . mysqli_error($db);
-    }
-
 }
 
 if(isset($_POST['email'])){
+    if($fname=!null) {
 
-    $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
-    if(mysqli_query($db,$sql)){
+        $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
+        if (mysqli_query($db, $sql)) {
 
-        echo "Your changes have been Saved.";
-    }
-    else{
-        echo"Error:".$sql."<br>" . mysqli_error($db);
+            echo "Your changes have been Saved.";
+        } else {
+            echo "Error:" . $sql . "<br>" . mysqli_error($db);
+        }
     }
 
 }
 
 if(isset($_POST['psw'])){
+    if($fname=!null) {
 
-    $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
-    if(mysqli_query($db,$sql)){
+        $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
+        if (mysqli_query($db, $sql)) {
 
-        echo "Your changes have been Saved.";
-    }
-    else{
-        echo"Error:".$sql."<br>" . mysqli_error($db);
+            echo "Your changes have been Saved.";
+        } else {
+            echo "Error:" . $sql . "<br>" . mysqli_error($db);
+        }
     }
 
 }

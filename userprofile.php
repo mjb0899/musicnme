@@ -302,7 +302,7 @@ if(strcmp($sess,$owner)==0){
                                              <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                          </div>
                                          <div class="media-body">
-                                          <h4 class="media-heading">"'.$post_owner.'"</h4>
+                                          <h4 class="media-heading">'.$post_owner.'</h4>
                                                 <p>'.$status.'</p>
                                           </div>
                                   </div>

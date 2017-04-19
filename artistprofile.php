@@ -8,7 +8,10 @@ if(!isset($_SESSION['name'])){
 $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
+
+//match content and user
 $_SESSION['match']=null;
+
 if(isset($_GET['owner'])){
     $owner=$_GET['owner'];
 
@@ -450,6 +453,13 @@ if(isset($_SESSION['match'])){
                 ?>
 
             </div>
+            <div id="followme" class="tabcontent">
+                <h1><?php $sess ?></h1>
+                <h1><?php $owner ?></h1>
+                <h1><?php $_SESSION['match'] ?></h1>
+
+            </div>
+
         </div>
 
     </div>

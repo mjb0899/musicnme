@@ -45,14 +45,6 @@ if(strcmp($sess,$owner)==0){
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-<style>
-    .btn-place{
-        margin: auto;
-    }
-    .container{
-        padding: 1rem;
-    }
-</style>
 
     <script>
         $(document).ready(function(){

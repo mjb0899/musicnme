@@ -45,6 +45,68 @@ if(strcmp($sess,$owner)==0){
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
+    <script>
+        function chk() {
+            var firstname=document.getElementById('firstname').value;
+            var lastname=document.getElementById('lastname').value;
+            var email=document.getElementById('email').value;
+            var psw=document.getElementById('psw').value;
+
+
+
+
+            var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw;
+            $.ajax({
+                type:"post",
+                url:"updateProfile.php",
+                data: dataString,
+                cache:false,
+                success:function (d) {
+
+                    if(d>0){
+                        $("#test").html("Your changes have been saved.");
+                        setTimeout(function(){location.reload();},2000);
+
+                    }else{
+                        $("#test").html("Not saved.");
+                    }
+
+                }
+            });
+            return false
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#edit_data").click(function(){
+                $("#edit_data").hide();
+                $("#submit_data").show();
+                $("#firstname").show();
+                $("#lastname").show();
+                $("#email").show();
+                $("#psw").show();
+
+
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#submit_data").click(function(){
+                $("#edit_data").show();
+                $("#submit_data").hide();
+                $("#firstname").hide();
+                $("#lastname").hide();
+                $("#email").hide();
+                $("#psw").hide();
+            });
+        });
+    </script>
+
+
+
 </head>
 
 <body>
@@ -136,11 +198,57 @@ if(strcmp($sess,$owner)==0){
         </div>
         <div  class="wrapper_details">
             <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">Info</button>
                 <button class="tablinks" onclick="openCity(event, 'status')" id="defaultOpen">Status</button>
                 <button class="tablinks" onclick="openCity(event, 'uploads')">Uploads</button>
                 <button class="tablinks" onclick="openCity(event, 'music')">Music</button>
                 <button class="tablinks" onclick="openCity(event, 'events')">Events</button>
                 <button class="tablinks" onclick="openCity(event, 'followme')">Follow Me</button>
+            </div>
+            <div id="info" class="tabcontent">
+                <?php
+                include("dbConnect.php");
+                $sql_query = "Select ufname,ulname,uemail from users Where username='$sess'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $firstname= $row['ufname'];
+                    $lastname= $row['ulname'];
+                    $email= $row['uemail'];
+                }
+                ?>
+                <form>
+                    <table style="width:100%">
+                        <tr>
+                            <td><?php echo $firstname?></td>
+                            <td><input type="text" name="firstname" id="firstname"></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo $lastname?></td>
+                            <td><input type="text" name="firstname" id="lastname"></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo $email?></td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Change Password</td>
+                            <td><input type="password" name="psw" id="psw"></td>
+                        </tr>
+
+                    </table>
+                </form>
+
+                <div>
+                    <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
+                    <button type="submit" id="submit_data" onclick="return chk()"> Save</button>
+                </div>
+
+
+
+                <div id="test"></div>
+
+
+
             </div>
             <div id="status" class="tabcontent">
             <h1>test</h1>

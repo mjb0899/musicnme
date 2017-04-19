@@ -168,9 +168,25 @@ $artist=$_SESSION['artist'];
                                     </h4>
                                 </div>
                                 <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                        sed do eiusmod tempror incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                                    <div class="panel-body">
+
+
+                                        <?php
+
+                                        include("dbConnect.php");
+
+                                        $sql_query = 'SELECT description from statuses where username='.$sess.' && title="status" ORDER BY dateposted DESC LIMIT 1';
+                                        $result = $db -> query($sql_query);
+                                        while($row = $result -> fetch_array()) {
+                                            $description=$row['description'];
+                                            echo $description;
+                                        }
+                                        ?>
+
+
+
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">

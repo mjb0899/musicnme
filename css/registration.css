@@ -92,7 +92,7 @@ main button {
     border-radius: 2px ;
 
 }
-#radio_label{
+.radio_label{
  color: #ff3333;
     background-color: whitesmoke;
     font-weight: lighter;

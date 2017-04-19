@@ -191,15 +191,15 @@ $artist=$_SESSION['artist'];
                                 <div class="panel-body">
                                     <!--NEEDS CORRECTION-->
                                     <?php
-                                    /*
+
                                     include("dbConnect.php");
-                                    $sql_query = 'SELECT description from statuses where title="status" && username='.$sess.' ORDER BY dateposted DESC LIMIT 1';
+                                    $sql_query = 'SELECT description from statuses where title="status" ORDER BY dateposted DESC LIMIT 1';
                                     $result = $db -> query($sql_query);
                                     while($row = $result -> fetch_array()) {
                                     $stat=$row['description'];
                                     echo $stat;
                                     }
-                                    */
+
                                     ?>
                                 </div>
                             </div>

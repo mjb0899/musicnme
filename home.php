@@ -157,21 +157,7 @@ $artist=$_SESSION['artist'];
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                        <?php
-
-                                        include("dbConnect.php");
-
-                                        $sql_query = 'SELECT description from statuses where username='.$sess .' && title="status" ORDER BY dateposted DESC LIMIT 1';
-                                        $result = $db -> query($sql_query);
-                                        while($row = $result -> fetch_array()) {
-                                            $description=$row['description'];
-                                            echo'<div>'. $description.'</div>';
-                                        }
-
-
-
-                                        ?>
-
+                                       gge
                                     </div>
                                 </div>
                             </div>

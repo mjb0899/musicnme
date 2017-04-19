@@ -230,11 +230,11 @@ if(strcmp($sess,$owner)==0){
                     </tr>
                     <tr>
                         <td><?php echo $email?></td>
-                        <td><input type="text" name="email" id="email"></td>
+                        <td><input type="email" name="email" id="email"></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
-                        <td><input type="text" name="psw" id="psw"></td>
+                        <td><input type="password" name="psw" id="psw"></td>
                     </tr>
 
                 </table>

@@ -157,7 +157,8 @@ $artist=$_SESSION['artist'];
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse in">
                                     <div class="panel-body">
-                                       gge
+
+
                                     </div>
                                 </div>
                             </div>

@@ -62,9 +62,8 @@ if(strcmp($sess,$owner)==0){
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="home.php">Home</a></li>
-                    <li><a href="#">Share Music</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Get In Touch</a></li>
+                    <li><a href="createEvent.php">Events</a></li>
+                    <li><a href="contactUs.php">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

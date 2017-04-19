@@ -32,6 +32,8 @@ if(strcmp($sess,$owner)==0){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
 
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
 
@@ -78,6 +80,33 @@ if(strcmp($sess,$owner)==0){
                 $("#psw").hide();
             });
         });
+    </script>
+
+    <script>
+        function chk() {
+            var firstname=document.getElementById('firstname').value;
+            var lastname=document.getElementById('lastname').value;
+            var email=document.getElementById('email').value;
+            var psw=document.getElementById('psw').value;
+
+
+
+
+            var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw;
+            $.ajax({
+                type:"post",
+                url:"updateProfile.php",
+                data: dataString,
+                cache:false,
+                success:function (html) {
+
+                $("#test").html(html)
+
+
+                }
+            });
+            return false
+        }
     </script>
 
 </head>
@@ -215,12 +244,12 @@ if(strcmp($sess,$owner)==0){
 
                <div>
                    <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
-                   <button type="submit" id="submit_data"> Save</button>
+                   <button type="submit" id="submit_data" onclick="return chk()"> Save</button>
                </div>
 
 
 
-                <p>Try to change the border-spacing to 5px.</p>
+                <div id="test"></div>
 
 
 

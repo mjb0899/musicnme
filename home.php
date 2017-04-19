@@ -370,7 +370,7 @@ $artist=$_SESSION['artist'];
                                                         <label class = "full" for="'.$topic_id.'_star3" title="Meh - 3 stars"></label>
                                                         <input class="stars" type="radio" id="'.$topic_id.'_star2" name="rating" value="2" />
                                                         <label class = "full" for="'.$topic_id.'_star2" title="Kinda bad - 2 stars"></label>
-                                                        <input class="stars" type="radio" id="'.$topic_id.'"_star1" name="rating" value="1" />
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star1" name="rating" value="1" />
                                                         <label class = "full" for="'.$topic_id.'_star1" title="Sucks big time - 1 star"></label>
                                                     </fieldset>
                                                   </div>
@@ -389,42 +389,42 @@ $artist=$_SESSION['artist'];
                         //upload music
                         if($file_title==="upload") {
                             if(in_array($file_type,$allowed_image)) {
-                                echo "<div class=\"media\">
-                                             <div class=\"media-left\">
-                                                <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                echo '<div class="media">
+                                             <div class="media-left">
+                                                <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                              </div>
-                                              <div class=\"media-body\">
-                                            <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>                                                 <p>$status</p>
+                                              <div class="media-body">
+                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>                                                 <p>'.$status.'</p>
                                               </div>
                                     
-                                             <div style='height: 100%; width: 80%; background-color: #212121;margin: auto'>
-                                             <img style='height: 100%; width: 100%; object-fit: contain' src=".$file_path.">      
+                                             <div style="height: 100%; width: 80%; background-color: #212121;margin: auto">
+                                             <img style="height: 100%; width: 100%; object-fit: contain" src="'.$file_path.'">      
                                              </div>
                                              
-                                              <div class=\"rater\" style='clear:both'>
-                                                     <div style='float:left'>
-                                                    <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
+                                              <div class="rater" style="clear:both">
+                                                     <div style="float:left">
+                                                    <h4><span class="glyphicon glyphicon-heart"></span>'.$post_hits.'</h4><h4><span class="glyphicon glyphicon-user"></span>'.$votes.'</h4>
                                                      </div>
                                                   
-                                                    <div class=\"ratingDiv\" style=\"float:right\">
-                                                    <fieldset  class=\"rating demo1 \">
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star4\" title=\"Pretty good - 4 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star3\" name=\"rating\" value=\"3\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star3\" title=\"Meh - 3 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star2\" name=\"rating\" value=\"2\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star2\" title=\"Kinda bad - 2 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star1\" name=\"rating\" value=\"1\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
+                                                    <div class="ratingDiv" style="float:right">
+                                                    <fieldset  class="rating demo1 ">
+                                                         <input class="stars" type="radio" id="'.$topic_id.'_star5" name="rating" value="5" />
+                                                        <label class = "full" for="'.$topic_id.'_star5" title="Awesome - 5 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star4" name="rating" value="4" />
+                                                        <label class = "full" for="'.$topic_id.'_star4" title="Pretty good - 4 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star3" name="rating" value="3" />
+                                                        <label class = "full" for="'.$topic_id.'_star3" title="Meh - 3 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star2" name="rating" value="2" />
+                                                        <label class = "full" for="'.$topic_id.'_star2" title="Kinda bad - 2 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star1" name="rating" value="1" />
+                                                        <label class = "full" for="'.$topic_id.'_star1" title="Sucks big time - 1 star"></label>
                                                     </fieldset>
                                                   </div>
                                           
                                              </div> 
                                          
                                             
-                                     </div>";//end media
+                                     </div>';//end media
 
 
 
@@ -433,44 +433,44 @@ $artist=$_SESSION['artist'];
 
 
                             }elseif(in_array($file_type,$allowed_media)){
-                                echo "<div class=\"media\">
-                                             <div class=\"media-left\">
-                                                 <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                                echo '<div class="media">
+                                             <div class="media-left">
+                                                 <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                              </div>
-                                              <div class=\"media-body\">
-                                                     <a href=\"$redirect?owner=$post_owner\"><h4 class=\"media-heading\">".$post_owner."</h4></a>
-                                                 <p>$status</p>
+                                              <div class="media-body">
+                                                     <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>
+                                                 <p>'.$status.'</p>
                                              </div>
                                   
-                                             <div style='border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem'>
-                                                  <audio controls style='width: 100%;'>
-                                                  <source src=\"$file_path\" type=\"audio/mpeg\">
+                                             <div style="border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem">
+                                <audio controls style="width: 100%;">
+                                                  <source src="'.$file_path.'" type="audio/mpeg">
                                                   </audio>
                                               </div>
                                               
-                                               <div class=\"rater\" style='clear:both'>
-                                                     <div style='float:left'>
-                                                    <h4><span class=\"glyphicon glyphicon-heart\"></span>$post_hits</h4><h4><span class=\"glyphicon glyphicon-user\"></span>$votes</h4>
+                                               <div class="rater" style="clear:both">
+                                                     <div style="float:left">
+                                                    <h4><span class="glyphicon glyphicon-heart"></span>'.$post_hits.'</h4><h4><span class="glyphicon glyphicon-user"></span>'.$votes.'</h4>
                                                      </div>
                                                   
-                                                    <div class=\"ratingDiv\" style=\"float:right\">
-                                                    <fieldset  class=\"rating demo1 \">
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star5\" name=\"rating\" value=\"5\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star5\" title=\"Awesome - 5 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star4\" name=\"rating\" value=\"4\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star4\" title=\"Pretty good - 4 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star3\" name=\"rating\" value=\"3\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star3\" title=\"Meh - 3 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star2\" name=\"rating\" value=\"2\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star2\" title=\"Kinda bad - 2 stars\"></label>
-                                                        <input class=\"stars\" type=\"radio\" id=\"$topic_id"."_star1\" name=\"rating\" value=\"1\" />
-                                                        <label class = \"full\" for=\"$topic_id"."_star1\" title=\"Sucks big time - 1 star\"></label>
+                                                    <div class="ratingDiv" style="float:right">
+                                                    <fieldset  class="rating demo1 ">
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star5" name="rating" value="5" />
+                                                        <label class = "full" for="'.$topic_id.'_star5" title="Awesome - 5 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star4" name="rating" value="4" />
+                                                        <label class = "full" for="'.$topic_id.'_star4" title="Pretty good - 4 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star3" name="rating" value="3" />
+                                                        <label class = "full" for="'.$topic_id.'_star3" title="Meh - 3 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star2" name="rating" value="2" />
+                                                        <label class = "full" for="'.$topic_id.'_star2" title="Kinda bad - 2 stars"></label>
+                                                        <input class="stars" type="radio" id="'.$topic_id.'_star1" name="rating" value="1" />
+                                                        <label class = "full" for="'.$topic_id.'_star1" title="Sucks big time - 1 star"></label>
                                                     </fieldset>
                                                   </div>
                                           
                                              </div> 
                      
-                                        </div>";//end media
+                                        </div>';//end media
                             }
                         }
 

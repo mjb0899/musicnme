@@ -189,7 +189,7 @@ $artist=$_SESSION['artist'];
                                         $result = $db -> query($sql_query);
                                         while($row = $result -> fetch_array()) {
                                             $new_user=$row['username'];
-                                            echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span>';
+                                            echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span><br>';
 
                                         }
 

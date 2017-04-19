@@ -166,23 +166,23 @@ if(strcmp($sess,$owner)==0){
                 <table style="width:100%">
                     <tr>
                         <td><?php echo $firstname?></td>
-                        <td>Smith</td>
+                        <td><input type="text"></td>
                         <td><a><span class="glyphicon glyphicon-pencil"></a></td>
                     </tr>
                     <tr>
                         <td><?php echo $lastname?></td>
-                        <td>Jackson</td>
-                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
+                        <td><input type="text"></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td><?php echo $email?></td>
-                        <td>Doe</td>
-                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
+                        <td><input type="text"></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Change Password</td>
-                        <td>Doe</td>
-                        <td><a><span class="glyphicon glyphicon-pencil"></a></td>
+                        <td><input type="text"></td>
+                        <td><input type="submit"></td>
                     </tr>
                 </table>
 

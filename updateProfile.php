@@ -76,9 +76,9 @@ if(isset($_POST['psw'])){
 
 }
 if((isset($_POST['psw']))||(isset($_POST['email']))||(isset($_POST['lastname']))||(isset($_POST['firstname']))){
-    echo "Your changes have been Saved.";
+    echo "Your changes have been Saved.".$fname.$lname.$email.$pass;
 }
 else{
-    echo "Not saved";
+    echo "Not saved".$fname.$lname.$email.$pass;
 }
 

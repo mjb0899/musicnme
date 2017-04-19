@@ -132,7 +132,7 @@ $artist=$_SESSION['artist'];
 
 
 
-                             <a href="<?php echo $red?>"><button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button></a>
+                             <a href="<?php echo $red?>"><button type="button"  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil">Edit</button></a>
 
 
                             </div>

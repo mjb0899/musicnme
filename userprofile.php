@@ -353,21 +353,18 @@ if(strcmp($sess,$owner)==0){
 </body>
 <script>
     $(document).ready(function(){
-        $("#edit_data").click(function(){
+        $("#edit_data").on("click",function(){
             $("#edit_data").hide();
             $("#submit_data").show();
-
-
         });
     });
 
     </script>
 <script>
     $(document).ready(function(){
-        $("#submit_data").click(function(){
-            $("#submit_data").hide();
+        $("#submit_data").on("click",function(){
             $("#edit_data").show();
-
+            $("#submit_data").hide();
         });
     });
 </script>

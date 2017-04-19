@@ -396,21 +396,21 @@ if(isset($_SESSION['match'])){
                     //uploads image and music
                     if($file_title==="upload") {
                        if(in_array($file_type,$allowed_media)){
-                            echo "<div class=\"media\">
-                     <div class=\"media-left\">
-                     <img src=\"$profile_pic\" class=\"media-object\" style=\"width:60px\">
+                           echo '<div class="media">
+                     <div class="media-left">
+                     <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                      </div>
-                     <div class=\"media-body\">
-                     <h4 class=\"media-heading\">$post_owner</h4>
-                     <p>$status</p>
+                     <div class="media-body">
+                     <h4 class="media-heading">'.$post_owner.'</h4>
+                     <p>'.$status.'</p>
                      </div>
                      </div>
-                     <div style='border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem'>
-                     <audio controls style='width: 100%;'>
-                     <source src=\"$file_path\" type=\"audio/mpeg\">
+                     <div style="border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem">
+                           <audio controls style="width: 100%;">
+                     <source src="'.$file_path.'" type="audio/mpeg">
                      </audio>
                      </div>
-                     <hr>";
+                     <hr>';
                         }
                     }
 

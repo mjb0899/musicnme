@@ -170,17 +170,20 @@ $artist=$_SESSION['artist'];
                                 <div id="collapse2" class="panel-collapse collapse">
                                     <div class="panel-body">
 
-
                                         <?php
 
                                         include("dbConnect.php");
 
-                                        $sql_query = 'SELECT description from statuses where username='.$sess.' && title="status" ORDER BY dateposted DESC LIMIT 1';
+                                        $sql_query = 'SELECT username from users where utype="artist" LIMIT 5';
                                         $result = $db -> query($sql_query);
                                         while($row = $result -> fetch_array()) {
-                                            $description=$row['description'];
-                                            echo $description;
+                                            $new_user=$row['username'];
+                                            echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span><br><br>';
+
                                         }
+
+
+
                                         ?>
 
 

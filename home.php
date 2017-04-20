@@ -253,7 +253,7 @@ $artist=$_SESSION['artist'];
                 <!--End collapse 2-->
                 <!--Alert Div-->
                 <div class="alert alert-success">
-                    <strong>Success!</strong> Indicates a successful or positive action.
+                    <strong>Rated!</strong>
                 </div>
                 <!--End Alert-->
             </div>

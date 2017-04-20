@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!--PAGE CSS-->
     <link rel="stylesheet" type="text/css" href="css/registration.css">
-    <script type="text/javascript" src="menubar.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </head>
 <body>

@@ -53,11 +53,7 @@ $artist=$_SESSION['artist'];
         );
     </script>
     <script>
-        if (jQuery('#exampleInputFile').val() == '') {
-            $('#file_responder').html("Please Attach File");
-        }else {
-            alert('File Not accepted');
-        }
+
     </script>
 </head>
 <body>

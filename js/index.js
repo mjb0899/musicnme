@@ -17,7 +17,8 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-//fileUploadVaildate
-if ($('#exampleInputFile').get(0).files.length === 0) {
-    console.log("No files selected.");
+if (jQuery('#exampleInputFile').val() == '') {
+    $('#file_responder').html("Please Attach File");
+}else {
+    alert('File Not accepted');
 }

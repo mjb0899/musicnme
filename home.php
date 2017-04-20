@@ -26,31 +26,20 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <!-- Rating script and files -->
-    <link rel="stylesheet" type="text/css" href="css/rating.css">
+
+    <!--index.js link-->
+    <script src="js/index.js">
+
+
+
+
+
+
+        <link rel="stylesheet" type="text/css" href="css/rating.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <script>
-        $(document).ready(function () {
-                $(".demo1 .stars").click(function () {
-                        $.post('rating.php',{
-                                rate:$(this).val(),topic:$(this).attr('id')}
-                            ,function(d){
-                                if(d>0)
-                                {
-                                    $("#not_rated_alert").show();
-                                    $("#not_rated_alert").fadeOut(2000);
-                                }
-                                else{
-                                   $("#rated_alert").show();
-                                   $("#rated_alert").fadeOut(2000);
-                                }
-                            }
-                        );
-                        $(this).attr("checked");
-                    }
-                );
-            }
-        );
+
     </script>
     <script>
 

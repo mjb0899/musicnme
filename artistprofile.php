@@ -36,8 +36,7 @@ if(strcmp($sess,$owner)==0){
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!-- js-->
-    <script type="text/javascript" src="js/index.js">
-    </script>
+
     <script src="js/index.js">
     </script>
     <script>

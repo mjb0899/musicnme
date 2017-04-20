@@ -114,6 +114,20 @@ if(isset($_POST['submit'])){
                     $userID = $col1;
                 }
 
+                $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted,title,file_namefile_type,path) VALUES (?,?,?,?,?,?,?)");
+                $stmt2->bind_param('sisssss',$description,$userID,$date,$upload,$fileNameNew,$fileActualExt,$fileDestination);
+                $stmt2-> execute();
+                $stmt2-> store_result();
+                $stmt2->bind_result($col1);
+                header("location:home.php");
+
+
+
+
+/*
+
+
+
                 //insert into topic
                 $sql="INSERT INTO topic(description,uid,dateposted,title,file_name,file_type,path) VALUES ('$description','$userID','$date','$upload','$fileNameNew','$fileActualExt','$fileDestination')";
                 if(mysqli_query($db,$sql)){
@@ -122,7 +136,31 @@ if(isset($_POST['submit'])){
                 else{
                     echo"Error:".$sql."<br>" . mysqli_error($db);
                 }
-                //insert into music
+
+
+
+*/
+
+
+
+
+
+
+
+                //insert into music metadata
+
+                $stmt3=$db->prepare("INSERT INTO music(music_name,artist,file_name) VALUES (?,?,?)");
+                $stmt3->bind_param('sss',$songtitle,$songartist,$fileNameNew);
+                $stmt3-> execute();
+                $stmt3-> store_result();
+                $stmt3->bind_result($col1);
+                header("location:home.php");
+
+
+
+
+                //raw sql
+               /*
                 $sql2="INSERT INTO music(music_name,artist,file_name) VALUES ('$songtitle','$songartist','$fileNameNew')";
                 if(mysqli_query($db,$sql2)){
 
@@ -132,6 +170,7 @@ if(isset($_POST['submit'])){
                 }
 
                 header("Location:home.php");
+               */
 
             }else{
                 echo "File too big";

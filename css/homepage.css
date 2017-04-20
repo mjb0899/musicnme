@@ -110,6 +110,12 @@ body{
 
 }
 
+.feed_image{
+    height: 50%;
+    width: 80%; border: 2px solid #212121;
+    margin: auto;
+
+}
 
 
 

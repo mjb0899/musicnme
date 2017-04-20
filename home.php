@@ -399,7 +399,7 @@ $artist=$_SESSION['artist'];
                     }
                     $allowed_image = array('jpg','jpeg','png');
                     $allowed_media = array('mp4','mp3');
-//upload music
+//upload image
                     if($file_title==="upload") {
                         if(in_array($file_type,$allowed_image)) {
                             echo '<div class="media">
@@ -409,7 +409,7 @@ $artist=$_SESSION['artist'];
                                     <div class="media-body">
                                           <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>                                                 <p>'.$status.'</p>
                                     </div>
-                                    <div style="height: 100%; width: 80%; background-color: #212121;margin: auto">
+                                    <div class="feed_image">
                                          <img style="height: 100%; width: 100%; object-fit: contain" src="'.$file_path.'">      
                                     </div>
                                     <div class="rater" style="clear:both">

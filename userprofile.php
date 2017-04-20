@@ -169,7 +169,7 @@ if(strcmp($sess,$owner)==0){
                                             </div>
                                              <div class="modal-body">
                                                 <form action="uploadImage.php" method="post" enctype="multipart/form-data">
-                                                <input type="file" name="file" id="exampleInputFile">
+                                                <input type="file" name="file" id="exampleInputFile" required>
                                                 <button type="submit" class="btn btn-default btn-sm" name="submit"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
                                                 </form>
                                              </div>

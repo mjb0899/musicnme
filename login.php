@@ -41,8 +41,6 @@ if(isset($_SESSION['name'])){
     header("location:home.php");
 }
 else{
-    session_start();
-    $_SESSION['errmsg']="Invalid Credentials";
     header("location:index.php");
 }
 

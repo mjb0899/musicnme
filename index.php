@@ -62,8 +62,6 @@
         <div id="ack">
             <p style="color: red;"> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
         </div>
-        <?php unset($_SESSION['errmsg']); ?>
-
         <form action="login.php" method="post">
             <label for="exampleInputEmail1" class="label_font">Username</label>
             <div class="form-group">

@@ -295,30 +295,30 @@ $artist=$_SESSION['artist'];
                         <div id="menu1" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
-                    <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="Say something about your post"></textarea>
+                                    <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="Say something about your post"></textarea>
+                                    <label>Select File</label>
                                     <input type="file" id="exampleInputFile" name="file" >
                                 </div>
                                 <button type="submit" class="btn btn-default" id="button_col" name="submit">Post
                                 </button>
                             </form>
                         </div>
+
+                        <!--Share Music post div-->
                         <div id="menu2" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <div class="input-group">
-                      <span class="input-group-addon">Title
-                      </span>
+                                        <span class="input-group-addon">Title</span>
                                         <input id="msg" type="text" class="form-control " name="songtitle"  placeholder="Give a title for your music">
                                     </div>
                                     <div class="input-group">
-                      <span class="input-group-addon">Artist
-                      </span>
+                                         <span class="input-group-addon">Artist</span>
                                         <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name">
                                     </div>
                                     <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
 
-                                    <label for="exampleInputFile">File input
-                                    </label>
+                                    <label>Select File</label>
                                     <input type="file" id="exampleInputFile" name="file">
                                     <p class="help-block">Example block-level help text here.
                                     </p>

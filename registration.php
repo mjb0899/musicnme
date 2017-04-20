@@ -25,7 +25,7 @@
             alert("Passwords do no match");
             return false;
         }
-
+            return true;
     }
 </script>
 

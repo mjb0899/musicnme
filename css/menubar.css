@@ -1,6 +1,7 @@
 body {
     background-image: url("../images/Elegant_Background-12.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
   margin: 0;
   padding: 0;
 }

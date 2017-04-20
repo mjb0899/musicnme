@@ -38,11 +38,11 @@ $artist=$_SESSION['artist'];
                                 if(d>0)
                                 {
                                     $("#not_rated_alert").show();
-                                    $("#not_rated_alert").fadeOut(2000);
+                                    $("#not_rated_alert").fadeOut(1000);
                                 }
                                 else{
                                    $("#rated_alert").show();
-                                   $("#rated_alert").fadeOut(2000);
+                                   $("#rated_alert").fadeOut(1000);
                                 }
                             }
                         );

@@ -19,6 +19,7 @@ footer:after {
 
 	width: 100%;
 	clear: both;
+	color:white;
 
 }
 .footer_right{
@@ -45,7 +46,7 @@ footer  a {
 .footer_below{
 	font-family: Century Gothic, sans-serif;
 	text-align: center;
-	color: black;
+	color: white;
 	width: 100%;
 	font-weight: 900;
 }

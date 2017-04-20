@@ -50,4 +50,3 @@ function chk() {
     );
     return false
 }
-//show ratedor not

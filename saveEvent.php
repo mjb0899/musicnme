@@ -13,14 +13,18 @@ $ename=$_POST['eventName'];
 $edesc=$_POST['eventDesc'];
 include ("dbConnect.php");
 
-$stmt1=prepare("Select uid from users where username=?");
-$stmt->bind_param('s',$sess);
-$stmt-> execute();
-$stmt-> store_result();
-$stmt->bind_result($col1);
-while ($stmt->fetch()) {
+$stmt1=$db->prepare("Select uid from users where username=?");
+$stmt1->bind_param('s',$sess);
+$stmt1-> execute();
+$stmt1-> store_result();
+$stmt1->bind_result($col1);
+while ($stmt1->fetch()) {
     $uid = $col1;
 }
+
+
+
+
 
 
 
@@ -31,8 +35,7 @@ while ($stmt->fetch()) {
 $sql="INSERT INTO events (uid,ename,edesc,edate,etime) VALUES ('$uid','$ename','$edesc','$date','$time')";
 
 if(mysqli_query($db,$sql)){
-echo 1;
-echo $date;
+
 }
 else{
     echo"Error:".$sql."<br>" . mysqli_error($db);

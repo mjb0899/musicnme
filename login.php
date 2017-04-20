@@ -23,6 +23,7 @@ $stmt-> store_result();
 $stmt->bind_result($col1);
 
 while ($stmt->fetch()) {
+
    $user_type=$col1;
     session_start();
 

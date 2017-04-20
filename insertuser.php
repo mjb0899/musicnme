@@ -25,7 +25,27 @@ $stmt2->bind_param('ssssss', $username,$pass,$email,$fname,$lname,$type);
 $stmt2->execute();
 $stmt2->store_result();
 $stmt2->bind_result($col1);
-header("location:home.php");
+
+
+
+try{
+session_start();
+
+    $_SESSION['name']=$username;
+
+
+    if($type==="user"){
+        $_SESSION['user'] = $user_type;
+    }
+    elseif ($user_type==="artist"){
+        $_SESSION['artist']=$user_type;
+    }
+
+    header("location:home.php");
+}catch(PDOException $e)
+{           header("location:index.php");
+    echo "Error: " . $e->getMessage();
+}
 
 /*
 $sql="INSERT INTO users(username,upassword,uemail,ufname,ulname,utype) VALUES ('$username','$pass','$email','$fname','$lname','$type')";

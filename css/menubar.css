@@ -8,6 +8,7 @@ body {
 
 .container-fluid a{
     color: #ff3333 !important;
+    font-size: large;
 }
 
 .navbar-custom {

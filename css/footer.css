@@ -7,7 +7,7 @@ footer{
 }
 footer h1{
 	text-align: center;
-	color: black
+	color: #ff3333;
 
 
 }
@@ -26,6 +26,7 @@ footer:after {
 
 	width: 100%;
 	clear: both;
+
 
 
 }
@@ -49,4 +50,6 @@ footer  a {
 	color: white;
 	width: 100%;
 	font-weight: 900;
+
+
 }

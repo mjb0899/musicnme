@@ -67,14 +67,21 @@ body{
     font-size: large;
     color: #ff3333;
 }
-.panel-heading{
-    color: #ff3333;
-    background-color: #212121;
-}
+
 #collapse3  a:hover{
     text-decoration: none;
     font-size: large;
 }
+#demo{
+    color: #ff3333;
+    background-color: #212121;
+}
+#demo button:hover{
+    color: #ff3333;
+    background-color: #212121;
+}
+
+
 
 .media{
     margin-top: 1rem;

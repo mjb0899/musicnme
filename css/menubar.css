@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/Elegant_Background-12.jpg");
+    background-repeat: no-repeat;
   margin: 0;
   padding: 0;
 }

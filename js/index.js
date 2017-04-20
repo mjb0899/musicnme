@@ -41,6 +41,8 @@ function chk() {
                             location.reload();
                         }
                         ,2000);
+                }else if(d==0){
+                    $("#test").html("Check Fields");
                 }
                 else{
                     $("#test").html("Not saved.");

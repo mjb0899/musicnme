@@ -59,7 +59,7 @@
 <main>
     <div class="wrapper">
 
-    <form action="insertuser.php" method="post" onsubmit="validate_password();">
+    <form action="insertuser.php" method="post" onsubmit="validate_password()">
         <div class="container">
             <div class="header_div">
                 <h2>  Join Our Family </h2>

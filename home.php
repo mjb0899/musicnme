@@ -26,6 +26,7 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <!-- Rating script and files -->
+    <script src="js/index.js">
 
 
     <link rel="stylesheet" type="text/css" href="css/rating.css">

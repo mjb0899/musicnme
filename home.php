@@ -273,20 +273,16 @@ $artist=$_SESSION['artist'];
             <div class="share_align">
                 <div class="container">
                     <ul class="nav nav-pills">
-                        <li class="active">
-                            <a data-toggle="pill" href="#home">Create a Post
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="pill" href="#menu1">Share Image
-                            </a>
-                        </li>
+                        <!--Share file Pills-->
+                        <li class="active"><a data-toggle="pill" href="#home">Create a Post</a></li>
+                        <li><a data-toggle="pill" href="#menu1">Share Image</a></li>
                         <?php if(isset($sess,$artist)){ echo ' <li><a data-toggle="pill" href="#menu2">Share Music</a></li>';}?>
                     </ul>
+                    <!--Share Status post div-->
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
                             <form method="post" action="savepost.php">
-                              <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
+                              <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?" required></textarea>
                                 <button type="sumbit" class="btn btn-default" id="button_col">Post
                                 </button>
                             </form>
@@ -303,7 +299,6 @@ $artist=$_SESSION['artist'];
                                 </button>
                             </form>
                         </div>
-
                         <!--Share Music post div-->
                         <div id="menu2" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">

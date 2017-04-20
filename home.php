@@ -230,10 +230,6 @@ $artist=$_SESSION['artist'];
                                     for($i=0;$i<$total_hits;$i++){
                                         echo '<span class="glyphicon glyphicon-star"></span>';
                                     }
-
-
-
-
                                     ?>
                                 </div>
                             </div>
@@ -253,7 +249,7 @@ $artist=$_SESSION['artist'];
                                     $result = $db -> query($sql_query);
                                     while($row = $result -> fetch_array()) {
                                         $new_user=$row['username'];
-                                        echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span><br><br>';
+                                        echo '<span class="glyphicon glyphicon-headphones"><a href="artistprofile.php?owner='.$new_user.'">'.' '.$new_user.'</span></a><br><br>';
                                     }
                                     ?>
                                 </div>

@@ -172,7 +172,7 @@ $artist=$_SESSION['artist'];
                             }
                             ?>
                             <a href="<?php echo $red?>">
-                <span class="glyphicon glyphicon-pencil">Edit
+                                  <span class="glyphicon glyphicon-pencil">Edit <!--Make pencil Center-->
                             </a>
                         </div>
                     </div>
@@ -251,6 +251,11 @@ $artist=$_SESSION['artist'];
                     </div>
                 </div>
                 <!--End collapse 2-->
+                <!--Alert Div-->
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Indicates a successful or positive action.
+                </div>
+                <!--End Alert-->
             </div>
         </div>
         <div class="two">

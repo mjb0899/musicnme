@@ -56,9 +56,8 @@ body{
 .profile_data button{
     width: 100%;
 }
-.data_box{
-
-
+.data_box_edit{
+    text-align: center;
 }
 .collapse2{
     margin-top: 2rem;

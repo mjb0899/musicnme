@@ -222,7 +222,7 @@ $artist=$_SESSION['artist'];
                                         $count=$count+1;
                                     }
                                     $total_hits=$hits_calculator/$count;
-                                    echo '<span class="glyphicon glyphicon-star">'.' '.$total_hits.'</span><br><br>';
+                                    echo '<span class="glyphicon glyphicon-star">'.' '.round($total_hits, 1).'</span><br><br>';
                                     ?>
                                 </div>
                             </div>

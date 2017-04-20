@@ -16,20 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/registration.css">
     <script type="text/javascript" src="js/index.js"></script>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script>
-    function validate_password(){
 
-        var a = document.getElementById("pwd").value;
-        var b = document.getElementById("rep_pwd").value;
-        if (a!=b) {
-            alert("Passwords do no match");
-            event.preventDefault();
-            return false;
-
-        }
-            return true;
-    }
-</script>
 
 
 </head>
@@ -61,7 +48,7 @@
 <main>
     <div class="wrapper">
 
-    <form action="insertuser.php" method="post" onsubmit=" validate_password();">
+    <form action="insertuser.php" method="post">
         <div class="container">
             <div class="header_div">
                 <h2>  Join Our Family </h2>

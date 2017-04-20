@@ -27,15 +27,8 @@ $artist=$_SESSION['artist'];
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <!-- Rating script and files -->
 
-    <!--index.js link-->
-    <script src="js/index.js">
 
-
-
-
-
-
-        <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <script>
@@ -50,8 +43,8 @@ $artist=$_SESSION['artist'];
                                     $("#not_rated_alert").fadeOut(2000);
                                 }
                                 else{
-                                    $("#rated_alert").show();
-                                    $("#rated_alert").fadeOut(2000);
+                                   $("#rated_alert").show();
+                                   $("#rated_alert").fadeOut(2000);
                                 }
                             }
                         );

@@ -300,8 +300,6 @@ $artist=$_SESSION['artist'];
                                     <label for="exampleInputFile" >File input
                                     </label>
                                     <input type="file" id="exampleInputFile" name="file" >
-                                    <p class="help-block">Example block-level help text here.
-                                    </p>
                                 </div>
                                 <button type="submit" class="btn btn-default" id="button_col" name="submit">Post
                                 </button>

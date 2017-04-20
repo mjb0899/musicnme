@@ -37,10 +37,12 @@ $artist=$_SESSION['artist'];
                             ,function(d){
                                 if(d>0)
                                 {
-                                    alert('You already rated');
+                                    $("#rated_alert").show();
+                                    $("#rated_alert").fadeOut(3000);
                                 }
                                 else{
-                                    alert('Thanks For Rating');
+                                   $("#rated_alert").show();
+                                   $("#rated_alert").fadeOut(3000);
                                 }
                             }
                         );

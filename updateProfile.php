@@ -107,7 +107,7 @@ if(isset($_POST['psw'])){
 }
 
 if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))){
-    echo "a";
+    echo "0";
 }
 else{
     echo 1;

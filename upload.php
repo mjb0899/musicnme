@@ -103,6 +103,11 @@ if(isset($_POST['submit'])){
                 move_uploaded_file($fileTmpName,$fileDestination);
 
                 //insert
+
+
+
+
+
                 //get uid
                 //prepared
                 $stmt1 = $db->prepare("Select uid from users where username=?");
@@ -113,6 +118,8 @@ if(isset($_POST['submit'])){
                 while ($stmt1->fetch()) {
                     $userID = $col1;
                 }
+
+                echo $description.$userID.$date.$upload.$fileNameNew.$fileActualExt.$fileDestination;
 
                 $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted,title,file_namefile_type,path) VALUES (?,?,?,?,?,?,?)");
                 $stmt2->bind_param('sisssss',$description,$userID,$date,$upload,$fileNameNew,$fileActualExt,$fileDestination);
@@ -165,7 +172,7 @@ if(isset($_POST['submit'])){
                 if(mysqli_query($db,$sql2)){
 
                 }
-                else{
+                else{k
                     echo"Error:".$sql."<br>" . mysqli_error($db);
                 }
 

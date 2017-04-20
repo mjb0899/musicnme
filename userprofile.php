@@ -34,7 +34,7 @@ if(strcmp($sess,$owner)==0){
     </script>
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <link rel="stylesheet" type="text/css" href="css/user.css">
-    <script src="js/artistjs.js">
+    <script src="js/index.js">
     </script>
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">

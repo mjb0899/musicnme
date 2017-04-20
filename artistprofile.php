@@ -31,15 +31,15 @@ if(strcmp($sess,$owner)==0){
     </script>
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <link rel="stylesheet" type="text/css" href="css/artist.css">
-    <script src="js/artistjs.js">
+    <script src="js/index.js">
     </script>
     <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <!-- js-->
-    <script type="text/javascript" src="js/artistjs.js">
+    <script type="text/javascript" src="js/index.js">
     </script>
-    <script src="js/artistjs.js">
+    <script src="js/index.js">
     </script>
     <script>
         // Get the element with id="defaultOpen" and click on it

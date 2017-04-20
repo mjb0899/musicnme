@@ -37,11 +37,15 @@ session_start();
     if($type==="user"){
         $_SESSION['user'] = $user_type;
     }
-    elseif ($user_type==="artist"){
+    elseif ($type==="artist"){
         $_SESSION['artist']=$user_type;
+    }else{
+        header("location:index.php");
+
     }
 
     header("location:home.php");
+
 }catch(PDOException $e)
 {           header("location:index.php");
     echo "Error: " . $e->getMessage();

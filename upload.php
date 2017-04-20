@@ -39,17 +39,33 @@ if(isset($_POST['submit'])){
                 $fileDestination='uploads/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName,$fileDestination);
 
-                //insert
+
                 //get uid
-                $sql_query = "Select uid from users Where username='$sess'";
-                $result = $db -> query($sql_query);
-                while($row = $result -> fetch_array()){
-                    $userID= $row['uid'];
+                $stmt1 = $db->prepare("Select uid from users where username=?");
+                $stmt1->bind_param('s', $sess);
+                $stmt1->execute();
+                $stmt1->store_result();
+                $stmt1->bind_result($col1);
+                while ($stmt1->fetch()) {
+                    $userID = $col1;
                 }
 
-
                 $upload="upload";
+
                 $date = date('Y-m-d H:i:s');
+
+
+
+                //preparing
+                $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted,title,file_type,path,file_name) VALUES (?,?,?,?,?,?,?)");
+                $stmt2->bind_param('sisssss',$description,$userID,$date,$upload,$fileActualExt,$fileDestination,$fileNameNew);
+                $stmt2-> execute();
+                $stmt2-> store_result();
+                $stmt2->bind_result($col1);
+                header("location:home.php");
+
+
+                /*
                 //insert into topic
                 $sql="INSERT INTO topic(description,uid,dateposted,title,file_type,path,file_name) VALUES ('$description','$userID','$date','$upload','$fileActualExt','$fileDestination','$fileNameNew')";
                 if(mysqli_query($db,$sql)){
@@ -60,6 +76,17 @@ if(isset($_POST['submit'])){
                 }
 
                 header("Location:home.php");
+
+                */
+
+
+
+
+
+
+
+
+
 
             }else{
                 echo "File too big";
@@ -77,10 +104,14 @@ if(isset($_POST['submit'])){
 
                 //insert
                 //get uid
-                $sql_query = "Select uid from users Where username='$sess'";
-                $result = $db -> query($sql_query);
-                while($row = $result -> fetch_array()){
-                    $userID= $row['uid'];
+                //prepared
+                $stmt1 = $db->prepare("Select uid from users where username=?");
+                $stmt1->bind_param('s', $sess);
+                $stmt1->execute();
+                $stmt1->store_result();
+                $stmt1->bind_result($col1);
+                while ($stmt1->fetch()) {
+                    $userID = $col1;
                 }
 
                 //insert into topic

@@ -229,9 +229,14 @@ $artist=$_SESSION['artist'];
                                         $count=$count+1;
                                     }
                                     $total_hits=$hits_calculator/$count;
-                                    for($i=0;$i<$total_hits;$i++){
-                                        echo '<span class="glyphicon glyphicon-star"></span>';
+                                    if($total_hits!=0) {
+                                        for ($i = 0; $i < $total_hits; $i++) {
+                                            echo '<span class="glyphicon glyphicon-star"></span>';
+                                        }
+                                    }else{
+                                        echo '<span class="glyphicon glyphicon-star-empty"></span>';
                                     }
+
                                     ?>
                                 </div>
                             </div>

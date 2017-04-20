@@ -13,11 +13,20 @@ $ename=$_POST['eventName'];
 $edesc=$_POST['eventDesc'];
 include ("dbConnect.php");
 
-$sql="Select uid from users where username='$sess'";
-$result = $db -> query($sql);
-while($row = $result -> fetch_array()){
-    $uid= $row['uid'];
+$stmt1=prepare("Select uid from users where username=?");
+$stmt->bind_param('s',$sess);
+$stmt-> execute();
+$stmt-> store_result();
+$stmt->bind_result($col1);
+while ($stmt->fetch()) {
+    $uid = $col1;
 }
+
+
+
+
+
+
 
 $sql="INSERT INTO events (uid,ename,edesc,edate,etime) VALUES ('$uid','$ename','$edesc','$date','$time')";
 

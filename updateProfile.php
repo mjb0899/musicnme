@@ -86,6 +86,18 @@ if(isset($_POST['lastname'])){
 if(isset($_POST['email'])){
     if($email!=null) {
 
+        $stmt1 = $db->prepare("UPDATE users SET uemail=? WHERE username=?");
+        $stmt1->bind_param('ss', $email, $sess);
+        $stmt1->execute();
+        $stmt1->store_result();
+        $stmt1->bind_result($col1);
+
+
+
+
+
+
+/*
         $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
 
 
@@ -96,6 +108,7 @@ if(isset($_POST['email'])){
         } else {
             echo "Error:" . $sql . "<br>" . mysqli_error($db);
         }
+        */
     }
 
 }

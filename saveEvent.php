@@ -23,21 +23,13 @@ while ($stmt1->fetch()) {
 }
 
 
+$stmt2=$db->prepare("INSERT INTO events (uid,ename,edesc,edate,etime) VALUES (?,?,?,?,?)");
+$stmt2->bind_param('i,s,s,s,s',$uid,$ename,$edesc,$date,$time);
+$stmt2-> execute();
+$stmt2-> store_result();
+$stmt2->bind_result($col1);
 
+$stmt1->close();
+$stmt2->close();
 
-
-
-
-
-
-
-
-$sql="INSERT INTO events (uid,ename,edesc,edate,etime) VALUES ('$uid','$ename','$edesc','$date','$time')";
-
-if(mysqli_query($db,$sql)){
-
-}
-else{
-    echo"Error:".$sql."<br>" . mysqli_error($db);
-}
 header("location:createEvent.php");

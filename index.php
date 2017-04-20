@@ -64,7 +64,7 @@ session_start();
             <h1> Welcome</h1>
         </div>
         <div id="ack">
-            <p style="color: red;"> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
+            <p style="color: red;font-size: large"> <?php if(!empty($_SESSION['errmsg'])) { echo $_SESSION['errmsg']; } ?></p>
         </div>
         <form action="login.php" method="post">
             <label for="exampleInputEmail1" class="label_font">Username</label>

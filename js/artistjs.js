@@ -1,3 +1,5 @@
+
+//Tab links in artist profile
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -14,6 +16,8 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+//fileUploadVaildate
 /*
 if ($('#check_Upload_File').get(0).files.length === 0) {
     console.log("No files selected.");

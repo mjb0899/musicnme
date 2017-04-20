@@ -411,8 +411,8 @@ $artist=$_SESSION['artist'];
                                              
                                     </div>
                                     
-                                      <div class="feed_image">                                   
-                                         <img src="'.$file_path.'">      
+                                   <div style="height: 100%; width: 80%; background-color: #212121;margin: auto">
+                                         <img style="height: 100%; width: 100%; object-fit: contain" src="'.$file_path.'">      
                                     </div>
                                  
                                     <div class="rater" style="clear:both">

@@ -109,24 +109,6 @@ body{
 
 }
 
-.feed_image{
-    height: 50%;
-    width: 70%;
-    margin: auto;
-    background-color: white;
-
-}
-
-.feed img{
-    height: 100%;
-    object-fit: contain;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
 
 .feed {
     margin-top: 1rem;

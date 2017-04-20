@@ -215,12 +215,14 @@ $artist=$_SESSION['artist'];
                                 <div class="panel-body">
                                     <?php
                                     include("dbConnect.php");
-                                    $sql_query = 'SELECT username from users where utype="artist" LIMIT 5';
+                                    $sql_query = "SELECT hits from post_info where username='$sess'";
                                     $result = $db -> query($sql_query);
                                     while($row = $result -> fetch_array()) {
-                                        $new_user=$row['username'];
-                                        echo '<span class="glyphicon glyphicon-headphones">'.' '.$new_user.'</span><br><br>';
+                                        $hits_calculator=$hits_calculator+$row['hits'];
+                                        $count=$count+1;
                                     }
+                                    $total_hits=$hits_calculator/$count;
+                                    echo '<span class="glyphicon glyphicon-star">'.' '.$total_hits.'</span><br><br>';
                                     ?>
                                 </div>
                             </div>

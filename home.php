@@ -39,7 +39,27 @@ $artist=$_SESSION['artist'];
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script>
     <script>
-
+        $(document).ready(function () {
+                $(".demo1 .stars").click(function () {
+                        $.post('rating.php',{
+                                rate:$(this).val(),topic:$(this).attr('id')}
+                            ,function(d){
+                                if(d>0)
+                                {
+                                    $("#not_rated_alert").show();
+                                    $("#not_rated_alert").fadeOut(2000);
+                                }
+                                else{
+                                    $("#rated_alert").show();
+                                    $("#rated_alert").fadeOut(2000);
+                                }
+                            }
+                        );
+                        $(this).attr("checked");
+                    }
+                );
+            }
+        );
     </script>
     <script>
 

@@ -1,6 +1,6 @@
 <?php
 include ("dbConnect.php");
-
+$_SESSION['errmsg']=0;
 if(empty($_POST["username"])||empty($_POST["password"])){
     echo "both fields required";
 }

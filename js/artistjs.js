@@ -14,4 +14,7 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
+/*
+if ($('#videoUploadFile').get(0).files.length === 0) {
+    console.log("No files selected.");
+}*/

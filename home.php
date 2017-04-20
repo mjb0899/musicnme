@@ -193,7 +193,7 @@ $artist=$_SESSION['artist'];
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapse1" class="panel-collapse collapse in">
+                            <div id="collapse1" class="panel-collapse collapse ">
                                 <div class="panel-body">
 
                                     <?php
@@ -217,7 +217,7 @@ $artist=$_SESSION['artist'];
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapse2" class="panel-collapse collapse">
+                            <div id="collapse2" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <?php
                                     include("dbConnect.php");

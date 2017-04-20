@@ -72,14 +72,6 @@ body{
     text-decoration: none;
     font-size: large;
 }
-btn_col{
-    color: #ff3333;
-    background-color: #212121;
-}
-.btn_col button:hover{
-    color: #ff3333;
-    background-color: #212121;
-}
 
 
 

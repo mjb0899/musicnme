@@ -62,6 +62,9 @@ body{
 .collapse2{
     margin-top: 2rem;
 }
+#collapse2{
+    text-align: center;
+}
 .media{
     margin-top: 1rem;
     background-color: whitesmoke;

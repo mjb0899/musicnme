@@ -22,4 +22,32 @@ if (jQuery('#exampleInputFile').val() == '') {
 }else {
     alert('File Not accepted');
 }
+//ajax function to edit profile
+function chk() {
+    var firstname=document.getElementById('firstname').value;
+    var lastname=document.getElementById('lastname').value;
+    var email=document.getElementById('email').value;
+    var psw=document.getElementById('psw').value;
+    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw;
+    $.ajax({
+            type:"post",
+            url:"updateProfile.php",
+            data: dataString,
+            cache:false,
+            success:function (d) {
+                if(d>0){
+                    $("#test").html("Your changes have been saved.");
+                    setTimeout(function(){
+                            location.reload();
+                        }
+                        ,2000);
+                }
+                else{
+                    $("#test").html("Not saved.");
+                }
+            }
+        }
+    );
+    return false
+}
 

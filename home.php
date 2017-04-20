@@ -285,11 +285,17 @@ $artist=$_SESSION['artist'];
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
                             <form method="post" action="savepost.php">
-                              <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?" required></textarea>
-                                <button type="sumbit" class="btn btn-default" id="button_col">Post
-                                </button>
+                              <textarea class="form-control" rows="2" id="status_area" name="status" placeholder="What's on your mind?" required></textarea>
+                                <button type="sumbit" class="btn btn-default" id="button_col" onclick="return savepost()">Post</button>
                             </form>
                         </div>
+
+
+
+
+
+
+
                         <!--Share Image post div-->
                         <div id="menu1" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">

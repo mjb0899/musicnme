@@ -178,6 +178,6 @@ textarea{
     }
 }
 
-#rated_alert{
+#rated_alert,#not_rated_alert{
     display: none;
 }

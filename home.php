@@ -37,12 +37,12 @@ $artist=$_SESSION['artist'];
                             ,function(d){
                                 if(d>0)
                                 {
-                                    $("#rated_alert").show();
-                                    $("#rated_alert").fadeOut(3000);
+                                    $("#not_rated_alert").show();
+                                    $("#not_rated_alert").fadeOut(2000);
                                 }
                                 else{
                                    $("#rated_alert").show();
-                                   $("#rated_alert").fadeOut(3000);
+                                   $("#rated_alert").fadeOut(2000);
                                 }
                             }
                         );
@@ -256,6 +256,9 @@ $artist=$_SESSION['artist'];
                 <!--Alert Div-->
                 <div class="alert alert-success" id="rated_alert">
                     <strong>Rated!</strong>
+                </div>
+                <div class="alert alert-info" id="not_rated_alert">
+                    <strong>Already Rated!</strong>
                 </div>
                 <!--End Alert-->
             </div>

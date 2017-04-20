@@ -65,6 +65,8 @@ body{
 #collapse2{
     text-align: center;
     font-size: large;
+    border: 2px solid #212121;
+    color: #ff3333;
 }
 #collapse3  a:hover{
     text-decoration: none;

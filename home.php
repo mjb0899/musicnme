@@ -149,6 +149,7 @@ $artist=$_SESSION['artist'];
                     </h2>
                 </a>
             </div>
+
             <div class="profile_data">
                 <!--Collapse 1-->
                 <div class="container">

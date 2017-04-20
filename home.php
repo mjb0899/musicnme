@@ -410,7 +410,7 @@ $artist=$_SESSION['artist'];
                                           <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>                                                 <p>'.$status.'</p>
                                     </div>
                                     <div class="feed_image">
-                                         <img style="height: 100%; width: 100%; object-fit: contain" src="'.$file_path.'">      
+                                         <img style="object-fit: contain" src="'.$file_path.'">      
                                     </div>
                                     <div class="rater" style="clear:both">
                                         <div style="float:left">

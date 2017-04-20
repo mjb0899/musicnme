@@ -294,7 +294,7 @@ $artist=$_SESSION['artist'];
                                 <div class="form-group">
                                     <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="It's always good to say something about your post"></textarea>
                                     <label>Select File</label>
-                                    <input type="file" id="exampleInputFile" name="file" >
+                                    <input type="file" id="exampleInputFile" name="file" required>
                                 </div>
                                 <button type="submit" class="btn btn-default" id="button_col" name="submit">Post
                                 </button>

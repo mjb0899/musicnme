@@ -22,3 +22,4 @@ if (jQuery('#exampleInputFile').val() == '') {
 }else {
     alert('File Not accepted');
 }
+

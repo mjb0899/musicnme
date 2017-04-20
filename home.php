@@ -291,12 +291,11 @@ $artist=$_SESSION['artist'];
                                 </button>
                             </form>
                         </div>
+                        <!--Share Image post div-->
                         <div id="menu1" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                     <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="Say something about your post"></textarea>
-                                    <label for="exampleInputFile" >File input
-                                    </label>
                                     <input type="file" id="exampleInputFile" name="file" >
                                 </div>
                                 <button type="submit" class="btn btn-default" id="button_col" name="submit">Post

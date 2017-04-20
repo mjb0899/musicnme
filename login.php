@@ -6,7 +6,7 @@ if(empty($_POST["username"])||empty($_POST["password"])){
 }
 else{
     $username=$_POST["username"];
-    $password=$_POST["password"];
+    $password=md5($_POST["password"]);
 }
 
 if(($username=='admin')&&($password=='admin')){

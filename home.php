@@ -372,7 +372,7 @@ $artist=$_SESSION['artist'];
                                      <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                 </div>
                                 <div class="media-body">
-                                    <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block" class="media-heading">'.$post_owner.' '.'</h4></a><p style="display:inline-block">posted a status</p>
+                                    <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block" class="media-heading">'.$post_owner.'  '.'</h4></a><p style="display:inline-block;color:#adadad">posted a status</p>
                                     <p style="font-size: large" >'.$status.'</p>
                                 </div>
                                     <div class="rater" style="clear:both">
@@ -406,8 +406,8 @@ $artist=$_SESSION['artist'];
                                           <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                     </div>
                                     <div class="media-body">
-                                          <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>                                                 <p>'.$status.'</p>
-                                             
+                                          <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block;" class="media-heading">'.$post_owner.' '.'</h4></a>                                                 <p>'.$status.'</p>
+                                            <p style="display:inline-block;color:#adadad">posted a status</p> 
                                     </div>
                                     
                                    <div style="height: 50%; width: 70%;margin: auto">
@@ -440,7 +440,8 @@ $artist=$_SESSION['artist'];
                                           <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                     </div>
                                     <div class="media-body">
-                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>
+                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4  style="display:inline-block;" class="media-heading">'.$post_owner.' '.'</h4></a>
+                                            <p style="display:inline-block;color:#adadad">shared music</p> 
                                             <p>'.$status.'</p>
                                     </div>
                                     <div style="border-left:2px solid #ff3333; padding: 1rem; margin-top: 1rem;margin-left: 1rem">

@@ -294,8 +294,7 @@ $artist=$_SESSION['artist'];
                         <div id="menu1" class="tab-pane fade">
                             <form action="upload.php" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
-                    <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="Say something about your post">
-                    </textarea>
+                    <textarea class="form-control" rows="2" id="comment" name="description_text"  placeholder="Say something about your post"></textarea>
                                     <label for="exampleInputFile" >File input
                                     </label>
                                     <input type="file" id="exampleInputFile" name="file" >
@@ -317,8 +316,8 @@ $artist=$_SESSION['artist'];
                       </span>
                                         <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name">
                                     </div>
-                                    <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post">
-                    </textarea>
+                                    <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post">   </textarea>
+
                                     <label for="exampleInputFile">File input
                                     </label>
                                     <input type="file" id="exampleInputFile" name="file">

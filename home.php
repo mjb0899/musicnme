@@ -53,8 +53,10 @@ $artist=$_SESSION['artist'];
         );
     </script>
     <script>
-        if ($('#exampleInputFile').get(0).files.length === 0) {
-            console.log("No files selected.");
+        if (jQuery('#exampleInputFile').val() == '') {
+            $('#file_responder').html("Please Attach File");
+        }else {
+            alert('File Not accepted');
         }
     </script>
 </head>
@@ -326,6 +328,7 @@ $artist=$_SESSION['artist'];
                     </div>
                 </div>
             </div>
+            <div id="file_responder"></div>
             <div class="feed">
                 <?php
                 include('dbConnect.php');

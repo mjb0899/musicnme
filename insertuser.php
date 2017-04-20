@@ -13,9 +13,13 @@ $lname=$_POST["lname"];
 $email=$_POST["email"];
 $type=$_POST['utype'];
 $pass = md5($_POST["pass"]);
+
+
 $allowed_utype = array('user','artist');
 if(in_array($type,$allowed_utype)) {
+
 }else{
+
     $type='user';
 }
 
@@ -27,18 +31,17 @@ $stmt2->store_result();
 $stmt2->bind_result($col1);
 
 
-
 try{
-session_start();
 
-    $_SESSION['name']=$username;
+    session_start();
 
-
-    if($type==="user"){
-        $_SESSION['user'] = $user_type;
+    if($type=="user"){
+        $_SESSION['name']=$username;
+        $_SESSION['user'] = $type;
     }
-    elseif ($type==="artist"){
-        $_SESSION['artist']=$user_type;
+    elseif ($type=="artist"){
+        $_SESSION['name']=$username;
+        $_SESSION['artist']=$type;
     }else{
         header("location:index.php");
 
@@ -50,16 +53,3 @@ session_start();
 {           header("location:index.php");
     echo "Error: " . $e->getMessage();
 }
-
-/*
-$sql="INSERT INTO users(username,upassword,uemail,ufname,ulname,utype) VALUES ('$username','$pass','$email','$fname','$lname','$type')";
-
-if(mysqli_query($db,$sql)){
-
-}
-else{
-    echo"Error:".$sql."<br>" . mysqli_error($db);
-}
-header("location:index.php");
-?>
-*/

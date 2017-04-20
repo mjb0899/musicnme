@@ -406,7 +406,7 @@ $artist=$_SESSION['artist'];
                                           <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                     </div>
                                     <div class="media-body">
-                                          <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block;" class="media-heading">'.$post_owner.' '.'</h4></a>                                                 <p>'.$status.'</p>
+                                          <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block;" class="media-heading">'.$post_owner.'  '.'</h4></a>                                                 <p>'.$status.'</p>
                                             <p style="display:inline-block;color:#adadad">posted an image</p> 
                                     </div>
                                     
@@ -440,7 +440,7 @@ $artist=$_SESSION['artist'];
                                           <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                     </div>
                                     <div class="media-body">
-                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4  style="display:inline-block;" class="media-heading">'.$post_owner.' '.'</h4></a>
+                                            <a href="'.$redirect.'?owner='.$post_owner.'"><h4  style="display:inline-block;" class="media-heading">'.$post_owner.'  '.'</h4></a>
                                             <p style="display:inline-block;color:#adadad">shared music</p> 
                                             <p>'.$status.'</p>
                                     </div>

@@ -116,6 +116,16 @@ if(isset($_POST['email'])){
 if(isset($_POST['psw'])){
     if($pass!=null) {
 
+        $stmt1 = $db->prepare("UPDATE users SET upassword=? WHERE username=?");
+        $stmt1->bind_param('ss', $pass, $sess);
+        $stmt1->execute();
+        $stmt1->store_result();
+        $stmt1->bind_result($col1);
+
+
+
+        /*
+
         $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
         if (mysqli_query($db, $sql)) {
 
@@ -123,6 +133,7 @@ if(isset($_POST['psw'])){
         } else {
             echo "Error:" . $sql . "<br>" . mysqli_error($db);
         }
+        */
     }
 
 }

@@ -305,11 +305,11 @@ $artist=$_SESSION['artist'];
                                 <div class="form-group">
                                     <div class="input-group">
                                         <span class="input-group-addon">Title</span>
-                                        <input id="msg" type="text" class="form-control " name="songtitle"  placeholder="Give a title for your music">
+                                        <input id="msg" type="text" class="form-control " name="songtitle"  placeholder="Give a title for your music (optional)">
                                     </div>
                                     <div class="input-group">
                                          <span class="input-group-addon">Artist</span>
-                                        <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name">
+                                        <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name (optional)">
                                     </div>
                                     <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="It's always good to say something about your post"></textarea>
 

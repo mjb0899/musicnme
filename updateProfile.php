@@ -79,6 +79,9 @@ if(isset($_POST['email'])){
     if($email!=null) {
 
         $sql = "UPDATE users SET uemail='$email' Where username='$sess'";
+
+
+
         if (mysqli_query($db, $sql)) {
 
 
@@ -104,7 +107,7 @@ if(isset($_POST['psw'])){
 }
 
 if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))){
-    echo 0;
+    echo "a";
 }
 else{
     echo 1;

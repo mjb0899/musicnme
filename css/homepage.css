@@ -67,7 +67,7 @@ body{
     font-size: large;
     color: #ff3333;
 }
-.panel-default{
+.panel-heading{
     border: 2px solid #212121;
 }
 #collapse3  a:hover{

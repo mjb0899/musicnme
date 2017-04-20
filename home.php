@@ -372,7 +372,7 @@ $artist=$_SESSION['artist'];
                                      <img src="'.$profile_pic.'" class="media-object" style="width:60px">
                                 </div>
                                 <div class="media-body">
-                                    <a href="'.$redirect.'?owner='.$post_owner.'"><h4 tyle="display:inline-block" class="media-heading">'.$post_owner.' '.'</h4></a><p style="display:inline-block">posted a status</p>
+                                    <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block" class="media-heading">'.$post_owner.' '.'</h4></a><p style="display:inline-block">posted a status</p>
                                     <p style="font-size: large" >'.$status.'</p>
                                 </div>
                                     <div class="rater" style="clear:both">

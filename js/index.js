@@ -74,3 +74,12 @@ function savepost() {
     );
     return false
 }*/
+
+
+function validate_password(){
+
+    if(!document.getElementById("pwd").value==document.getElementById("rep_pwd").value)alert("Passwords do no match");
+    return document.getElementById("pwd").value==document.getElementById("rep_pwd").value;
+    return false;
+}
+

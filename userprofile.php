@@ -67,9 +67,7 @@ if(strcmp($sess,$owner)==0){
             }
         );
     </script>
-    <script>
 
-    </script>
 </head>
 <body>
 <header>

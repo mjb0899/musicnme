@@ -412,7 +412,10 @@ $artist=$_SESSION['artist'];
                                     </div>
                                     
                                       <div class="feed_image">
+                                      <div style="margin:auto;">
                                          <img src="'.$file_path.'">      
+
+                                      </div>
                                     </div>
                                  
                                     <div class="rater" style="clear:both">

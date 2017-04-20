@@ -72,11 +72,11 @@ body{
     text-decoration: none;
     font-size: large;
 }
-#demo{
+.profile_data.btn_col{
     color: #ff3333;
     background-color: #212121;
 }
-#demo button:hover{
+.btn_col button:hover{
     color: #ff3333;
     background-color: #212121;
 }

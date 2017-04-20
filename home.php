@@ -153,7 +153,7 @@ $artist=$_SESSION['artist'];
             <div class="profile_data">
                 <!--Collapse 1-->
                 <div class="container">
-                    <button type="button" class="btn btn-info" data-toggle="collapse"  data-target="#demo">Profile Details
+                    <button type="button" class="btn btn-info btn_col" data-toggle="collapse"  data-target="#demo">Profile Details
                     </button>
                     <div id="demo" class="collapse">
                         <div class="data_box">

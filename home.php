@@ -316,7 +316,7 @@ $artist=$_SESSION['artist'];
                       </span>
                                         <input id="msg" type="text" class="form-control" name="songartist"  placeholder="Give the Artist name">
                                     </div>
-                                    <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post">   </textarea>
+                                    <textarea class="form-control" rows="2" id="comment" name="description_text" placeholder="Say something about your post"></textarea>
 
                                     <label for="exampleInputFile">File input
                                     </label>

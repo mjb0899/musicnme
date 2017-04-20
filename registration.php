@@ -23,10 +23,8 @@
         var b = document.getElementById("rep_pwd").value;
         if (a!=b) {
             alert("Passwords do no match");
-            widows.history.back();
             return false;
         }
-        return true;
 
     }
 </script>
@@ -61,7 +59,7 @@
 <main>
     <div class="wrapper">
 
-    <form action="insertuser.php" method="post" onsubmit="validate_password();">
+    <form action="insertuser.php" method="post" onsubmit="event.preventDefault(); validate_password();">
         <div class="container">
             <div class="header_div">
                 <h2>  Join Our Family </h2>

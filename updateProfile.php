@@ -14,8 +14,7 @@ $artist=$_SESSION['artist'];
 $fname=$_POST['firstname'];
 $lname=$_POST['lastname'];
 $email=$_POST['email'];
-$pass=$_POST['psw'];
-
+$pass = md5($_POST['psw']);
 
 include("dbConnect.php");
 

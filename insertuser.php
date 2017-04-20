@@ -11,7 +11,7 @@ $username=$_POST["username"];
 $fname=$_POST["fname"];
 $lname=$_POST["lname"];
 $email=$_POST["email"];
-$pass=md5($_POST["pass"]);
+$pass =$_POST["pass"];
 $type=$_POST['utype'];
 
 $sql="INSERT INTO users(username,upassword,uemail,ufname,ulname,utype) VALUES ('$username','$pass','$email','$fname','$lname','$type')";

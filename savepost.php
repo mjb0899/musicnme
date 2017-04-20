@@ -25,6 +25,9 @@ try{
             $userID = $col1;
         }
     }
+    //get date
+    $date = date('Y-m-d H:i:s');
+
 
     $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted) VALUES (?,?,?)");
     $stmt2->bind_param('sis',$status,$userID,$date);

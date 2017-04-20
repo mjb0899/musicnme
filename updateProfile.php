@@ -29,6 +29,7 @@ if(isset($_POST['firstname'])){
 
 
         //raw
+        /*
         $sql = "UPDATE users SET ufname='$fname' Where username='$sess'";
 
         if(mysqli_query($db,$sql)){
@@ -36,19 +37,16 @@ if(isset($_POST['firstname'])){
         }
         else{
             echo"Error:".$sql."<br>" . mysqli_error($db);
-        }
+        }*/
 
-        /*
+
         //prepared
         $stmt1 = $db->prepare("UPDATE users SET ufname=? WHERE username=?");
         $stmt1->bind_param('ss', $fname, $sess);
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
-        header("location:home.php");
 
-
-        */
 
 
 

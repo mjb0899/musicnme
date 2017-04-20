@@ -19,10 +19,13 @@
 <script>
     function validate_password(){
 
-        if(!document.getElementById("pwd").value==document.getElementById("rep_pwd").value)alert("Passwords do no match");
-        return document.getElementById("pwd").value==document.getElementById("rep_pwd").value;
+        var a = document.getElementById("password").value;
+        var b = document.getElementById("confirm_password").value;
+        if (a!=b) {
+            alert("Passwords do no match");
+            return false;
+        }
 
-        return false;
     }
 </script>
 

@@ -165,7 +165,7 @@ if(strcmp($sess,$owner)==0){
                                          <div class="modal-content">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Select File</h4>
+                                                <h4 class="modal-title">Upload Profile Image</h4>
                                             </div>
                                              <div class="modal-body">
                                                 <form action="uploadImage.php" method="post" enctype="multipart/form-data">

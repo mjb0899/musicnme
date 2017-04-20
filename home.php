@@ -252,7 +252,7 @@ $artist=$_SESSION['artist'];
                 </div>
                 <!--End collapse 2-->
                 <!--Alert Div-->
-                <div class="alert alert-success">
+                <div class="alert alert-success" id="rated_alert">
                     <strong>Rated!</strong>
                 </div>
                 <!--End Alert-->

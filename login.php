@@ -42,6 +42,7 @@ if(isset($_SESSION['name'])){
     header("location:home.php");
 }
 else{
+    session_start();
     $_SESSION['errmsg']='INVALID CREDENTIALS';
     header("location:index.php");
 }

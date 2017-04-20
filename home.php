@@ -286,8 +286,7 @@ $artist=$_SESSION['artist'];
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
                             <form method="post" action="savepost.php">
-                  <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?">
-                  </textarea>
+                              <textarea class="form-control" rows="2" id="comment" name="status" placeholder="What's on your mind?"></textarea>
                                 <button type="sumbit" class="btn btn-default" id="button_col">Post
                                 </button>
                             </form>

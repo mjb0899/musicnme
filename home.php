@@ -173,9 +173,12 @@ $artist=$_SESSION['artist'];
                                 $red='artistprofile.php';
                             }
                             ?>
-                            <a href="<?php echo $red?>">
+                            <div class="data_box_edit">
+                                <a href="<?php echo $red?>">
                                   <span class="glyphicon glyphicon-pencil">Edit <!--Make pencil Center-->
-                            </a>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

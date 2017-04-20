@@ -178,3 +178,6 @@ textarea{
     }
 }
 
+one.alert{
+    display: none;
+}

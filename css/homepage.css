@@ -90,7 +90,9 @@ body{
 
 
 
-
+.tab-content{
+    margin: 1rem;
+}
 .container li a{
     background-color: #ff3333;
     color: white;

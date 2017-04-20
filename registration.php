@@ -19,8 +19,8 @@
 <script>
     function validate_password(){
 
-        var a = document.getElementById("password").value;
-        var b = document.getElementById("confirm_password").value;
+        var a = document.getElementById("pwd").value;
+        var b = document.getElementById("rep_pwd").value;
         if (a!=b) {
             alert("Passwords do no match");
             return false;

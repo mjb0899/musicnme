@@ -52,8 +52,11 @@ $artist=$_SESSION['artist'];
             }
         );
     </script>
-    <style>
-    </style>
+    <script>
+        if ($('#exampleInputFile').get(0).files.length === 0) {
+            console.log("No files selected.");
+        }
+    </script>
 </head>
 <body>
 <header>

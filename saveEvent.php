@@ -12,7 +12,7 @@ $time=$_POST['time'];
 $ename=$_POST['eventName'];
 $edesc=$_POST['eventDesc'];
 include ("dbConnect.php");
-
+try{
 $stmt1=$db->prepare("Select uid from users where username=?");
 $stmt1->bind_param('s',$sess);
 $stmt1-> execute();
@@ -24,12 +24,14 @@ while ($stmt1->fetch()) {
 
 
 $stmt2=$db->prepare("INSERT INTO events (uid,ename,edesc,edate,etime) VALUES (?,?,?,?,?)");
-$stmt2->bind_param('i,s,s,s,s',$uid,$ename,$edesc,$date,$time);
+$stmt2->bind_param('issss',$uid,$ename,$edesc,$date,$time);
 $stmt2-> execute();
 $stmt2-> store_result();
 $stmt2->bind_result($col1);
-
-$stmt1->close();
-$stmt2->close();
-
 header("location:createEvent.php");
+}
+catch(PDOException $e)
+    {
+        echo "Error: " . $e->getMessage();
+    }
+

@@ -320,8 +320,6 @@ $artist=$_SESSION['artist'];
 
                                     <label>Select File</label>
                                     <input type="file" id="exampleInputFile" name="file">
-                                    <p class="help-block">Example block-level help text here.
-                                    </p>
                                 </div>
                                 <button type="submit" class="btn btn-default" id="button_col" name="submit">Post
                                 </button>

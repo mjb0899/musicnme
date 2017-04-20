@@ -408,10 +408,11 @@ $artist=$_SESSION['artist'];
                                     </div>
                                     <div class="media-body">
                                           <a href="'.$redirect.'?owner='.$post_owner.'"><h4 class="media-heading">'.$post_owner.'</h4></a>                                                 <p>'.$status.'</p>
-                                    </div>
-                                    <div class="feed_image">
+                                               <div class="feed_image">
                                          <img style="object-fit: contain" src="'.$file_path.'">      
                                     </div>
+                                    </div>
+                                 
                                     <div class="rater" style="clear:both">
                                         <div style="float:left">
                                               <h4><span class="glyphicon glyphicon-heart"></span>'.$post_hits.'</h4><h4><span class="glyphicon glyphicon-user"></span>'.$votes.'</h4>

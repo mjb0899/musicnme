@@ -6,15 +6,16 @@
  * Time: 04:05
  */
 
+session_start();
+$sess=$_SESSION['name'];
+$user=$_SESSION['user'];
+$artist=$_SESSION['artist'];
+
 $fname=$_POST['firstname'];
 $lname=$_POST['lastname'];
 $email=$_POST['email'];
 $pass=$_POST['psw'];
 
-session_start();
-$sess=$_SESSION['name'];
-$user=$_SESSION['user'];
-$artist=$_SESSION['artist'];
 
 include("dbConnect.php");
 

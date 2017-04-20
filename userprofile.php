@@ -229,15 +229,15 @@ if(strcmp($sess,$owner)==0){
                                 <?php echo $email?>
                             </td>
                             <td>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
                             </td>
                         </tr>
                         <?php
                         if(isset($_SESSION['match'])){
                             echo' <tr>
-<td>Change Password</td>
-<td><input type="password" name="psw" id="psw"></td>
-</tr>';
+                                    <td>Change Password</td>
+                                    <td><input type="password" name="psw" id="psw"></td>
+                                   </tr>';
                         }
                         ?>
                     </table>

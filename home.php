@@ -80,8 +80,7 @@ $artist=$_SESSION['artist'];
                         </a>
                     </li>
                     <li>
-                        <a href="createEvent.php">Events
-                        </a>
+                        <?php if(isset($artist)) { echo '<a href="createEvent.php">Events</a>';} ?>
                     </li>
                     <li>
                         <a href="contactUs.php">Get In Touch

@@ -54,7 +54,7 @@ $artist=$_SESSION['artist'];
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li <?php if(!isset($sess)) { ?>style="display:none;"<?php } ?>><a href="home.php">Home</a></li>
-                    <li <?php if(!isset($sess)) { ?>style="display:none;"<?php } ?>><a href="createEvent.php">Events</a></li>
+                    <?php if(isset($artist)) { echo '<a href="createEvent.php">Events</a>';} ?>
                     <li><a href="contactUs.php">Get In Touch</a></li>
                     <li><a href="aboutus.php">About Us</a></li>
                 </ul>

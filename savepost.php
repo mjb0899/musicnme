@@ -30,9 +30,7 @@ $status=$_POST["status"];
                                 else{
                                     echo"Error:".$sql."<br>" . mysqli_error($db);
                                 }
-
-                                echo 1;
-
+                                header("location:home.php");
                     }
                     else{
                         echo "Empty Post";

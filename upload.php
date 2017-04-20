@@ -119,9 +119,12 @@ if(isset($_POST['submit'])){
                     $userID = $col1;
                 }
 
-                echo $description.$userID.$date.$upload.$fileNameNew.$fileActualExt.$fileDestination;
 
-                $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted,title,file_namefile_type,path) VALUES (?,?,?,?,?,?,?)");
+      /*          $upload="upload";
+
+                $date = date('Y-m-d H:i:s');*/
+
+                $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted,title,file_name,file_type,path) VALUES (?,?,?,?,?,?,?)");
                 $stmt2->bind_param('sisssss',$description,$userID,$date,$upload,$fileNameNew,$fileActualExt,$fileDestination);
                 $stmt2-> execute();
                 $stmt2-> store_result();

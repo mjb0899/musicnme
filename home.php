@@ -411,7 +411,7 @@ $artist=$_SESSION['artist'];
                                              
                                     </div>
                                     
-                                   <div style="height: 60%; width: 80%;margin: auto">
+                                   <div style="height: 50%; width: 70%;margin: auto">
                                          <img style="height: 100%; width: 100%; object-fit: contain" src="'.$file_path.'">      
                                     </div>
                                  

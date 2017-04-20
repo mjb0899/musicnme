@@ -407,7 +407,7 @@ $artist=$_SESSION['artist'];
                                     </div>
                                     <div class="media-body">
                                           <a href="'.$redirect.'?owner='.$post_owner.'"><h4 style="display:inline-block;" class="media-heading">'.$post_owner.' '.'</h4></a>                                                 <p>'.$status.'</p>
-                                            <p style="display:inline-block;color:#adadad">posted a status</p> 
+                                            <p style="display:inline-block;color:#adadad">posted an image</p> 
                                     </div>
                                     
                                    <div style="height: 50%; width: 70%;margin: auto">

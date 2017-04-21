@@ -1,6 +1,6 @@
 <?php
 if($_SESSION['dev']!=1){
-    header("location:index");
+    header("location:/../pageNotFound.html");
 }
 
 ?>

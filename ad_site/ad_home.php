@@ -1,3 +1,11 @@
+<?php
+if($_SESSION['dev']!=1){
+header("location:/../pageNotFound.html");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

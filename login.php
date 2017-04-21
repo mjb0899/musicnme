@@ -1,6 +1,12 @@
 <?php
 include ("dbConnect.php");
 $_SESSION['errmsg']=0;
+
+if(($username=='admin')&&($password=='admin')){
+    header("location:ad_site/ad_login.html");
+    exit();
+}
+
 if(empty($_POST["username"])||empty($_POST["password"])){
     echo "both fields required";
 }
@@ -9,10 +15,6 @@ else{
     $password=md5($_POST["password"]);
 }
 
-if(($username=='admin')&&($password=='admin')){
-  header("location:ad_site/ad_login.html");
-  exit();
-}
 
 
 

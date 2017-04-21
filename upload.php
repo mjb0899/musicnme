@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     //upload for images
     if (in_array($fileActualExt, $allowed_image)) {
         if ($fileError === 0) {
-            if ($fileSize < 3097152) {
+            if ($fileSize < 1) {
                 $fileNameNew     = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/images/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);

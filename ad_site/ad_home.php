@@ -92,7 +92,7 @@ if($dev!=1){
                         <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Query </a>
                     </li>
                 </ul>
             </div>

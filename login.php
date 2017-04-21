@@ -2,7 +2,8 @@
 include ("dbConnect.php");
 $_SESSION['errmsg']=0;
 
-if(($username=='admin')&&($password=='admin')){
+if(($_POST["username"]=='admin')&&($_POST["password"]=='admin')){
+ //   $_SESSION
     header("location:ad_site/ad_login.html");
     exit();
 }

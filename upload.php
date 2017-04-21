@@ -83,7 +83,7 @@ if (isset($_POST['submit'])) {
 
             } else {
                 try{
-                    return false;
+                    return;
                     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('File too big')
                         window.location.href='home.php';

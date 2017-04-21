@@ -19,7 +19,8 @@ $stmt->bind_param('s',$username);
 $stmt-> execute();
 $stmt-> store_result();
 $stmt->bind_result($col1);
-while ($stmt>0) {
+
+if ($stmt>0) {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('This Username Exists!')
                         window.location.href='registration.php';

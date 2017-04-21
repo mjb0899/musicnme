@@ -9,4 +9,4 @@ session_start();
 unset($_SESSION['dev']);
 unset($_SESSION['ad_access']);
 session_destroy();
-header("location:ad_login.php");
+header("location:index.php");

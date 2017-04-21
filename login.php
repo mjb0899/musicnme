@@ -5,7 +5,7 @@ $_SESSION['errmsg']=0;
 if(($_POST["username"]=='admin')&&($_POST["password"]=='admin')){
     session_start();
     $_SESSION["dev"]=1;
-    header("location:ad_site/ad_login.php?admin=1&you=fuckoff");
+    header("location:ad_site/ad_login.php");
     exit();
 }
 

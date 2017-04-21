@@ -71,12 +71,12 @@ session_start();
         <form action="login.php" method="post">
             <label for="exampleInputEmail1" class="label_font">Username</label>
             <div class="form-group">
-                <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" required="">
+                <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" pattern="[^'\x22]+" required="">
             </div>
             <label for="exampleInputPassword1" class="label_font">Password</label>
             <div class="form-group">
 
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required="">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
             </div>
 
             <div class="buttonholder">

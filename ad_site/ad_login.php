@@ -1,6 +1,7 @@
 <?php
-echo $_SESSION['dev'];
 session_start();
+echo $_SESSION['dev'];
+
 if($_SESSION['dev']!=1){
     header("location:/../pageNotFound.html");
 }else{

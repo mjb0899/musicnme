@@ -5,6 +5,15 @@
  * Date: 03/04/2017
  * Time: 13:10
  */
+
+if(!isset($_POST["username"])){
+    header("location:pageNotFound.html");
+}else{
+
+}
+
+
+
 include ("dbConnect.php");
 
 $username=$_POST["username"];

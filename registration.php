@@ -72,11 +72,11 @@
             <div >
                 <div class="form-group">
                     <label for="usr" class="label_font">First Name:</label>
-                    <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" pattern="[A-Za-z+]" title="Letters Only" required>
+                    <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" pattern="[A-Za-z]+" title="Letters Only" required>
                 </div>
                 <div class="form-group">
                     <label for="usr" class="label_font">Last Name</label>
-                    <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" pattern="[A-Za-z+]" title="Letters Only" required>
+                    <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" pattern="[A-Za-z]+" title="Letters Only" required>
                 </div>
                 <div class="form-group">
                     <label for="usr" class="label_font">Pick a username:</label>

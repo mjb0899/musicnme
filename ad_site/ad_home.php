@@ -1,8 +1,13 @@
 <?php
-if($_SESSION['dev']!=1){
-header("location:/../pageNotFound.html");
-}
 
+session_start();
+$dev=$_SESSION['dev'];
+
+if($dev=1){
+}else{
+    header("location:/../pageNotFound.html");
+
+}
 ?>
 
 

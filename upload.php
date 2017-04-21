@@ -82,9 +82,12 @@ if (isset($_POST['submit'])) {
 
 
             } else {
-                alert("File too big");
-                header("location:home.php");
-
+              //file too big
+                echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('File too big')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+                exit();
             }
         } else {
             echo alert("Not a Valid file type");

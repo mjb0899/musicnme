@@ -161,13 +161,10 @@ $artist=$_SESSION['artist'];
                 }elseif ($profile_redirect==="artist"){
                     $user_redirect="artistprofile.php";
                 }
+                echo '  <a href="<?php $user_redirect?>"> <h2>'. $user_redirect.'</h2> </a>'
 
                 ?>
-                <a href="<?php $user_redirect?>">
-                    <h2>
-                        <?php echo $sess  ?>
-                    </h2>
-                </a>
+
             </div>
 
             <div class="profile_data">

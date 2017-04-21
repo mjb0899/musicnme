@@ -137,7 +137,7 @@ if($dev!=1){
                                         <i class="fa fa-comments fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">Get Value</div>
+                                        <div class="huge">27</div>
                                         <div>POSTS</div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@ if($dev!=1){
                                         <i class="fa fa-tasks fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">GET VALUE</div>
+                                        <div class="huge">7</div>
                                         <div>USERS</div>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@ if($dev!=1){
                                         <i class="fa fa-support fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">FEEDBACK</div>
+                                        <div class="huge">2</div>
                                         <div>Users</div>
                                     </div>
                                 </div>

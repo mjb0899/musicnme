@@ -71,7 +71,7 @@ session_start();
         <form action="login.php" method="post">
             <label for="exampleInputEmail1" class="label_font">Username</label>
             <div class="form-group">
-                <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" pattern="[^'\x22]+" required="">
+                <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" title="Invalid input" pattern="[^'\x22]+" required="">
             </div>
             <label for="exampleInputPassword1" class="label_font">Password</label>
             <div class="form-group">

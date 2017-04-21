@@ -7,10 +7,13 @@
  */
 session_start();
 $sess=$_SESSION['name'];
+if($sess==null){
+    header("location:pageNotFound.html");
+}
+
 $desc=$_POST['matter'];
 $subject=$_POST['subject'];
 
-echo $sess.$desc.$subject;
 
 include ("dbConnect.php");
 

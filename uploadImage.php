@@ -48,15 +48,33 @@ if(isset($_POST['submit'])){
                 header("Location:userprofile.php");
 
             }else{
-                echo "File too big";
+                try{
+                    echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('File too big')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+                    exit();
+                }catch(PDOException $e){
+                    echo "file too big";
+                }
+
             }
         }else{
-            echo "Something went wrong with your file";
+
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Something went Wrong')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+            exit();
         }
     }
     else{
 
-        echo "You cannot upload files of this type";
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Cannot Upload this kind of file')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+        exit();
     }
 
 

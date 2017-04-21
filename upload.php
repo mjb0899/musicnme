@@ -83,7 +83,6 @@ if (isset($_POST['submit'])) {
 
             } else {
                 try{
-                    return;
                     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('File too big')
                         window.location.href='home.php';
@@ -166,7 +165,11 @@ if (isset($_POST['submit'])) {
 
     } else {
 
-        echo "You cannot upload files of this type";
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Cannot Upload thi kind of file')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+        exit();
     }
 
 

@@ -21,7 +21,7 @@ $stmt-> store_result();
 $stmt->bind_result($col1);
 while ($stmt>0) {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
-                         window.alert('Something went Wrong')
+                         window.alert('This Username Exists!')
                         window.location.href='registration.php';
                     </SCRIPT>");
     exit();

@@ -8,6 +8,10 @@
 
 session_start();
 $sess=$_SESSION['name'];
+if($sess==null){
+    header("location:pageNotFound.html");
+}
+
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 

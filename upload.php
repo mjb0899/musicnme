@@ -176,7 +176,7 @@ if (isset($_POST['submit'])) {
     } else {
 
         echo ("<SCRIPT LANGUAGE='JavaScript'>
-                         window.alert('Cannot Upload thi kind of file')
+                         window.alert('Cannot Upload this kind of file')
                         window.location.href='home.php';
                     </SCRIPT>");
         exit();

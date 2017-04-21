@@ -19,7 +19,7 @@ $stmt->bind_param('s',$username);
 $stmt-> execute();
 $stmt-> store_result();
 $stmt->bind_result($col1);
-while ($stmt->fetch()) {
+while ($stmt>0) {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('Something went Wrong')
                         window.location.href='registration.php';

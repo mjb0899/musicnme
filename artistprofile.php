@@ -11,21 +11,6 @@ $_SESSION['match']=null;
 
 if(isset($_GET['owner'])){
 
-    $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
-    $stmt->bind_param('s',$username);
-    $stmt-> execute();
-    $stmt-> store_result();
-    $stmt->bind_result($col1);
-    while ($stmt->fetch()) {
-        header("location:pageNotFound.html");
-        exit();
-    }
-
-
-
-
-
-
 
 
     $owner=$_GET['owner'];

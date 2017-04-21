@@ -7,6 +7,8 @@
  */
 session_start();
 unset($_SESSION['dev']);
+unset($_SESSION['ad_access']);
+
 session_destroy();
 var_dump($_SESSION);
 //header("location:index.php");

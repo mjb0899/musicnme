@@ -191,8 +191,7 @@ if(strcmp($sess,$owner)==0){
                 </button>
                 <button class="tablinks" onclick="openCity(event, 'uploads')">Uploads
                 </button>
-                <button class="tablinks" onclick="openCity(event, 'testtab')">testtab
-                </button>
+
             </div>
             <div id="info" class="tabcontent">
                 <?php
@@ -252,17 +251,6 @@ if(strcmp($sess,$owner)==0){
                 ?>
                 <div id="test">
                 </div>
-            </div>
-            <div id="testtab" class="tabcontent">
-                <h1>
-                    <?php echo $sess ?>
-                </h1>
-                <h1>
-                    <?php echo $owner ?>
-                </h1>
-                <h1>
-                    <?php echo $_SESSION['match'] ?>
-                </h1>
             </div>
             <div id="status" class="tabcontent">
                 <?php

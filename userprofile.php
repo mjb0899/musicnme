@@ -7,11 +7,38 @@ $sess=$_SESSION['name'];
 $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 $_SESSION['match']=null;
+
+
+
+//test owner
+
+//Testing the get request
+
+$test_owner=$_GET['owner'];
 if(isset($_GET['owner'])){
-    $owner=$_GET['owner'];
+    include("dbConnect.php");
+    $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
+    $stmt->bind_param('s',$test_owner);
+    $stmt-> execute();
+    $stmt-> store_result();
+    $stmt->bind_result($col1);
+    //if null page not found
+    while($stmt->fetch()==null) {
+
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+                        window.location.href='pageNotFound.html';
+                    </SCRIPT>");
+        exit();
+    }
+    $owner=$test_owner;
 }else{
     $owner=$sess;
 }
+
+
+
+
+
 //for uploading and editing profile
 if(strcmp($sess,$owner)==0){
     $_SESSION['match']=1;

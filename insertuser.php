@@ -6,7 +6,7 @@
  * Time: 13:10
  */
 
-if(!isset($_POST["username"])){
+if(isset($_POST["username"])){
 
 }else{
     header("location:pageNotFound.html");

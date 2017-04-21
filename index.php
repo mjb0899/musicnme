@@ -52,7 +52,7 @@ session_start();
 <!--MAIN PAGE-->
 <main >
     <div class="quote">
-        <h2>Music is life.<br> That's why our hearts has beats.</h2>
+        <h2>Music is life.<br> That's why our hearts have beats.</h2>
 
 
 

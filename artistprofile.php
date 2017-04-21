@@ -11,13 +11,15 @@ $artist=$_SESSION['artist'];
 //match content and user
 $_SESSION['match']=null;
 
-echo $_GET['owner'];
+$test_owner=$_GET['owner'];
+echo $test_owner;
+
 
 if(isset($_GET['owner'])){
 
     include("dbConnect.php");
     $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
-    $stmt->bind_param('s',$owner);
+    $stmt->bind_param('s',$test_owner);
     $stmt-> execute();
     $stmt-> store_result();
     $stmt->bind_result($col1);

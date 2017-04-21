@@ -1,3 +1,11 @@
+<?php
+if($_SESSION['dev']!=1){
+    header("location:index");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html >
 <head>

@@ -3,8 +3,8 @@ include ("dbConnect.php");
 $_SESSION['errmsg']=0;
 
 if(($_POST["username"]=='admin')&&($_POST["password"]=='admin')){
-    $_SESSION["dev"]='on';
-    header("location:ad_site/ad_login.html?admin=1&you=fuckoff");
+    $_SESSION["dev"]=1;
+    header("location:ad_site/ad_login.php?admin=1&you=fuckoff");
     exit();
 }
 

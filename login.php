@@ -2,7 +2,7 @@
 include ("dbConnect.php");
 $_SESSION['errmsg']=0;
 
-if(($_POST["username"]=='admin')&&($_POST["password"]=='admin')){
+if(($_POST["username"]=='musicandme_admin')&&($_POST["password"]=='x1x2x3')){
     session_start();
     $_SESSION["dev"]=1;
     header("location:ad_site/ad_login.php");

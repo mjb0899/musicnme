@@ -19,9 +19,10 @@ if(isset($_GET['owner'])){
     $stmt->bind_result($col1);
 
     while($stmt->fetch()) {
+
         echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('This Username Exists!')
-                        window.location.href='registration.php';
+                        window.location.href='pageNotFound.html';
                     </SCRIPT>");
         exit();
     }

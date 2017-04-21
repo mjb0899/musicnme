@@ -82,10 +82,14 @@ if (isset($_POST['submit'])) {
 
 
             } else {
-                echo "File too big";
+                alert("File too big");
+                header("location:home.php");
+
             }
         } else {
-            echo "Something went wrong with your file";
+            echo alert("Not a Valid file type");
+                header("location:home.php");
+
         }
     } elseif (in_array($fileActualExt, $allowed_media)) {
         //upload for music

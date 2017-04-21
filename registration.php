@@ -72,11 +72,11 @@
             <div >
                 <div class="form-group">
                     <label for="usr" class="label_font">First Name:</label>
-                    <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" required>
+                    <input type="text" class="form-control" id="usr" name="fname" placeholder="Enter First Name" pattern="[A-Za-z+]" title="Letters Only" required>
                 </div>
                 <div class="form-group">
                     <label for="usr" class="label_font">Last Name</label>
-                    <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" required>
+                    <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" pattern="[A-Za-z+]" title="Letters Only" required>
                 </div>
                 <div class="form-group">
                     <label for="usr" class="label_font">Pick a username:</label>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="form-group">
                     <label for="email" class="label_font">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="pwd" class="label_font">Password:</label>

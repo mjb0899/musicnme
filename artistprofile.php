@@ -16,7 +16,6 @@ echo $test_owner;
 
 
 if(isset($_GET['owner'])){
-
     include("dbConnect.php");
     $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
     $stmt->bind_param('s',$test_owner);
@@ -24,14 +23,13 @@ if(isset($_GET['owner'])){
     $stmt-> store_result();
     $stmt->bind_result($col1);
 
-    while($stmt->fetch()) {
+    while($stmt->fetch()==null) {
 
         echo ("<SCRIPT LANGUAGE='JavaScript'>
                         window.location.href='pageNotFound.html';
                     </SCRIPT>");
         exit();
     }
-
 
     $owner=$_GET['owner'];
 }else{

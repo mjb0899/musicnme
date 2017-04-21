@@ -11,7 +11,7 @@ $artist=$_SESSION['artist'];
 //match content and user
 $_SESSION['match']=null;
 
-echo $_POST['owner'];
+echo $_GET['owner'];
 
 if(isset($_GET['owner'])){
 

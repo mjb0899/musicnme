@@ -8,6 +8,7 @@ $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 //match content and user
 $_SESSION['match']=null;
+
 if(isset($_GET['owner'])){
     $owner=$_GET['owner'];
 }else{
@@ -145,7 +146,33 @@ if(strcmp($sess,$owner)==0){
             <div class="propic" id="profile_pic">
                 <?php
                 include("dbConnect.php");
+                //test
+                $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
+                $stmt->bind_param('s',$owner);
+                $stmt-> execute();
+                $stmt-> store_result();
+
+                if($stmt->fetch()>0) {
+
+                }else{
+                    header("location:pageNotFound.html");
+                    exit();
+                }
+
+
+
+
+
+
+
+
+
+
+
+
                 $sql_query = "Select profile_image,username from users Where username='$owner'";
+
+
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $profile_path=$row['profile_image'];

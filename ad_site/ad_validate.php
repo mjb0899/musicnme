@@ -16,4 +16,6 @@ if(($username=='lucifer')&&($password=='xxxx')){
 }
 else{
     alert("incorrect Password. Are you admin?");
+    header("location:ad_login.php");
+
 }

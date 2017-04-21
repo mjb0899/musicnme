@@ -15,7 +15,11 @@ if(($username=='lucifer')&&($password=='xxxx')){
     exit();
 }
 else{
-    alert("incorrect Password. Are you admin?");
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Invalid credentials!')
+                        window.location.href='ad_login.php';
+                    </SCRIPT>");
+    exit();
     header("location:ad_login.php");
 
 }

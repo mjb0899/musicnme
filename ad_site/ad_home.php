@@ -58,7 +58,7 @@ if($dev!=1){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="ad_home.php">SB Admin</a>
+                <a class="navbar-brand" href="ad_home.php" style="color: #ff3333">Music&Me<</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">

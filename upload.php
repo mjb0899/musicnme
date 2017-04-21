@@ -38,9 +38,7 @@ if (isset($_POST['submit'])) {
         'png'
     );
     $allowed_media = array(
-        'mp4',
-        'mp3',
-        'txt'
+        'mp3'
     );
     //upload for images
     if (in_array($fileActualExt, $allowed_image)) {

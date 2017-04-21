@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
     //upload for images
     if (in_array($fileActualExt, $allowed_image)) {
         if ($fileError === 0) {
-            if ($fileSize < 1) {
+            if ($fileSize < 3097152) {
                 $fileNameNew     = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/images/' . $fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
@@ -82,17 +82,25 @@ if (isset($_POST['submit'])) {
 
 
             } else {
-              //file too big
-                echo ("<SCRIPT LANGUAGE='JavaScript'>
+                try{
+                    return false;
+                    echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('File too big')
                         window.location.href='home.php';
                     </SCRIPT>");
-                exit();
+                    exit();
+                  }catch(PDOException $e){
+                    echo "file too big";
+                }
+
+
             }
         } else {
-            echo alert("Not a Valid file type");
-                header("location:home.php");
-
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Something went Wrong')
+                        window.location.href='home.php';
+                    </SCRIPT>");
+            exit();
         }
     } elseif (in_array($fileActualExt, $allowed_media)) {
         //upload for music

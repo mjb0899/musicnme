@@ -9,6 +9,9 @@ session_start();
 $sess=$_SESSION['name'];
 $desc=$_POST['matter'];
 $subject=$_POST['subject'];
+
+echo $sess.$desc.$subject;
+
 include ("dbConnect.php");
 
 try{
@@ -27,7 +30,8 @@ try{
     $stmt2-> execute();
     $stmt2-> store_result();
     $stmt2->bind_result($col1);
-    header("location:contactUs.php");
+
+ //   header("location:contactUs.php");
 }
 catch(PDOException $e)
 {

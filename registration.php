@@ -80,7 +80,7 @@
                 </div>
                 <div class="form-group">
                     <label for="usr" class="label_font">Pick a username:</label>
-                    <input type="text" class="form-control" id="usr" name="username"placeholder="Select a username" required>
+                    <input type="text" class="form-control" id="usr" name="username"placeholder="Select a username" pattern=".{6,}" title="Six or more characters" required>
                 </div>
                 <div class="form-group">
                     <label for="email" class="label_font">Email:</label>

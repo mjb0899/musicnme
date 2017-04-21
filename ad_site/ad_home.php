@@ -86,7 +86,7 @@ if($dev!=1){
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="ad_home.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="ad_home.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>

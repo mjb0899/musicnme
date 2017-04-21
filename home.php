@@ -143,7 +143,27 @@ $artist=$_SESSION['artist'];
                 ?>
             </div>
             <div class="user_display">
-                <a href="userprofile.php">
+                <?php
+                include('dbConnect.php');
+
+                $stmt1=$db->prepare("Select utype from users where username=?");
+                $stmt1->bind_param('s',$sess);
+                $stmt1-> execute();
+                $stmt1-> store_result();
+                $stmt1->bind_result($col1);
+                while ($stmt1->fetch()) {
+                    $profile_redirect = $col1;
+                }
+
+                //check post_owner account type (user or artist)
+                if($profile_redirect==="user"){
+                    $user_redirect="userprofile.php";
+                }elseif ($profile_redirect==="artist"){
+                    $user_redirect="artistprofile.php";
+                }
+
+                ?>
+                <a href="<?php $user_redirect?>">
                     <h2>
                         <?php echo $sess  ?>
                     </h2>

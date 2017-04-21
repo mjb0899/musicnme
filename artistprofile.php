@@ -11,10 +11,9 @@ $artist=$_SESSION['artist'];
 //match content and user
 $_SESSION['match']=null;
 
+//Testing the get request
+
 $test_owner=$_GET['owner'];
-echo $test_owner;
-
-
 if(isset($_GET['owner'])){
     include("dbConnect.php");
     $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
@@ -22,7 +21,7 @@ if(isset($_GET['owner'])){
     $stmt-> execute();
     $stmt-> store_result();
     $stmt->bind_result($col1);
-
+    //if null page not found
     while($stmt->fetch()==null) {
 
         echo ("<SCRIPT LANGUAGE='JavaScript'>
@@ -30,8 +29,7 @@ if(isset($_GET['owner'])){
                     </SCRIPT>");
         exit();
     }
-
-    $owner=$_GET['owner'];
+    $owner=$test_owner;
 }else{
     $owner=$sess;
 }

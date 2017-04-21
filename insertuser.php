@@ -6,13 +6,10 @@
  * Time: 13:10
  */
 
-if(isset($_POST["username"])){
-
-}else{
+if($_POST['username']==null){
     header("location:pageNotFound.html");
+    exit();
 }
-
-
 
 include ("dbConnect.php");
 

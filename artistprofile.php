@@ -17,8 +17,17 @@ if(isset($_GET['owner'])){
 if(strcmp($sess,$owner)==0){
     $_SESSION['match']=1;
 }
+//check user
 
+$stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
+$stmt->bind_param('s',$username);
+$stmt-> execute();
+$stmt-> store_result();
+$stmt->bind_result($col1);
+while ($stmt->fetch()==null) {
+    header("location:pageNotFound.html");
 
+}
 
 
 

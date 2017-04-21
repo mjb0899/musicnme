@@ -7,6 +7,10 @@
  */
 session_start();
 $sess=$_SESSION['name'];
+if($sess==null){
+    header("location:pageNotFound.html");
+}
+
 $date=$_POST['date'];
 $time=$_POST['time'];
 $ename=$_POST['eventName'];

@@ -1,14 +1,14 @@
 <?php
 session_start();
-echo $_SESSION['dev'];
+$dev=$_SESSION['dev'];
 
-if($_SESSION['dev']!=1){
-    header("location:/../pageNotFound.html");
+if($dev=1){
+    header("location:/ad_home.php");
+
 }else{
+    header("location:/../pageNotFound.html");
 }
 ?>
-
-
 <!DOCTYPE html>
 <html >
 <head>

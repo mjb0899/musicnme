@@ -270,7 +270,7 @@ if($dev!=1){
                                         <i class="fa fa-support fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-                                        <div class="huge">FEEDBACK/MESSAGES</div>
+                                        <div class="huge">FEEDBACK</div>
                                         <div>Users</div>
                                     </div>
                                 </div>

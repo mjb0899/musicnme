@@ -22,6 +22,7 @@ $stmt->bind_result($col1);
 while ($stmt->fetch()>0) {
     alert('sorry Username Exists');
     header("location:registration.php");
+    exit();
 }
 
 

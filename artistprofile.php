@@ -11,6 +11,7 @@ $_SESSION['match']=null;
 
 if(isset($_GET['owner'])){
 
+    include("dbConnect.php");
     $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
     $stmt->bind_param('s',$owner);
     $stmt-> execute();

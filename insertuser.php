@@ -19,9 +19,11 @@ $stmt->bind_param('s',$username);
 $stmt-> execute();
 $stmt-> store_result();
 $stmt->bind_result($col1);
-while ($stmt->fetch()>0) {
-    alert('sorry Username Exists');
-    header("location:registration.php");
+while ($stmt->fetch()) {
+    echo ("<SCRIPT LANGUAGE='JavaScript'>
+                         window.alert('Something went Wrong')
+                        window.location.href='registration.php';
+                    </SCRIPT>");
     exit();
 }
 

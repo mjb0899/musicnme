@@ -20,7 +20,7 @@ $stmt-> execute();
 $stmt-> store_result();
 $stmt->bind_result($col1);
 
-if ($stmt>0) {
+if ($col1>0) {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('This Username Exists!')
                         window.location.href='registration.php';

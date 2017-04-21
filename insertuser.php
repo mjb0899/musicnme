@@ -7,9 +7,9 @@
  */
 
 if(!isset($_POST["username"])){
-    header("location:pageNotFound.html");
-}else{
 
+}else{
+    header("location:pageNotFound.html");
 }
 
 

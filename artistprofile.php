@@ -260,8 +260,6 @@ if(strcmp($sess,$owner)==0){
                 </div>
             </div>
             <div id="status" class="tabcontent">
-                <h1>test
-                </h1>
                 <?php
                 include("dbConnect.php");
                 $sql_query = "Select * from post_info WHERE username='$owner' ORDER BY dateposted DESC ";

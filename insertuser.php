@@ -14,6 +14,16 @@ $email=$_POST["email"];
 $type=$_POST['utype'];
 $pass = md5($_POST["pass"]);
 
+$stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
+$stmt->bind_param('s',$username);
+$stmt-> execute();
+$stmt-> store_result();
+$stmt->bind_result($col1);
+while ($stmt->fetch()>0) {
+    alert('sorry Username Exists');
+    header("location:registration.php");
+}
+
 
 $allowed_utype = array('user','artist');
 if(in_array($type,$allowed_utype)) {

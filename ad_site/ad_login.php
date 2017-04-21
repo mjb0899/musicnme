@@ -2,10 +2,7 @@
 session_start();
 $dev=$_SESSION['dev'];
 
-if($dev=1){
-    header("location:/ad_home.php");
-
-}else{
+if($dev!=1){
     header("location:/../pageNotFound.html");
 }
 ?>

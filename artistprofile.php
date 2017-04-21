@@ -152,13 +152,10 @@ if(strcmp($sess,$owner)==0){
                 $stmt-> execute();
                 $stmt-> store_result();
 
-                if($stmt->fetch()>0) {
-
-                }else{
+                if($stmt=null){
                     header("location:pageNotFound.html");
                     exit();
                 }
-
 
 
 

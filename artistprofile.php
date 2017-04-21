@@ -18,18 +18,6 @@ if(strcmp($sess,$owner)==0){
     $_SESSION['match']=1;
 }
 
-//test
-$stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
-$stmt->bind_param('s',$owner);
-$stmt-> execute();
-$stmt-> store_result();
-
-if($stmt==null){
-    header("location:pageNotFound.html");
-    exit();
-}
-
-
 
 
 

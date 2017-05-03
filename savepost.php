@@ -19,6 +19,8 @@ $user=$_SESSION['user'];
 $artist=$_SESSION['artist'];
 $status=$_POST["status"];
 
+$status_san=htmlspecialchars($status);
+
 
 try{
     if($status!=null) {
@@ -38,7 +40,7 @@ try{
 
 
     $stmt2=$db->prepare("INSERT INTO topic(description,uid,dateposted) VALUES (?,?,?)");
-    $stmt2->bind_param('sis',$status,$userID,$date);
+    $stmt2->bind_param('sis',$status_san,$userID,$date);
     $stmt2-> execute();
     $stmt2-> store_result();
     $stmt2->bind_result($col1);
